@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog id="XML Catalog File (see http://www.oasis-open.org/committees/entity/spec-2001-08-06.html) - Created By Protege 4" prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=1" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://www.ifomis.org/bfo/1.0" uri="bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://www.ifomis.org/bfo/1.1" uri="bfo11.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://purl.obolibrary.org/obo/ido.owl" uri="ido.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://purl.obolibrary.org/obo/ogms.owl" uri="ogms.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="protege-dc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://protege.stanford.edu/plugins/owl/protege#" uri="protege.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://www.obofoundry.org/ro/ro.owl" uri="ro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1291700824386" name="http://purl.org/obo/owl/ro_bfo_bridge/1.1" uri="ro_bfo_bridge11.owl"/>
+    </group>
+</catalog>
