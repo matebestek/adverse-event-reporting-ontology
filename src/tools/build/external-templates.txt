@@ -1,0 +1,68 @@
+default endpoint:http://sparql.obo.neurocommons.org/sparql/
+default graph_base:http://purl.org/science/graph/obo/
+# define the prefixes that will be added to all queries
+
+prefix:rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix:owl: <http://www.w3.org/2002/07/owl#>
+prefix:obi: <http://purl.obolibrary.org/obo/>
+prefix:tax: <http://purl.org/obo/owl/NCBITaxon#NCBITaxon>
+prefix:obo: <http://www.geneontology.org/formats/oboInOwl#>
+prefix:iao: <http://purl.obolibrary.org/obo/>
+
+# give names to our annotation properties
+
+alias:preferredTerm=iao:IAO_0000111
+alias:definition=iao:IAO_0000115
+alias:importedFrom=iao:IAO_0000412
+
+# get the label and definition for your basic OBO term.
+== http://purl.org/obo/owl/.* == 
+construct
+{ 
+  _ID_GOES_HERE_ alias:preferredTerm ?label.
+  _ID_GOES_HERE_ rdfs:label ?label.
+  _ID_GOES_HERE_ alias:definition ?definition.
+}
+from _GRAPH_GOES_HERE_
+where
+{
+  {   _ID_GOES_HERE_ rdfs:label ?label. }
+  UNION
+  {   _ID_GOES_HERE_ obo:hasDefinition ?blank.
+      ?blank rdfs:label ?definition}
+}
+
+# get the label and definition for BIRN terms
+== http://ontology.neuinfo.org/NIF/BiomaterialEntities/.* == 
+construct
+{ 
+  _ID_GOES_HERE_ rdf:type owl:Class.
+  _ID_GOES_HERE_ alias:preferredTerm ?label.
+  _ID_GOES_HERE_ rdfs:label ?label.
+  _ID_GOES_HERE_ alias:definition ?definition.
+}
+where
+{
+  {   _ID_GOES_HERE_ rdfs:label ?label. }
+  UNION
+  {   _ID_GOES_HERE_ <http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#birnlexDefinition> ?definition}
+}
+
+# get the label and definition for obolibrary type (VO, OBI...) terms
+== http://purl.obolibrary.org/obo/.* == 
+construct
+{ 
+  _ID_GOES_HERE_ rdf:type owl:Class.
+  _ID_GOES_HERE_ alias:preferredTerm ?label.
+  _ID_GOES_HERE_ rdfs:label ?label.
+  _ID_GOES_HERE_ alias:definition ?definition.
+}
+from _GRAPH_GOES_HERE_
+where
+{
+  {   _ID_GOES_HERE_ rdfs:label ?label. }
+  UNION
+  {   _ID_GOES_HERE_ alias:definition ?definition}
+}
+
+

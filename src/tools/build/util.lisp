@@ -1,0 +1,58 @@
+(defvar *aero-uri-pattern* (#"compile" 'java.util.regex.pattern "^http://purl.obolibrary.org/obo/AERO_\\d+$"))
+
+(defun is-aero-uri (uri)
+  (#"matches" (#"matcher" *flu-uri-pattern* (uri-full uri))))
+
+(eval-when (:compile-toplevel :load-toplevel :execute)
+  (def-uri-alias "material-entity" !snap:MaterialEntity)
+  (def-uri-alias "ready-for-release" !<http://purl.obolibrary.org/obo/IAO_0000122>)
+  (def-uri-alias "metadata-complete" !<http://purl.obolibrary.org/obo/IAO_0000120>)
+  (def-uri-alias "metadata-incomplete" !<http://purl.obolibrary.org/obo/IAO_0000123>)
+  (def-uri-alias "pending-final-vetting" !<http://purl.obolibrary.org/obo/IAO_0000125>)
+  (def-uri-alias "uncurated" !<http://purl.obolibrary.org/obo/IAO_0000124>)
+  (def-uri-alias "placeholder" !<http://purl.obolibrary.org/obo/IAO_0000121>)
+  (def-uri-alias "obsolete-class" !<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+  (def-uri-alias "definition" !obo:IAO_0000115)
+  (def-uri-alias "definition-source" !obo:IAO_0000119)
+  (def-uri-alias "definition-editor" !obo:IAO_0000117)
+  (def-uri-alias "preferred-term" !obo:IAO_0000111)
+  (def-uri-alias "alternative-term" !obo:IAO_0000118)
+  (def-uri-alias "example-of-usage" !obo:IAO_0000112)
+  (def-uri-alias "curation-status" !obo:IAO_0000078)
+  (def-uri-alias "editor-note" !obo:IAO_0000116)
+  (def-uri-alias "curator-note" !obo:IAO_0000232)
+  )
+
+
+(defmacro with-obo-metadata-uris (&body body)
+  `(let-uri (("ready-for-release" !obo:IAO_0000122)
+	     ("metadata-complete" !obo:IAO_0000120)
+	     ("metadata-incomplete" !obo:IAO_0000123)
+	     ("pending-final-vetting" !obo:IAO_0000125)
+	     ("uncurated" !obo:IAO_0000124)
+	     ("placeholder" !obo:IAO_0000121)
+	     ("obsolete-class" !<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+	     ("definition" !obo:IAO_0000115)
+	     ("definition-source" !obo:IAO_0000119)
+	     ("definition-editor" !obo:IAO_0000117)
+	     ("preferred-term" !obo:IAO_0000111)
+	     ("alternative-term" !obo:IAO_0000118)
+	     ("example-of-usage" !obo:IAO_0000112)
+	     ("has-curation-status" !obo:IAO_0000114)
+	     ("editor-note" !obo:IAO_0000116)
+	     ("curator-note" !obo:IAO_0000232)
+	     ("curation-status" !obo:IAO_0000078)
+	     ("imported-from" !obo:IAO_0000412)
+	     )
+	    ,@(loop for p in (list !obo:IAO_0000112 !obo:IAO_0000118 !obo:IAO_0000111 !obo:IAO_0000117 !obo:IAO_0000232
+				   !obo:IAO_0000119 !obo:IAO_0000115 !obo:IAO_0000412 !obo:IAO_0000114 !obo:IAO_0000116)
+		 collect `(annotation-property ,p))
+	    ,@(loop for i in (list !obo:IAO_0000122 !obo:IAO_0000120 !obo:IAO_0000123 !obo:IAO_0000125 !obo:IAO_0000124 !obo:IAO_0000121) 
+		 collect `(individual ,i (type !curation-status)))
+	    ,@body
+	    ))
+
+(defvar *aero-label-source* nil)
+
+  
+  
