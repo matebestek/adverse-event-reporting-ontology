@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY GO "http://purl.org/obo/owl/GO#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY oae "http://purl.obolibrary.org/obo/oae/" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;aero/external.owl#"
+     xml:base="&obo;aero/external.owl"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:UBERON="http://purl.org/obo/owl/UBERON#"
+     xmlns:GO="http://purl.org/obo/owl/GO#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;aero/external.owl"/>
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
+
+    <owl:Class rdf:about="&obo;VO_0000002">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0600007"/>
+   <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/VO.owl"/>
+    </owl:Class>
+
+    
+    <!-- http://purl.obolibrary.org/obo/OBI_0100015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100015">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
+
+    <owl:Class rdf:about="&obo;OBI_0600007">
+               <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000274"/>
+ <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000652"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+ 
+
+    <!-- http://purl.org/obo/owl/GO#GO_0001660 -->
+
+    <owl:Class rdf:about="&GO;GO_0001660">
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0006954 -->
+
+    <owl:Class rdf:about="&GO;GO_0006954">
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0007610 -->
+
+    <owl:Class rdf:about="&GO;GO_0007610">
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0000010">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+      <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0000955">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+      <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0001016">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+      <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
+    </owl:Class>
+    
+
+
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+

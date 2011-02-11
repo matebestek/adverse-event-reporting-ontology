@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY GO "http://purl.org/obo/owl/GO#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY oae "http://purl.obolibrary.org/obo/oae/" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;aero/external-by-hand.owl#"
+     xml:base="&obo;aero/external-by-hand.owl"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:UBERON="http://purl.org/obo/owl/UBERON#"
+     xmlns:GO="http://purl.org/obo/owl/GO#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;aero/external-by-hand.owl"/>
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#activates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#activates">
+        <rdfs:label xml:lang="en">activates</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000111 xml:lang="en">activates</obo:IAO_0000111>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#positively_regulates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of">
+        <rdfs:label xml:lang="en">bearer_of</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en"
+            >A relation between an entity and a dependent continuant; the reciprocal relation of inheres_in</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">bearer_of</obo:IAO_0000111>
+    </owl:ObjectProperty>
+
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">inheres_in</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en"
+            >A relation between a dependent continuant D and an entity E. D inheres_in E iff: given any d that instantiates D at t, there exists some e that instantiates E at t and d *inheres_in* e at t. Here *inheres_in* is the primitive instance level relation.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">inheres_in</obo:IAO_0000111>
+
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in_part_of">
+        <rdfs:label xml:lang="en"
+            >inheres_in_part_of</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000111 xml:lang="en"
+            >inheres_in_part_of</obo:IAO_0000111>
+
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#positively_regulates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#positively_regulates">
+        <rdfs:label xml:lang="en"
+            >positively_regulates</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en"
+            >A regulation relation in which the unfolding of the regulating process *increases* the frequency, rate or extent of the regulated process</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >positively_regulates</obo:IAO_0000111>
+
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#regulates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#regulates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#regulates">
+        <rdfs:label xml:lang="en">regulates</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en"
+            >A relation between a process and a process or quality. A regulates B if the unfolding of A affects the frequency, rate or extent of B. A is called the regulating process, B the regulates process</obo:IAO_0000115>
+
+        <obo:IAO_0000111 xml:lang="en">regulates</obo:IAO_0000111>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#role_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#role_of">
+        <rdfs:label xml:lang="en">role_of</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en"
+            >A relation between a role R and an entity E. R role_of E iff: R inheres_in E and R is a role</obo:IAO_0000115>
+
+        <obo:IAO_0000111 xml:lang="en">role_of</obo:IAO_0000111>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#stimulates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#stimulates">
+        <rdfs:label xml:lang="en">stimulates</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+
+        <obo:IAO_0000111 xml:lang="en">stimulates</obo:IAO_0000111>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#unfolds_in -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#unfolds_in">
+        <rdfs:label xml:lang="en">unfolds_in</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en"
+            >P unfolds_in C : the execution of P is spatially contained by C. forall pP,  forall c&#39; partipates_in p, c&#39; located_in C at t, for some t in P</obo:IAO_0000115>
+
+        <obo:IAO_0000111 xml:lang="en">unfolds_in</obo:IAO_0000111>
+    </owl:ObjectProperty>
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0000010">
+        <rdfs:label xml:lang="en">peripheral nervous system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Nervous structures including ganglia outside of the central nervous system. Divided into somatic nervous system and autonomic nervous system [FB:gg, OMD:peripheral+nervous+system, Wikipedia:Peripheral_nervous_system, ZFIN:curator]
+comment: This class was created automatically from a combination of ontologies</oboInOwl:hasDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0000955">
+        <rdfs:label xml:lang="en">brain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>def: &quot;The supra-esophageal ganglion of the central nervous system, composed of three primitive ganglia known as protocerebrum, deutocerebrum and tritocerebrum. In the context of Drosophila refers to the preoral ganglionic mass of the central nervous system containing the ventral ganglia. // Organ component of neuraxis that has as its parts gray matter and white matter that surround the cerebral ventricular system; Examples: There is only one brain. // Organ that is a component of the central nervous system and is responsible for the coordination and control of bodily activities and the interpretation of information from the senses. It appears when the neural tube segregates in forebrain, midbrain, and hindbrain at NF stage 22. The general pattern of the brain has been mainly established at NF stage 28. Yolky material is consumed and the fibre tracts and later the commissures develop. In general all of its parts are well developed at NF stage 53 and later development consists mainly of growth and some further cytological differentiation. In the period of metamorphosis only topographical changes take place.&quot; [FB:gg, ISBN:0815318960, ISBN:3110148986, OMD:brain, Wikipedia:Brain]
+comment: This class was created automatically from a combination of ontologies</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0001016">
+        <rdfs:label xml:lang="en">nervous system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <oboInOwl:hasDbXref xml:lang="en">UBERON:0001016</oboInOwl:hasDbXref>
+        <obo:IAO_0000118>UBERON:FBbt_00005093-FMA_7157-MA_0000016-MIAA_0000026-WBbt_0005735-XAO_0000177-ZFA_0000396</obo:IAO_0000118>
+        <obo:IAO_0000116>MC, 20100112: I am using the UBERON term as this one is non human specific, compared to FMA.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a network of specialized cells that communicate information about an organism&#39;s surroundings and itself[Wikipedia].</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+
+</rdf:RDF>
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+
