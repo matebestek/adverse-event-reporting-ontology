@@ -58,47 +58,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000294"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000298 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000298"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000308"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000312"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#stimulates -->
-
-    <owl:ObjectProperty rdf:about="&OBO_REL;stimulates"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#unfolds_in -->
-
-    <owl:ObjectProperty rdf:about="&OBO_REL;unfolds_in"/>
-    
-
 
     <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
 
@@ -876,84 +835,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <obo:IAO_0000115 xml:lang="en">A role inhering in a person that is realized when the bearer sees an event and reports what happened</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">adapted from http://golovchenko.org/cgi-bin/wnsearch?q=witness</obo:IAO_0000119>
     </owl:Class>
-    
 
-
-    <!-- http://purl.org/obo/owl/GO#GO_0001660 -->
-
-    <owl:Class rdf:about="&GO;GO_0001660">
-        <rdfs:label xml:lang="en">fever</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <obo:IAO_0000115 xml:lang="en">A rise in body temperature above the normal, often as a response to infection.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">fever</obo:IAO_0000111>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/obo/owl/GO#GO_0006954 -->
-
-    <owl:Class rdf:about="&GO;GO_0006954">
-        <rdfs:label>inflammatory response</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <obo:IAO_0000115>The immediate defensive reaction (by vertebrate tissue) to infection or injury caused by chemical or physical agents. The process is characterized by local vasodilation, extravasation of plasma into intercellular spaces and accumulation of white blood cells and macrophages.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/obo/owl/GO#GO_0007610 -->
-
-    <owl:Class rdf:about="&GO;GO_0007610">
-        <rdfs:label xml:lang="en">behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <obo:IAO_0000115 xml:lang="en">The specific actions or reactions of an organism in response to external or internal stimuli. Patterned activity of a whole organism in a manner dependent upon some combination of that organism&#39;s internal state and external conditions. [source: GOC:ems, ISBN:0395448956]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
-
-    <owl:Class rdf:about="&UBERON;UBERON_0000010">
-        <rdfs:label xml:lang="en">peripheral nervous system</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;part_of"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>Nervous structures including ganglia outside of the central nervous system. Divided into somatic nervous system and autonomic nervous system [FB:gg, OMD:peripheral+nervous+system, Wikipedia:Peripheral_nervous_system, ZFIN:curator]
-comment: This class was created automatically from a combination of ontologies</oboInOwl:hasDefinition>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
-
-    <owl:Class rdf:about="&UBERON;UBERON_0000955">
-        <rdfs:label xml:lang="en">brain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;part_of"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>def: &quot;The supra-esophageal ganglion of the central nervous system, composed of three primitive ganglia known as protocerebrum, deutocerebrum and tritocerebrum. In the context of Drosophila refers to the preoral ganglionic mass of the central nervous system containing the ventral ganglia. // Organ component of neuraxis that has as its parts gray matter and white matter that surround the cerebral ventricular system; Examples: There is only one brain. // Organ that is a component of the central nervous system and is responsible for the coordination and control of bodily activities and the interpretation of information from the senses. It appears when the neural tube segregates in forebrain, midbrain, and hindbrain at NF stage 22. The general pattern of the brain has been mainly established at NF stage 28. Yolky material is consumed and the fibre tracts and later the commissures develop. In general all of its parts are well developed at NF stage 53 and later development consists mainly of growth and some further cytological differentiation. In the period of metamorphosis only topographical changes take place.&quot; [FB:gg, ISBN:0815318960, ISBN:3110148986, OMD:brain, Wikipedia:Brain]
-comment: This class was created automatically from a combination of ontologies</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
-
-    <owl:Class rdf:about="&UBERON;UBERON_0001016">
-        <rdfs:label xml:lang="en">nervous system</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
-        <oboInOwl:hasDbXref xml:lang="en">UBERON:0001016</oboInOwl:hasDbXref>
-        <obo:IAO_0000118>UBERON:FBbt_00005093-FMA_7157-MA_0000016-MIAA_0000026-WBbt_0005735-XAO_0000177-ZFA_0000396</obo:IAO_0000118>
-        <obo:IAO_0000116>MC, 20100112: I am using the UBERON term as this one is non human specific, compared to FMA.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a network of specialized cells that communicate information about an organism&#39;s surroundings and itself[Wikipedia].</obo:IAO_0000115>
-    </owl:Class>
     
 
 </rdf:RDF>
