@@ -101,22 +101,22 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000002 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000002 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000002">
+    <owl:Class rdf:about="&obo;AERO_0000002">
         <rdfs:label xml:lang="en">disorder resulting from an AEFI process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000005"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000005"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000016"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000016"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000005"/>
         <rdfs:comment xml:lang="en">MC, 20110120: AR mentioned that the use of is_specified_output is not appropriate, as this would indicate that the adverse event process is a planned process - specified output are things that are specified in the plan to realize a process. Adverse events are not planned process but processual entities, and therefore this should be updated. AR mentioned that BFO will include an appropriate relation.</rdfs:comment>
         <rdfs:comment xml:lang="en">MC, 20110120: This class should have a different label for OBO Foundry unique label. &quot;adverse event following immunization&quot; is a term in use by the clinician community, however in the context if the Foundry it may be confusing to associate the word &quot;event&quot; which seem to refer to a process with the hierarchical position under continuant.
 Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
@@ -125,9 +125,9 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000001 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000001">
+    <owl:Class rdf:about="&obo;AERO_0000001">
         <rdfs:label xml:lang="en">clinical guideline</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
         <obo:IAO_0000115 xml:lang="en">A directive information entity that establishes a diagnostic based on a set of signs or symptoms</obo:IAO_0000115>
@@ -135,20 +135,20 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000003 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000003 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000003">
+    <owl:Class rdf:about="&obo;AERO_0000003">
         <rdfs:label xml:lang="en">Brighton case definition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">A clinical guideline in which a set of signs is described to establish a diagnostic of adverse events with a related degree of certainty, as defined by the Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">MC, 20110126: this should be linked to the different adverse events reported. AR suggests using a new relation to appear in BFO2, maybe &quot;ascription&quot;</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000005 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000005 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000005">
+    <owl:Class rdf:about="&obo;AERO_0000005">
         <rdfs:label xml:lang="en">disorder resulting from an adverse event process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
@@ -156,7 +156,7 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
                     <rdf:Description rdf:about="&obo;OGMS_0000045"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000015"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000015"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -168,15 +168,15 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000006 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000006 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000006">
+    <owl:Class rdf:about="&obo;AERO_0000006">
         <rdfs:label xml:lang="en">adverse event rash</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000005"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000008"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000005"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000008"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -186,15 +186,15 @@ Proposed OBO Foundry label: rash resulting from an adverse event</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000007 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000007 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000007">
+    <owl:Class rdf:about="&obo;AERO_0000007">
         <rdfs:label xml:lang="en">AEFI rash</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000002"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000008"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000002"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000008"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -204,9 +204,9 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000008 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000008 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000008">
+    <owl:Class rdf:about="&obo;AERO_0000008">
         <rdfs:label xml:lang="en">rash</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
         <obo:IAO_0000115 xml:lang="en">A rash is a change of the skin which affects its color, appearance or texture. </obo:IAO_0000115>
@@ -215,15 +215,15 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000009 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000009 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000009">
+    <owl:Class rdf:about="&obo;AERO_0000009">
         <rdfs:label xml:lang="en">adverse event</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000005"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000015"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000005"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000015"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -236,26 +236,26 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000010 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000010 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000010">
+    <owl:Class rdf:about="&obo;AERO_0000010">
         <rdfs:label xml:lang="en">adverse event following immunization</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000002"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000016"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000002"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000016"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000009"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000009"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000011 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000011 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000011">
+    <owl:Class rdf:about="&obo;AERO_0000011">
         <rdfs:label xml:lang="en">_manifestations</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
         <rdfs:comment xml:lang="en">temporary placeholder - to be removed
@@ -264,21 +264,21 @@ This class just helps me group some terms during development of the structure</r
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000012 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000012 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000012">
+    <owl:Class rdf:about="&obo;AERO_0000012">
         <rdfs:label xml:lang="en">Idiopathic thrombocytopenic purpura</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <obo:IAO_0000115 xml:lang="en">Idiopathic thrombocytopenic purpura (ITP) is the condition of having a low platelet count (thrombocytopenia) of no known cause (idiopathic).v</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Idiopathic_thrombocytopenic_purpura</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000013 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000013 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000013">
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000011"/>
+    <owl:Class rdf:about="&obo;AERO_0000013">
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
@@ -297,19 +297,19 @@ This class just helps me group some terms during development of the structure</r
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000014 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000014 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000014">
+    <owl:Class rdf:about="&obo;AERO_0000014">
         <rdfs:label xml:lang="en">motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A _manifestation involving the motor system</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000015 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000015 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000015">
+    <owl:Class rdf:about="&obo;AERO_0000015">
         <rdfs:label xml:lang="en">adverse event process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
@@ -336,14 +336,14 @@ This class just helps me group some terms during development of the structure</r
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000016 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000016 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000016">
+    <owl:Class rdf:about="&obo;AERO_0000016">
         <rdfs:label xml:lang="en">adverse event following immunization process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000015"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&ro;preceded_by"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
@@ -351,29 +351,29 @@ This class just helps me group some terms during development of the structure</r
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000015"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000017 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000017 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000017">
+    <owl:Class rdf:about="&obo;AERO_0000017">
         <rdfs:label xml:lang="en">seizure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000018 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000018 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000018">
+    <owl:Class rdf:about="&obo;AERO_0000018">
         <rdfs:label xml:lang="en">AEFI generalized convulsive seizure</rdfs:label>
         <rdfs:label xml:lang="en">AEFI seizure</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000017"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000017"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&ro;preceded_by"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
@@ -381,19 +381,19 @@ This class just helps me group some terms during development of the structure</r
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000019 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000019 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000019">
+    <owl:Class rdf:about="&obo;AERO_0000019">
         <rdfs:label xml:lang="en">AEFI seizure level 1 of certainty</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000021"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000021"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&ro;preceded_by"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
@@ -401,14 +401,14 @@ This class just helps me group some terms during development of the structure</r
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000018"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
@@ -417,14 +417,14 @@ This class just helps me group some terms during development of the structure</r
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000020 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000020 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000020">
+    <owl:Class rdf:about="&obo;AERO_0000020">
         <rdfs:label xml:lang="en">febrile seizure</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000017"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000017"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&ro;has_part"/>
                         <owl:someValuesFrom rdf:resource="&GO;GO_0001660"/>
@@ -432,26 +432,26 @@ This class just helps me group some terms during development of the structure</r
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000021 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000021 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000021">
+    <owl:Class rdf:about="&obo;AERO_0000021">
         <rdfs:label xml:lang="en">seizure level 1 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000026"/>
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000029"/>
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000030"/>
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000031"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000026"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000029"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000030"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000031"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -460,7 +460,7 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000048"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -470,21 +470,21 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000022 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000022 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000022">
+    <owl:Class rdf:about="&obo;AERO_0000022">
         <rdfs:label xml:lang="en">seizure level 2 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000026"/>
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000029"/>
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000030"/>
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000031"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000026"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000029"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000030"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000031"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -493,7 +493,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000047"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -503,21 +503,21 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000023 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000023 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000023">
+    <owl:Class rdf:about="&obo;AERO_0000023">
         <rdfs:label xml:lang="en">seizure level 3 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000047"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000028"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -526,56 +526,56 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000025 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000025 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000025">
+    <owl:Class rdf:about="&obo;AERO_0000025">
         <rdfs:label xml:lang="en">atonic motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <obo:IAO_0000115 xml:lang="en">A sudden loss of tone in postural muscle, often preceded by a myoclonic jerk and precipitated by hyperventilation</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000026 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000026 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000026">
+    <owl:Class rdf:about="&obo;AERO_0000026">
         <rdfs:label xml:lang="en">generalized atonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000025"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000028"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000025"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000025"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000025"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000027 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000027 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000027">
+    <owl:Class rdf:about="&obo;AERO_0000027">
         <rdfs:label xml:lang="en">clonic motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">Sudden, brief (100ms) involuntary contractions of the same muscle groups, regularly repetitive at a frequency of about two to three contractions per second.</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000028 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000028 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000028">
+    <owl:Class rdf:about="&obo;AERO_0000028">
         <rdfs:label xml:lang="en">generalized motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000014"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000014"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                        <owl:allValuesFrom rdf:resource="&obo;aero/AERO_0000050"/>
+                        <owl:allValuesFrom rdf:resource="&obo;AERO_0000050"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -586,15 +586,15 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000029 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000029 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000029">
+    <owl:Class rdf:about="&obo;AERO_0000029">
         <rdfs:label xml:lang="en">generalized clonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000027"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000028"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000027"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -602,15 +602,15 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000030 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000030 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000030">
+    <owl:Class rdf:about="&obo;AERO_0000030">
         <rdfs:label xml:lang="en">generalized tonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000028"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000044"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000044"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -618,15 +618,15 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000031 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000031 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000031">
+    <owl:Class rdf:about="&obo;AERO_0000031">
         <rdfs:label xml:lang="en">generalized tonic-clonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000028"/>
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000044"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000044"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -634,20 +634,20 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000035 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000035 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000035">
+    <owl:Class rdf:about="&obo;AERO_0000035">
         <rdfs:label xml:lang="en">hypotonic-hyporesponsive episode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <obo:IAO_0000118 xml:lang="en">HHE</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">HHE is characterized by sudde onset of reduced muscle tone, hyporesponsiveness (i.e., less responsive than usual to verbal or other sensorial stimuli) and change of skin color (pallor or cyanosis)</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000037 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000037 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000037">
+    <owl:Class rdf:about="&obo;AERO_0000037">
         <rdfs:label>bilateral</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Quality"/>
         <obo:IAO_0000119>http://www.thefreedictionary.com/bilateral</obo:IAO_0000119>
@@ -656,11 +656,11 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000040 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000040 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000040">
+    <owl:Class rdf:about="&obo;AERO_0000040">
         <rdfs:label xml:lang="en">shaking</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <obo:IAO_0000118 xml:lang="en">quivering</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">repetitive, cyclical movements of the body or a body part; usually involuntary, but can also manifest in response to an attempt at movement</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">shivering</obo:IAO_0000118>
@@ -670,32 +670,32 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000041 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000041">
+    <owl:Class rdf:about="&obo;AERO_0000041">
         <rdfs:label xml:lang="en">bilateral shaking</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;aero/AERO_0000040"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                        <owl:allValuesFrom rdf:resource="&obo;aero/AERO_0000050"/>
+                        <owl:allValuesFrom rdf:resource="&obo;AERO_0000050"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000040"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A shaking process which unfolds in both sides of an organism</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000042 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000042 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000042">
+    <owl:Class rdf:about="&obo;AERO_0000042">
         <rdfs:label xml:lang="en">syncope</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <rdfs:comment xml:lang="en">MC, 20110126: The Brighton guideline on which this is based needs to be checked. 
 Email correspondance with Brighton:
 [MC] One thing is unclear to me: Level 1 of diagnostic certainty is defined
@@ -718,33 +718,33 @@ If you are working on a database and only have the clinical criteria vailable, y
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000043 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000043 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000043">
+    <owl:Class rdf:about="&obo;AERO_0000043">
         <rdfs:label xml:lang="en">myoclonic jerk</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <obo:IAO_0000115 xml:lang="en">A myoclonic jerk is the brief, involuntary twitching of a muscle or group of muscles. It may be caused either by a sudden muscle contraction, or a sudden lapse of contraction. This happens when a person is on the verge of falling asleep, and suddenly have a sensation or feeling that they are free falling through the air. Contractions are called positive myoclonus; relaxations are called negative myoclonus. When falling asleep, it is common for people to experience a type of myoclonic jerk known as a hypnic jerk. Hiccups are also a kind of myoclonic jerk specifically affecting the diaphragm.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://house.wikia.com/wiki/Myoclonic_jerk</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000044 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000044 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000044">
+    <owl:Class rdf:about="&obo;AERO_0000044">
         <rdfs:label xml:lang="en">tonic motor manifestation</rdfs:label>
         <rdfs:label xml:lang="en">tonic-clonic motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000027"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                                <owl:allValuesFrom rdf:resource="&obo;aero/AERO_0000044"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -757,10 +757,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;aero/AERO_0000044"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&ro;precedes"/>
-                                <owl:allValuesFrom rdf:resource="&obo;aero/AERO_0000027"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -773,21 +773,21 @@ If you are working on a database and only have the clinical criteria vailable, y
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000045 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000045 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000045">
+    <owl:Class rdf:about="&obo;AERO_0000045">
         <rdfs:label xml:lang="en">loss of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <obo:IAO_0000115 xml:lang="en">i.e., unreactive to verbal and painful stimuli</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000047 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000047 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000047">
+    <owl:Class rdf:about="&obo;AERO_0000047">
         <rdfs:label xml:lang="en">history of unconsciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000045"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000045"/>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">MC, 20110126: AR suggest that &quot;history of consciousness is not a process.
 definition reads &quot;the sudden loss of consciousness was not observed, but the patient was found unconscious&quot;, so maybe updating the label would be better : &quot;unwitnessed loss of consciousness with history of unconsciousness&quot; would help</rdfs:comment>
@@ -796,15 +796,15 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000048 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000048 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000048">
+    <owl:Class rdf:about="&obo;AERO_0000048">
         <rdfs:label xml:lang="en">witnessed sudden loss of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;aero/AERO_0000045"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
-                <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
@@ -812,24 +812,24 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000050 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000050 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000050">
+    <owl:Class rdf:about="&obo;AERO_0000050">
         <rdfs:label xml:lang="en">bilateral site</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Site"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000298"/>
-                <owl:someValuesFrom rdf:resource="&obo;aero/AERO_0000037"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aero/AERO_0000055 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000055 -->
 
-    <owl:Class rdf:about="&obo;aero/AERO_0000055">
+    <owl:Class rdf:about="&obo;AERO_0000055">
         <rdfs:label xml:lang="en">witness role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Role"/>
         <obo:IAO_0000115 xml:lang="en">A role inhering in a person that is realized when the bearer sees an event and reports what happened</obo:IAO_0000115>
