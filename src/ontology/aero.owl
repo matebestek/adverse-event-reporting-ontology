@@ -9,7 +9,6 @@
     <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
-    <!ENTITY oae "http://purl.obolibrary.org/obo/oae/" >
     <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
     <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -33,11 +32,12 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;aero.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">alpha 0.1 </owl:versionInfo>
         <rdfs:comment xml:lang="en">This is a proposed hierarchy to deal with Adverse Events.</rdfs:comment>
+        <owl:imports rdf:resource="&obo;aero/external-by-hand.owl"/>
+        <owl:imports rdf:resource="&obo;aero/external.owl"/>
+        <owl:imports rdf:resource="&obo;aero/externalDerived.owl"/>
         <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
- <owl:imports rdf:resource="&obo;aero/external.owl"/>
- <owl:imports rdf:resource="&obo;aero/external-by-hand.owl"/>
- <owl:imports rdf:resource="&obo;aero/externalDerived.owl"/>
         <owl:imports rdf:resource="http://purl.org/obo/owl/ro"/>
         <owl:imports rdf:resource="http://purl.org/obo/owl/ro_bfo_bridge/1.1"/>
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
@@ -45,6 +45,21 @@
     
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
 
 
     <!-- 
@@ -57,6 +72,41 @@
 
     
 
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000294"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000298 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000298"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000308"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000312"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#stimulates -->
+
+    <owl:ObjectProperty rdf:about="&OBO_REL;stimulates"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#unfolds_in -->
+
+    <owl:ObjectProperty rdf:about="&OBO_REL;unfolds_in"/>
+    
 
 
     <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
@@ -94,10 +144,13 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000001 -->
 
-
-
-
+    <owl:Class rdf:about="&obo;AERO_0000001">
+        <rdfs:label xml:lang="en">clinical guideline</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that establishes a diagnostic based on a set of signs or symptoms</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -121,16 +174,6 @@
         <rdfs:comment xml:lang="en">MC, 20110120: This class should have a different label for OBO Foundry unique label. &quot;adverse event following immunization&quot; is a term in use by the clinician community, however in the context if the Foundry it may be confusing to associate the word &quot;event&quot; which seem to refer to a process with the hierarchical position under continuant.
 Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
         <rdfs:comment xml:lang="en">MC, 20110126: class renamed from &quot;adverse event following immunization continuant&quot; following AR suggestion</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000001 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000001">
-        <rdfs:label xml:lang="en">clinical guideline</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity that establishes a diagnostic based on a set of signs or symptoms</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -445,6 +488,12 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -455,12 +504,6 @@ This class just helps me group some terms during development of the structure</r
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -835,9 +878,90 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <obo:IAO_0000115 xml:lang="en">A role inhering in a person that is realized when the bearer sees an event and reports what happened</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">adapted from http://golovchenko.org/cgi-bin/wnsearch?q=witness</obo:IAO_0000119>
     </owl:Class>
-
     
 
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000033"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000274 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000274"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
+
+    <owl:Class rdf:about="&obo;OBI_0600007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000045"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
+
+    <owl:Class rdf:about="&obo;VO_0000002"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0001660 -->
+
+    <owl:Class rdf:about="&GO;GO_0001660"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0006954 -->
+
+    <owl:Class rdf:about="&GO;GO_0006954"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="&snap;MaterialEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="&snap;Quality"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="&snap;Role"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
+
+    <owl:Class rdf:about="&snap;Site"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="&span;ProcessualEntity"/>
 </rdf:RDF>
 
 
