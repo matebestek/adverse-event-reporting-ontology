@@ -36,6 +36,14 @@
     <obo:IAO_0000115>Vaccination is: an 'administering substance in vivo' that involves in adding vaccine into a host (e.g., human, mouse) in vivo with the intend to invoke a protective immune response.</obo:IAO_0000115>
     <obo:IAO_0000111>vaccination</obo:IAO_0000111>
   </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
+    <rdfs:label>symptom</rdfs:label>
+    <obo:IAO_0000111>symptom</obo:IAO_0000111>
+    <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed by the patient or a processual entity experienced by the patient, either of which is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
+  </owl:Class>
+
+
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024">
     <rdfs:label>sign</rdfs:label>
     <obo:IAO_0000111>sign</obo:IAO_0000111>

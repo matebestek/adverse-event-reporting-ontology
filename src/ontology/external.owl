@@ -86,7 +86,12 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
 
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
 

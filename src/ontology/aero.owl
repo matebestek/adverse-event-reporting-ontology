@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY GO "http://purl.org/obo/owl/GO#" >
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
@@ -21,6 +22,7 @@
      xml:base="&obo;aero.owl"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:UBERON="http://purl.org/obo/owl/UBERON#"
@@ -270,7 +272,14 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000020"/>
+                    <rdf:Description rdf:about="&obo;OGMS_0000024"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An adverse event is a sign presenting in a predetermined time frame following administration of a coumpound or usage of a device</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">I initialy made adverse event a defined class: is_a sign and preceded by administration. However, by doing so, and as the range of preceded by is processual entities, I was implicitely making adverse event a subclass of processual entity, therfore making adverse event rash (a continuant) inconsistent.</rdfs:comment>
         <rdfs:comment xml:lang="en">This definition purposedly relies on the usage of ogms:sign, itself defined as &quot;A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance.&quot; This will allow to cover continuants such as rash and processes such as seizures under the adverse event root. Also, we consider events reported by the clinician, so sign is particularly fitting. Depending on our use case, we may need to extend to symptoms, which are reported by the patient himself.
@@ -324,14 +333,14 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</obo:IAO_0000115>
@@ -372,7 +381,7 @@ This class just helps me group some terms during development of the structure</r
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 xml:lang="en">An adverse event process is a process appearing in a pre determined time frame following administration of a coumpound or usage of a device</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An adverse event process is a processual entity occurring in a pre determined time frame following administration of a coumpound or usage of a device</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">I included the usage of a device into the definition of adverse event as I am aiming at being inclusive, and cover cases such as those described by MAUDE - Manufacturer and User Facility Device Experience. See for example http://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfMAUDE/detail.cfm?mdrfoi__id=1942591 - a patient get fitted with bioprosthetic heart valves and dies within the following 4 months.</rdfs:comment>
         <rdfs:comment xml:lang="en">Note that this definition of adverse event doesn&#39;t imply any type of causality between the sign observed and the coumpond administration/device utilization. For our purposes, we consider any type of sign presenting within a specific time frame after the coumpound administration/device utilization to be an adverse event.</rdfs:comment>
     </owl:Class>
@@ -521,6 +530,12 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -531,12 +546,6 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -554,13 +563,13 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -881,6 +890,25 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000060 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000060">
+        <rdfs:label xml:lang="en">sign or symptom</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000020"/>
+                    <rdf:Description rdf:about="&obo;OGMS_0000024"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+        <rdfs:comment xml:lang="en">20110331, MC: this class covers the set of entities that can be observed in a clinical setting, whether by a patient or a clinician. </rdfs:comment>
+        <rdfs:comment xml:lang="en">20110331, MC: this is a helper class which is aimed at simplifying the update process on the AERO side if/when OGMS updates their definition of sign and/or symptom</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="&obo;IAO_0000033"/>
@@ -896,6 +924,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
 
     <owl:Class rdf:about="&obo;OBI_0600007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000020"/>
     
 
 
@@ -932,6 +966,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1#Entity -->
+
+    <owl:Class rdf:about="&bfo;Entity"/>
     
 
 
