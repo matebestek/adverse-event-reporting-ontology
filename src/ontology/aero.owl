@@ -99,6 +99,12 @@
     
 
 
+    <!-- http://purl.org/obo/owl/OBO_REL#regulates -->
+
+    <owl:ObjectProperty rdf:about="&OBO_REL;regulates"/>
+    
+
+
     <!-- http://purl.org/obo/owl/OBO_REL#stimulates -->
 
     <owl:ObjectProperty rdf:about="&OBO_REL;stimulates"/>
@@ -330,6 +336,7 @@ This class just helps me group some terms during development of the structure</r
     <!-- http://purl.obolibrary.org/obo/AERO_0000013 -->
 
     <owl:Class rdf:about="&obo;AERO_0000013">
+        <rdfs:label xml:lang="en">encephalitis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -413,6 +420,26 @@ This class just helps me group some terms during development of the structure</r
     <owl:Class rdf:about="&obo;AERO_0000017">
         <rdfs:label xml:lang="en">seizure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;regulates"/>
+                        <owl:someValuesFrom rdf:resource="&GO;GO_0007610"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -454,17 +481,6 @@ This class just helps me group some terms during development of the structure</r
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000018"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -502,6 +518,17 @@ This class just helps me group some terms during development of the structure</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -531,6 +558,17 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -570,6 +608,17 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -963,9 +1012,21 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     
 
 
+    <!-- http://purl.org/obo/owl/GO#GO_0007610 -->
+
+    <owl:Class rdf:about="&GO;GO_0007610"/>
+    
+
+
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0001016"/>
     
 
 
