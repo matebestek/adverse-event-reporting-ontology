@@ -958,6 +958,66 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000061 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000061">
+        <rdfs:label xml:lang="en">AEFI encephalitis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;AERO_0000013"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000062 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000062">
+        <rdfs:label xml:lang="en">AEFI Idiopathic thrombocytopenic purpura</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;AERO_0000012"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000063 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000063">
+        <rdfs:label xml:lang="en">AEFI: hypotonic-hyporesponsive episode</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;AERO_0000035"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000035"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="&obo;IAO_0000033"/>
