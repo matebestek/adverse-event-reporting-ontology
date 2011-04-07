@@ -286,7 +286,7 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An adverse event is a sign presenting in a predetermined time frame following administration of a coumpound or usage of a device</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An adverse event is an undesirable sign or symptom presenting in a predetermined time frame following administration of a coumpound or usage of a device</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">I initialy made adverse event a defined class: is_a sign and preceded by administration. However, by doing so, and as the range of preceded by is processual entities, I was implicitely making adverse event a subclass of processual entity, therfore making adverse event rash (a continuant) inconsistent.</rdfs:comment>
         <rdfs:comment xml:lang="en">This definition purposedly relies on the usage of ogms:sign, itself defined as &quot;A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance.&quot; This will allow to cover continuants such as rash and processes such as seizures under the adverse event root. Also, we consider events reported by the clinician, so sign is particularly fitting. Depending on our use case, we may need to extend to symptoms, which are reported by the patient himself.
 </rdfs:comment>
