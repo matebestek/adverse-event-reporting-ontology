@@ -90,6 +90,13 @@
     </owl:ObjectProperty>
 
     
+    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
+        <rdfs:label xml:lang="en">is_realized_by</rdfs:label>
+	<owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
@@ -280,6 +287,7 @@ comment: This class was created automatically from a combination of ontologies</
         <obo:IAO_0000115 xml:lang="en">a network of specialized cells that communicate information about an organism&#39;s surroundings and itself[Wikipedia].</obo:IAO_0000115>
     </owl:Class>
     
+
 
 
 
