@@ -288,8 +288,22 @@ comment: This class was created automatically from a combination of ontologies</
     </owl:Class>
     
 
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000068">
+        <rdfs:label xml:lang="en">begins to exist during</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+    </owl:ObjectProperty>
 
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000059">
+        <rdfs:label>etiological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A process in an organism that leads to a subsequent disorder.</obo:IAO_0000115>
+    </owl:Class>
 
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
 
 </rdf:RDF>
 

@@ -1,25 +1,6 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY GO "http://purl.org/obo/owl/GO#" >
-    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
-    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
-    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
-    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
-]>
-
-
-<rdf:RDF xmlns="&obo;aero.owl#"
-     xml:base="&obo;aero.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aero.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aero.owl"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
@@ -33,13 +14,13 @@
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="&obo;aero.owl">
-        <owl:versionInfo rdf:datatype="&xsd;string">alpha 0.1 </owl:versionInfo>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aero.owl">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha 0.1 </owl:versionInfo>
         <rdfs:comment xml:lang="en">This is a proposed hierarchy to deal with Adverse Events.</rdfs:comment>
-        <owl:imports rdf:resource="&obo;aero/external-by-hand.owl"/>
-        <owl:imports rdf:resource="&obo;aero/external.owl"/>
-        <owl:imports rdf:resource="&obo;aero/externalDerived.owl"/>
-        <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/aero/external-by-hand.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/aero/external.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/aero/externalDerived.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao.owl"/>
         <owl:imports rdf:resource="http://purl.org/obo/owl/ro"/>
         <owl:imports rdf:resource="http://purl.org/obo/owl/ro_bfo_bridge/1.1"/>
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
@@ -55,12 +36,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     
 
 
@@ -77,97 +58,97 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
-    <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000293"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000294"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000294"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000297 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000297"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000297"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000298 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000298"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000298"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000300"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000308"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000312"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
     
 
 
     <!-- http://purl.org/obo/owl/OBO_REL#regulates -->
 
-    <owl:ObjectProperty rdf:about="&OBO_REL;regulates"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#regulates"/>
     
 
 
     <!-- http://purl.org/obo/owl/OBO_REL#stimulates -->
 
-    <owl:ObjectProperty rdf:about="&OBO_REL;stimulates"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#stimulates"/>
     
 
 
     <!-- http://purl.org/obo/owl/OBO_REL#unfolds_in -->
 
-    <owl:ObjectProperty rdf:about="&OBO_REL;unfolds_in"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#unfolds_in"/>
     
 
 
     <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
 
-    <owl:ObjectProperty rdf:about="&ro;has_part"/>
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
     
 
 
     <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
 
-    <owl:ObjectProperty rdf:about="&ro;part_of"/>
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of"/>
     
 
 
     <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
 
-    <owl:ObjectProperty rdf:about="&ro;preceded_by"/>
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
     
 
 
     <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
 
-    <owl:ObjectProperty rdf:about="&ro;precedes"/>
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes"/>
     
 
 
@@ -184,9 +165,9 @@
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000001 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000001">
         <rdfs:label xml:lang="en">diagnosis guideline</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000115 xml:lang="en">A directive information entity that specifies how to establish a diagnosis based on clinical findings</obo:IAO_0000115>
     </owl:Class>
     
@@ -194,20 +175,20 @@
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000002 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000002">
         <rdfs:label xml:lang="en">disorder resulting from an AEFI process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000005"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000016"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000016"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000005"/>
         <rdfs:comment xml:lang="en">MC, 20110120: AR mentioned that the use of is_specified_output is not appropriate, as this would indicate that the adverse event process is a planned process - specified output are things that are specified in the plan to realize a process. Adverse events are not planned process but processual entities, and therefore this should be updated. AR mentioned that BFO will include an appropriate relation.</rdfs:comment>
         <rdfs:comment xml:lang="en">MC, 20110120: This class should have a different label for OBO Foundry unique label. &quot;adverse event following immunization&quot; is a term in use by the clinician community, however in the context if the Foundry it may be confusing to associate the word &quot;event&quot; which seem to refer to a process with the hierarchical position under continuant.
 Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
@@ -218,10 +199,10 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000003 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000003">
         <rdfs:label xml:lang="en">Brighton case definition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A diagnosis guideline specifying how to establish a diagnostic of adverse event with an associated degree of certainty, as developed by the Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A diagnosis guideline specifying how to establish a diagnosis of adverse event with an associated degree of certainty, as developed by the Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">MC, 20110126: this should be linked to the different adverse events reported. AR suggests using a new relation to appear in BFO2, maybe &quot;ascription&quot;</rdfs:comment>
     </owl:Class>
     
@@ -229,46 +210,54 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000004 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000004">
         <rdfs:label>Brighton assessment of generalized convulsive seizure as an adverse event following immunization </rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000024"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000036"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000034"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000032"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000033"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000024"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000034"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000032"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000033"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000938"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000009"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>a categorical measurement datum whose instances are used to classify adverse events according to whether or not they have some likelihood of being a seizure and if so, to what degree</obo:IAO_0000119>
+        <obo:IAO_0000119>PMID:14741144#Generalized convulsive seizure as an adverse event following immunization: case definition and guidelines for data collection, analysis, and presentation.</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000005 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000005">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000005">
         <rdfs:label xml:lang="en">disorder resulting from an adverse event process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000045"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000015"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000068"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000009"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000059"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
         <rdfs:comment xml:lang="en">MC, 20110120: AR mentioned that the use of is_specified_output is not appropriate, as this would indicate that the adverse event process is a planned process - specified output are things that are specified in the plan to realize a process. Adverse events are not planned process but processual entities, and therefore this should be updated. AR mentioned that BFO will include an appropriate relation.</rdfs:comment>
         <rdfs:comment xml:lang="en">MC, 20110120: This class was initially labeled &quot;adverse event continuant&quot;. After discussion with AR, and due to the fact that the word &quot;event&quot; implicitely refers to a process, we renamed this class.</rdfs:comment>
     </owl:Class>
@@ -277,13 +266,13 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000006 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000006">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000006">
         <rdfs:label xml:lang="en">adverse event rash</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000005"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000008"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000008"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -295,13 +284,13 @@ Proposed OBO Foundry label: rash resulting from an adverse event</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000007 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000007">
         <rdfs:label xml:lang="en">AEFI rash</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000002"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000008"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000002"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000008"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -313,9 +302,9 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000008 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000008">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000008">
         <rdfs:label xml:lang="en">rash</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:IAO_0000115 xml:lang="en">A rash is a change of the skin which affects its color, appearance or texture. </obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Rash</obo:IAO_0000119>
     </owl:Class>
@@ -324,21 +313,21 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000009 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000009">
         <rdfs:label xml:lang="en">adverse event</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000005"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000015"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000020"/>
-                    <rdf:Description rdf:about="&obo;OGMS_0000024"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -352,26 +341,26 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000010 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000010">
         <rdfs:label xml:lang="en">adverse event following immunization</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000002"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000016"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000002"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000016"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000009"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000011 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000011">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000011">
         <rdfs:label xml:lang="en">_manifestations</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:comment xml:lang="en">temporary placeholder - to be removed
 This class just helps me group some terms during development of the structure</rdfs:comment>
     </owl:Class>
@@ -380,9 +369,9 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000012 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000012">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000012">
         <rdfs:label xml:lang="en">Idiopathic thrombocytopenic purpura</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000011"/>
         <obo:IAO_0000115 xml:lang="en">Idiopathic thrombocytopenic purpura (ITP) is the condition of having a low platelet count (thrombocytopenia) of no known cause (idiopathic).v</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Idiopathic_thrombocytopenic_purpura</obo:IAO_0000119>
     </owl:Class>
@@ -391,19 +380,19 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000013 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000013">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000013">
         <rdfs:label xml:lang="en">encephalitis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#stimulates"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#unfolds_in"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/UBERON#UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</obo:IAO_0000115>
@@ -414,9 +403,9 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000014 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000014">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000014">
         <rdfs:label xml:lang="en">motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A _manifestation involving the motor system</obo:IAO_0000115>
     </owl:Class>
     
@@ -424,19 +413,19 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000015 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000015">
         <rdfs:label xml:lang="en">adverse event process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;OBI_0000274"/>
-                                    <rdf:Description rdf:about="&obo;OBI_0600007"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000274"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600007"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -453,48 +442,48 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000016 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000016">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000016">
         <rdfs:label xml:lang="en">adverse event following immunization process</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000015"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000015"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000017 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000017">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000017">
         <rdfs:label xml:lang="en">seizure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;regulates"/>
-                        <owl:someValuesFrom rdf:resource="&GO;GO_0007610"/>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#regulates"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/GO#GO_0007610"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#unfolds_in"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/UBERON#UBERON_0001016"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -502,28 +491,28 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000018 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000018">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000018">
         <rdfs:label xml:lang="en">AEFI generalized convulsive seizure according to Brighton guideline</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000009"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000009"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;AERO_0000024"/>
-                                    <rdf:Description rdf:about="&obo;AERO_0000032"/>
-                                    <rdf:Description rdf:about="&obo;AERO_0000033"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000024"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000032"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000033"/>
                                 </owl:oneOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -537,19 +526,19 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000019 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000019">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000019">
         <rdfs:label xml:lang="en">AEFI seizure level 1 of certainty according to Brighton guideline</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000018"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000018"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:hasValue rdf:resource="&obo;AERO_0000024"/>
+                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/AERO_0000024"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -560,39 +549,45 @@ This class just helps me group some terms during development of the structure</r
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000020 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000020">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000020">
         <rdfs:label xml:lang="en">febrile seizure</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000017"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000017"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
-                        <owl:someValuesFrom rdf:resource="&GO;GO_0001660"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/GO#GO_0001660"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000017"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000021 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000021">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000021">
         <rdfs:label xml:lang="en">seizure level 1 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000026"/>
-                            <rdf:Description rdf:about="&obo;AERO_0000029"/>
-                            <rdf:Description rdf:about="&obo;AERO_0000030"/>
-                            <rdf:Description rdf:about="&obo;AERO_0000031"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000026"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000029"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000030"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000031"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -600,19 +595,13 @@ This class just helps me group some terms during development of the structure</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000003"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -624,39 +613,39 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000022 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000022">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000022">
         <rdfs:label xml:lang="en">seizure level 2 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000003"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000026"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000029"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000030"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000031"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000026"/>
-                            <rdf:Description rdf:about="&obo;AERO_0000029"/>
-                            <rdf:Description rdf:about="&obo;AERO_0000030"/>
-                            <rdf:Description rdf:about="&obo;AERO_0000031"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -668,30 +657,30 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000023 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000023">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000023">
         <rdfs:label xml:lang="en">seizure level 3 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000003"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -702,9 +691,9 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000025 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000025">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000025">
         <rdfs:label xml:lang="en">atonic motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
         <obo:IAO_0000115 xml:lang="en">A sudden loss of tone in postural muscle, often preceded by a myoclonic jerk and precipitated by hyperventilation</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
     </owl:Class>
@@ -713,26 +702,26 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000026 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000026">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000026">
         <rdfs:label xml:lang="en">generalized atonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000025"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000025"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000028"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000025"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000027 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000027">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000027">
         <rdfs:label xml:lang="en">clonic motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">Sudden, brief (100ms) involuntary contractions of the same muscle groups, regularly repetitive at a frequency of about two to three contractions per second.</obo:IAO_0000115>
     </owl:Class>
@@ -741,15 +730,15 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000028 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000028">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000028">
         <rdfs:label xml:lang="en">generalized motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000014"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000014"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                        <owl:allValuesFrom rdf:resource="&obo;AERO_0000050"/>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#unfolds_in"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000050"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -762,13 +751,13 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000029 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000029">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000029">
         <rdfs:label xml:lang="en">generalized clonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000027"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000027"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000028"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -778,13 +767,13 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000030 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000030">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000030">
         <rdfs:label xml:lang="en">generalized tonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000028"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000044"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -794,13 +783,13 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000031 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000031">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000031">
         <rdfs:label xml:lang="en">generalized tonic-clonic motor manifestation</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000028"/>
-                    <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000028"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000044"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -810,9 +799,9 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000035 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000035">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000035">
         <rdfs:label xml:lang="en">hypotonic-hyporesponsive episode</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000011"/>
         <obo:IAO_0000118 xml:lang="en">HHE</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">HHE is characterized by sudde onset of reduced muscle tone, hyporesponsiveness (i.e., less responsive than usual to verbal or other sensorial stimuli) and change of skin color (pallor or cyanosis)</obo:IAO_0000115>
     </owl:Class>
@@ -821,9 +810,9 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000037 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000037">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000037">
         <rdfs:label>bilateral</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
         <obo:IAO_0000119>http://www.thefreedictionary.com/bilateral</obo:IAO_0000119>
         <obo:IAO_0000115>Affecting or undertaken by two sides equally; binding on both parties</obo:IAO_0000115>
     </owl:Class>
@@ -832,42 +821,43 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000038 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000038">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000038">
         <rdfs:label>diagnosing generalized convulsive seizure according to Brighton guidelines</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000039"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000039"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000988"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000988"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>performing a diagnosis specified by the Brighton case definition for convulsive seizure as an adverse event following immunization</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000039 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000039">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000039">
         <rdfs:label>case definition of generalized convulsive seizure as an adverse event following immunization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
-                        <owl:allValuesFrom rdf:resource="&obo;AERO_0000038"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000038"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
@@ -880,9 +870,9 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000040 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000040">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000040">
         <rdfs:label xml:lang="en">shaking</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
         <obo:IAO_0000118 xml:lang="en">quivering</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">repetitive, cyclical movements of the body or a body part; usually involuntary, but can also manifest in response to an attempt at movement</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">shivering</obo:IAO_0000118>
@@ -894,20 +884,20 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000041 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000041">
         <rdfs:label xml:lang="en">bilateral shaking</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000040"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000040"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                        <owl:allValuesFrom rdf:resource="&obo;AERO_0000050"/>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#unfolds_in"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000050"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A shaking process which unfolds in both sides of an organism</obo:IAO_0000115>
     </owl:Class>
     
@@ -915,9 +905,9 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000042 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000042">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000042">
         <rdfs:label xml:lang="en">syncope</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
         <rdfs:comment xml:lang="en">MC, 20110126: The Brighton guideline on which this is based needs to be checked. 
 Email correspondance with Brighton:
 [MC] One thing is unclear to me: Level 1 of diagnostic certainty is defined
@@ -942,9 +932,9 @@ If you are working on a database and only have the clinical criteria vailable, y
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000043 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000043">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000043">
         <rdfs:label xml:lang="en">myoclonic jerk</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
         <obo:IAO_0000115 xml:lang="en">A myoclonic jerk is the brief, involuntary twitching of a muscle or group of muscles. It may be caused either by a sudden muscle contraction, or a sudden lapse of contraction. This happens when a person is on the verge of falling asleep, and suddenly have a sensation or feeling that they are free falling through the air. Contractions are called positive myoclonus; relaxations are called negative myoclonus. When falling asleep, it is common for people to experience a type of myoclonic jerk known as a hypnic jerk. Hiccups are also a kind of myoclonic jerk specifically affecting the diaphragm.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://house.wikia.com/wiki/Myoclonic_jerk</obo:IAO_0000119>
     </owl:Class>
@@ -953,20 +943,20 @@ If you are working on a database and only have the clinical criteria vailable, y
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000044 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000044">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000044">
         <rdfs:label xml:lang="en">tonic motor manifestation</rdfs:label>
         <rdfs:label xml:lang="en">tonic-clonic motor manifestation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000027"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000044"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -975,14 +965,14 @@ If you are working on a database and only have the clinical criteria vailable, y
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000044"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;precedes"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#precedes"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000027"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -997,9 +987,9 @@ If you are working on a database and only have the clinical criteria vailable, y
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000045 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000045">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000045">
         <rdfs:label xml:lang="en">loss of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000014"/>
         <obo:IAO_0000115 xml:lang="en">i.e., unreactive to verbal and painful stimuli</obo:IAO_0000115>
     </owl:Class>
     
@@ -1007,9 +997,9 @@ If you are working on a database and only have the clinical criteria vailable, y
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000047 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000047">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000047">
         <rdfs:label xml:lang="en">history of unconsciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000045"/>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">MC, 20110126: AR suggest that &quot;history of consciousness is not a process.
 definition reads &quot;the sudden loss of consciousness was not observed, but the patient was found unconscious&quot;, so maybe updating the label would be better : &quot;unwitnessed loss of consciousness with history of unconsciousness&quot; would help</rdfs:comment>
@@ -1020,13 +1010,13 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000048 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000048">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000048">
         <rdfs:label xml:lang="en">witnessed sudden loss of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000055"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
@@ -1036,13 +1026,13 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000050 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000050">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000050">
         <rdfs:label xml:lang="en">bilateral site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Site"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Site"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000298"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000037"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000298"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1051,9 +1041,9 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000055 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000055">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000055">
         <rdfs:label xml:lang="en">witness role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
         <obo:IAO_0000115 xml:lang="en">A role inhering in a person that is realized when the bearer sees an event and reports what happened</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">adapted from http://golovchenko.org/cgi-bin/wnsearch?q=witness</obo:IAO_0000119>
     </owl:Class>
@@ -1062,17 +1052,17 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000060 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000060">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000060">
         <rdfs:label xml:lang="en">sign or symptom</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000020"/>
-                    <rdf:Description rdf:about="&obo;OGMS_0000024"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
         <rdfs:comment xml:lang="en">20110331, MC: this class covers the set of entities that can be observed in a clinical setting, whether by a patient or a clinician. </rdfs:comment>
         <rdfs:comment xml:lang="en">20110331, MC: this is a helper class which is aimed at simplifying the update process on the AERO side if/when OGMS updates their definition of sign and/or symptom</rdfs:comment>
     </owl:Class>
@@ -1081,129 +1071,129 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000061 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000061">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000061">
         <rdfs:label xml:lang="en">AEFI encephalitis</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000013"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000013"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000013"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000062 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000062">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000062">
         <rdfs:label xml:lang="en">AEFI Idiopathic thrombocytopenic purpura</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000012"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000012"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000012"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000063 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000063">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000063">
         <rdfs:label xml:lang="en">AEFI: hypotonic-hyporesponsive episode</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000035"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000035"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000035"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000064 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000064">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000064">
         <rdfs:label xml:lang="en">AEFI seizure level 2 of certainty</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000022"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000022"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000065 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000065">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000065">
         <rdfs:label xml:lang="en">AEFI seizure level 3 of certainty</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000023"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000023"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000023"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000033"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000274 -->
 
-    <owl:Class rdf:about="&obo;OBI_0000274"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000274"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
-    <owl:Class rdf:about="&obo;OBI_0000938"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000988 -->
 
-    <owl:Class rdf:about="&obo;OBI_0000988">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000988">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000014"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1212,103 +1202,120 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
 
-    <owl:Class rdf:about="&obo;OBI_0600007"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600007"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
 
-    <owl:Class rdf:about="&obo;OGMS_0000014"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000014"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
 
-    <owl:Class rdf:about="&obo;OGMS_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
 
-    <owl:Class rdf:about="&obo;OGMS_0000024"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
 
-    <owl:Class rdf:about="&obo;OGMS_0000045"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000059 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000059">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000068"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
 
-    <owl:Class rdf:about="&obo;VO_0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000002"/>
     
 
 
     <!-- http://purl.org/obo/owl/GO#GO_0001660 -->
 
-    <owl:Class rdf:about="&GO;GO_0001660"/>
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0001660"/>
     
 
 
     <!-- http://purl.org/obo/owl/GO#GO_0006954 -->
 
-    <owl:Class rdf:about="&GO;GO_0006954"/>
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006954"/>
     
 
 
     <!-- http://purl.org/obo/owl/GO#GO_0007610 -->
 
-    <owl:Class rdf:about="&GO;GO_0007610"/>
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0007610"/>
     
 
 
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
+    <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0000955"/>
     
 
 
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0001016"/>
+    <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0001016"/>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1#Entity -->
 
-    <owl:Class rdf:about="&bfo;Entity"/>
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1#Entity"/>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
 
-    <owl:Class rdf:about="&snap;MaterialEntity"/>
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
 
-    <owl:Class rdf:about="&snap;Quality"/>
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
-    <owl:Class rdf:about="&snap;Role"/>
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
 
-    <owl:Class rdf:about="&snap;Site"/>
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Site"/>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
 
-    <owl:Class rdf:about="&span;ProcessualEntity"/>
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     
 
 
@@ -1325,8 +1332,8 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000024 -->
 
-    <owl:NamedIndividual rdf:about="&obo;AERO_0000024">
-        <rdf:type rdf:resource="&obo;AERO_0000004"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000024">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000004"/>
         <rdfs:label>Level 1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1334,8 +1341,8 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000032 -->
 
-    <owl:NamedIndividual rdf:about="&obo;AERO_0000032">
-        <rdf:type rdf:resource="&obo;AERO_0000004"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000032">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000004"/>
         <rdfs:label>Level 2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1343,8 +1350,8 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000033 -->
 
-    <owl:NamedIndividual rdf:about="&obo;AERO_0000033">
-        <rdf:type rdf:resource="&obo;AERO_0000004"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000033">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000004"/>
         <rdfs:label>Level 3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1352,8 +1359,8 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000034 -->
 
-    <owl:NamedIndividual rdf:about="&obo;AERO_0000034">
-        <rdf:type rdf:resource="&obo;AERO_0000004"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000034">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000004"/>
         <rdfs:label>Reported generalized convulsive seizure with insufficient evidence to meet the case definition</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1361,13 +1368,13 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <!-- http://purl.obolibrary.org/obo/AERO_0000036 -->
 
-    <owl:NamedIndividual rdf:about="&obo;AERO_0000036">
-        <rdf:type rdf:resource="&obo;AERO_0000004"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000036">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000004"/>
         <rdfs:label>not a case of generalized convulsive seizure</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.1.0.1659) http://owlapi.sourceforge.net -->
 
