@@ -35,7 +35,8 @@
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;aero.owl">
         <owl:versionInfo rdf:datatype="&xsd;string">alpha 0.1 </owl:versionInfo>
-        <rdfs:comment xml:lang="en">This is a proposed hierarchy to deal with Adverse Events.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is a proposed hierarchy to deal with Adverse Events. The initial focus of AERO is to represent specifically adverse events following immunization (AEFIs) according to the Brighton case definitions.
+It however aims at being an inclusive resource and allows other types of adverse events to be added as needed by other communities.</rdfs:comment>
         <owl:imports rdf:resource="&obo;aero/external-by-hand.owl"/>
         <owl:imports rdf:resource="&obo;aero/external.owl"/>
         <owl:imports rdf:resource="&obo;aero/externalDerived.owl"/>
@@ -353,18 +354,9 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000020"/>
-                    <rdf:Description rdf:about="&obo;OGMS_0000024"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An adverse event is an undesirable, unfavorable and unintended sign or symptom presenting in a predetermined time frame following administration of a coumpound or usage of a device</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An adverse event is an undesirable, unfavorable and unintended medical occurrence presenting in a predetermined time frame following administration of a compound or usage of a device</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">I initialy made adverse event a defined class: is_a sign and preceded by administration. However, by doing so, and as the range of preceded by is processual entities, I was implicitely making adverse event a subclass of processual entity, therfore making adverse event rash (a continuant) inconsistent.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This definition purposedly relies on the usage of ogms:sign, itself defined as &quot;A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance.&quot; This will allow to cover continuants such as rash and processes such as seizures under the adverse event root. Also, we consider events reported by the clinician, so sign is particularly fitting. Depending on our use case, we may need to extend to symptoms, which are reported by the patient himself.
-</rdfs:comment>
+        <obo:IAO_0000119>ICH Topic E 2 A Clinical Safety Data Management: Definitions and Standards for Expedited Reporting</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -382,6 +374,8 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000009"/>
+        <obo:IAO_0000115>An adverse event is an undesirable, unfavorable and unintended medical occurrence presenting in a predetermined time frame following administration of a vaccine</obo:IAO_0000115>
+        <obo:IAO_0000119>Adapted from ICH Topic E 2 A Clinical Safety Data Management: Definitions and Standards for Expedited Reporting</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -648,6 +642,12 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
@@ -672,12 +672,6 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">history of unconsciousness AND generalized, 
 tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the absence of: hypotonic hyporesponsive episode (as deﬁned by the Brighton Collaboration), syncope, and myoclonic jerks.</obo:IAO_0000115>
@@ -690,12 +684,6 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <owl:Class rdf:about="&obo;AERO_0000023">
         <rdfs:label xml:lang="en">seizure level 3 of certainty</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
@@ -711,6 +699,12 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
@@ -983,10 +977,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
+                                <owl:onProperty rdf:resource="&ro;precedes"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -999,10 +993,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;precedes"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
+                                <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1276,18 +1270,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
-
-    <owl:Class rdf:about="&obo;OGMS_0000020"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
-
-    <owl:Class rdf:about="&obo;OGMS_0000024"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
 
     <owl:Class rdf:about="&obo;OGMS_0000045"/>
@@ -1398,7 +1380,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:NamedIndividual rdf:about="&obo;AERO_0000024">
         <rdf:type rdf:resource="&obo;AERO_0000004"/>
-        <rdfs:label>Level 1</rdfs:label>
+        <rdfs:label>Level 1 of certainty of generalized convulsive seizure as an adverse event following immunization</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1407,7 +1389,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:NamedIndividual rdf:about="&obo;AERO_0000032">
         <rdf:type rdf:resource="&obo;AERO_0000004"/>
-        <rdfs:label>Level 2</rdfs:label>
+        <rdfs:label>Level 2 of certainty of generalized convulsive seizure as an adverse event following immunization</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1416,7 +1398,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:NamedIndividual rdf:about="&obo;AERO_0000033">
         <rdf:type rdf:resource="&obo;AERO_0000004"/>
-        <rdfs:label>Level 3</rdfs:label>
+        <rdfs:label>Level 3 of certainty of generalized convulsive seizure as an adverse event following immunization</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1440,5 +1422,5 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 

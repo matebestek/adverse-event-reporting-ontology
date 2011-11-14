@@ -1,112 +1,236 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-    xmlns:obo="http://purl.obolibrary.org/obo/"
-    xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
-    xmlns:ncbitax="http://purl.org/obo/owl/NCBITaxon#"
-    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
-    xmlns:pato="http://purl.org/obo/owl/PATO#"
-    xmlns:cell="http://purl.org/obo/owl/CL#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:envo="http://purl.org/obo/owl/ENVO#"
-    xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
-    xmlns:caro="http://purl.org/obo/owl/CARO#"
-    xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
-    xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-    xmlns:rotoo="http://purl.org/obo/owl/ro#"
-    xmlns:pro="http://purl.org/obo/owl/PRO#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:so="http://purl.org/obo/owl/SO#"
-    xmlns:go="http://purl.org/obo/owl/GO#"
-    xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
-  xml:base="http://purl.obolibrary.org/obo/aero/externalDerived.owl">
-  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aero/externalDerived.owl">
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >$Revision: 80 $</owl:versionInfo>
-  </owl:Ontology>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000002">
-    <rdfs:label>vaccination</rdfs:label>
-    <obo:IAO_0000115>Vaccination is: an 'administering substance in vivo' that involves in adding vaccine into a host (e.g., human, mouse) in vivo with the intend to invoke a protective immune response.</obo:IAO_0000115>
-    <obo:IAO_0000111>vaccination</obo:IAO_0000111>
-  </owl:Class>
-
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
-    <rdfs:label>symptom</rdfs:label>
-    <obo:IAO_0000111>symptom</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed by the patient or a processual entity experienced by the patient, either of which is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
-  </owl:Class>
 
 
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024">
-    <rdfs:label>sign</rdfs:label>
-    <obo:IAO_0000111>sign</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000652">
-    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >is a material processing with the objective to combine two or more material entities as input into a single material entity as output.</obo:IAO_0000115>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >material combination</rdfs:label>
-    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >material combination</obo:IAO_0000111>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600007">
-    <rdfs:label xml:lang="en">administering substance in vivo</rdfs:label>
-    <obo:IAO_0000111 xml:lang="en">administering substance in vivo</obo:IAO_0000111>
-    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A process by which a substance is intentionally given to an organism</obo:IAO_0000115>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045">
-    <obo:IAO_0000111>disorder</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</obo:IAO_0000115>
-    <rdfs:label>disorder</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
-    <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
-    <obo:IAO_0000111 xml:lang="en">material processing</obo:IAO_0000111>
-    <rdfs:label xml:lang="en">material processing</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0000010"/>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100015">
-    <obo:IAO_0000111 xml:lang="en">anatomical entity</obo:IAO_0000111>
-    <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
-    <obo:IAO_0000115 xml:lang="en">An anatomical entity is a material entity that is part of a multicellular organism, and which is large enough so that it forms an identifiable structure in the organism. Specifically, it excludes granular parts of the organism, such as atoms, molecules, cells, which can be removed from the organism without affecting it. It is defined as the union of 'multi-tissue structure', 'body substance' and 'portion of tissue'</obo:IAO_0000115>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-    <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
-    <rdfs:label xml:lang="en">planned process</rdfs:label>
-    <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0001016"/>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000274">
-    <rdfs:label xml:lang="en">adding a material entity into a target</rdfs:label>
-    <obo:IAO_0000111 xml:lang="en">adding a material entity into a target</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">is a process with the objective to place a material entity bearing the 'material to be added role' into a material bearing the 'target of material addition role'.</obo:IAO_0000115>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0001660">
-    <obo:IAO_0000115 xml:lang="en">A rise in body temperature above the normal, often as a response to infection.</obo:IAO_0000115>
-    <rdfs:label xml:lang="en">fever</rdfs:label>
-    <obo:IAO_0000111 xml:lang="en">fever</obo:IAO_0000111>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0000955"/>
-  <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006954">
-    <rdfs:label xml:lang="en">inflammatory response</rdfs:label>
-    <obo:IAO_0000111 xml:lang="en">inflammatory response</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">The immediate defensive reaction (by vertebrate tissue) to infection or injury caused by chemical or physical agents. The process is characterized by local vasodilation, extravasation of plasma into intercellular spaces and accumulation of white blood cells and macrophages.</obo:IAO_0000115>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0007610">
-    <rdfs:label xml:lang="en">behavior</rdfs:label>
-    <obo:IAO_0000115 xml:lang="en">The specific actions or reactions of an organism in response to external or internal stimuli. Patterned activity of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions.</obo:IAO_0000115>
-    <obo:IAO_0000111 xml:lang="en">behavior</obo:IAO_0000111>
-  </owl:Class>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY cell "http://purl.org/obo/owl/CL#" >
+    <!ENTITY rotoo "http://purl.org/obo/owl/ro#" >
+    <!ENTITY go "http://purl.org/obo/owl/GO#" >
+    <!ENTITY so "http://purl.org/obo/owl/SO#" >
+    <!ENTITY pro "http://purl.org/obo/owl/PRO#" >
+    <!ENTITY pato "http://purl.org/obo/owl/PATO#" >
+    <!ENTITY envo "http://purl.org/obo/owl/ENVO#" >
+    <!ENTITY caro "http://purl.org/obo/owl/CARO#" >
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY chebi "http://purl.org/obo/owl/CHEBI#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ncbitax "http://purl.org/obo/owl/NCBITaxon#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY robfo "http://purl.org/obo/owl/ro_bfo_bridge/1.1#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY protege-dc "http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;aero/externalDerived.owl#"
+     xml:base="&obo;aero/externalDerived.owl"
+     xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:ncbitax="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:envo="http://purl.org/obo/owl/ENVO#"
+     xmlns:rotoo="http://purl.org/obo/owl/ro#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pato="http://purl.org/obo/owl/PATO#"
+     xmlns:caro="http://purl.org/obo/owl/CARO#"
+     xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:so="http://purl.org/obo/owl/SO#"
+     xmlns:cell="http://purl.org/obo/owl/CL#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:UBERON="http://purl.org/obo/owl/UBERON#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pro="http://purl.org/obo/owl/PRO#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:go="http://purl.org/obo/owl/GO#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;aero/externalDerived.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">$Revision: 80 $</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000011">
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000094">
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">material processing</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000274 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000274">
+        <rdfs:label xml:lang="en">adding a material entity into a target</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">adding a material entity into a target</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">is a process with the objective to place a material entity bearing the &#39;material to be added role&#39; into a material bearing the &#39;target of material addition role&#39;.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000652 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000652">
+        <rdfs:label rdf:datatype="&xsd;string">material combination</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">is a material processing with the objective to combine two or more material entities as input into a single material entity as output.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">material combination</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100015 -->
+
+    <owl:Class rdf:about="&obo;OBI_0100015">
+        <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An anatomical entity is a material entity that is part of a multicellular organism, and which is large enough so that it forms an identifiable structure in the organism. Specifically, it excludes granular parts of the organism, such as atoms, molecules, cells, which can be removed from the organism without affecting it. It is defined as the union of &#39;multi-tissue structure&#39;, &#39;body substance&#39; and &#39;portion of tissue&#39;</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">anatomical entity</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
+
+    <owl:Class rdf:about="&obo;OBI_0600007">
+        <rdfs:label xml:lang="en">administering substance in vivo</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process by which a substance is intentionally given to an organism</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">administering substance in vivo</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000045">
+        <rdfs:label>disorder</rdfs:label>
+        <obo:IAO_0000111>disorder</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
+
+    <owl:Class rdf:about="&obo;VO_0000002">
+        <rdfs:label>vaccination</rdfs:label>
+        <obo:IAO_0000111>vaccination</obo:IAO_0000111>
+        <obo:IAO_0000115>Vaccination is: an &#39;administering substance in vivo&#39; that involves in adding vaccine into a host (e.g., human, mouse) in vivo with the intend to invoke a protective immune response.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0001660 -->
+
+    <owl:Class rdf:about="&go;GO_0001660">
+        <rdfs:label xml:lang="en">fever</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A rise in body temperature above the normal, often as a response to infection.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">fever</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0006954 -->
+
+    <owl:Class rdf:about="&go;GO_0006954">
+        <rdfs:label xml:lang="en">inflammatory response</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The immediate defensive reaction (by vertebrate tissue) to infection or injury caused by chemical or physical agents. The process is characterized by local vasodilation, extravasation of plasma into intercellular spaces and accumulation of white blood cells and macrophages.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">inflammatory response</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0007610 -->
+
+    <owl:Class rdf:about="&go;GO_0007610">
+        <rdfs:label xml:lang="en">behavior</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The specific actions or reactions of an organism in response to external or internal stimuli. Patterned activity of a whole organism in a manner dependent upon some combination of that organism&#39;s internal state and external conditions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">behavior</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0000010"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
+
+    <owl:Class rdf:about="&UBERON;UBERON_0001016"/>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
