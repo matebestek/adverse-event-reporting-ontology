@@ -409,14 +409,14 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</obo:IAO_0000115>
@@ -487,14 +487,8 @@ This class just helps me group some terms during development of the structure</r
     <!-- http://purl.obolibrary.org/obo/AERO_0000017 -->
 
     <owl:Class rdf:about="&obo;AERO_0000017">
-        <rdfs:label xml:lang="en">seizure</rdfs:label>
+        <rdfs:label xml:lang="en">seizure according to Brighton criteria</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -508,6 +502,23 @@ This class just helps me group some terms during development of the structure</r
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -551,18 +562,14 @@ This class just helps me group some terms during development of the structure</r
     <!-- http://purl.obolibrary.org/obo/AERO_0000019 -->
 
     <owl:Class rdf:about="&obo;AERO_0000019">
-        <rdfs:label xml:lang="en">AEFI seizure level 1 of certainty according to Brighton guideline</rdfs:label>
+        <rdfs:label xml:lang="en">AEFI seizure level 1 of certainty according to Brighton criteria</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000018"/>
+                    <rdf:Description rdf:about="&obo;AERO_0000021"/>
                     <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:hasValue rdf:resource="&obo;AERO_0000024"/>
+                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -595,8 +602,13 @@ This class just helps me group some terms during development of the structure</r
 
     <owl:Class rdf:about="&obo;AERO_0000021">
         <rdfs:label xml:lang="en">seizure level 1 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000048"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
@@ -610,24 +622,8 @@ This class just helps me group some terms during development of the structure</r
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">witnessed sudden loss of consciousness AND generalized, 
 tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the absence of: hypotonic hyporesponsive episode (as deﬁned by the Brighton Collaboration), syncope, and myoclonic jerks.</obo:IAO_0000115>
@@ -639,25 +635,13 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <owl:Class rdf:about="&obo;AERO_0000022">
         <rdfs:label xml:lang="en">seizure level 2 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom>
@@ -671,7 +655,8 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">history of unconsciousness AND generalized, 
 tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the absence of: hypotonic hyporesponsive episode (as deﬁned by the Brighton Collaboration), syncope, and myoclonic jerks.</obo:IAO_0000115>
@@ -683,30 +668,19 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <owl:Class rdf:about="&obo;AERO_0000023">
         <rdfs:label xml:lang="en">seizure level 3 of certainty</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000017"/>
         <rdfs:comment xml:lang="en">MC, 20110126: this needs to be linked to the Brighton guideline defined under directive information entity</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">history of unconsciousness AND other generalized motor manifestations.</obo:IAO_0000115>
     </owl:Class>
@@ -977,10 +951,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;precedes"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
+                                <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -993,10 +967,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
+                                <owl:onProperty rdf:resource="&ro;precedes"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1137,7 +1111,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <!-- http://purl.obolibrary.org/obo/AERO_0000064 -->
 
     <owl:Class rdf:about="&obo;AERO_0000064">
-        <rdfs:label xml:lang="en">AEFI seizure level 2 of certainty</rdfs:label>
+        <rdfs:label xml:lang="en">AEFI seizure level 2 of certainty according to Brighton criteria</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1149,7 +1123,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000022"/>
     </owl:Class>
     
 
@@ -1157,7 +1130,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <!-- http://purl.obolibrary.org/obo/AERO_0000065 -->
 
     <owl:Class rdf:about="&obo;AERO_0000065">
-        <rdfs:label xml:lang="en">AEFI seizure level 3 of certainty</rdfs:label>
+        <rdfs:label xml:lang="en">AEFI seizure level 3 of certainty according to Brighton criteria</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1169,7 +1142,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000023"/>
     </owl:Class>
     
 
