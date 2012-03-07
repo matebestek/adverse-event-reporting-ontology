@@ -426,14 +426,14 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</obo:IAO_0000115>
@@ -508,12 +508,6 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000069"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
@@ -521,6 +515,12 @@ This class just helps me group some terms during development of the structure</r
                         <owl:someValuesFrom rdf:resource="&obo;AERO_0000039"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1409,48 +1409,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000123">
         <rdfs:label xml:lang="en">respiratory distress</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:onClass rdf:resource="&obo;AERO_0000118"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:onClass rdf:resource="&obo;AERO_0000117"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:onClass rdf:resource="&obo;AERO_0000119"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:onClass rdf:resource="&obo;AERO_0000124"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:onClass rdf:resource="&obo;AERO_0000120"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:onClass rdf:resource="&obo;AERO_0000121"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonMidLevelTerms"/>
         <obo:IAO_0000115>respiratory distress—2 or more of the
 following: 
@@ -1492,44 +1450,57 @@ following:
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000153 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000200 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000153">
-        <rdfs:label xml:lang="en">RD_right</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000121"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000133"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+    <owl:Class rdf:about="&obo;AERO_0000200">
+        <rdfs:label xml:lang="en">infected abscess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000115 xml:lang="en">A localized collection of pus in a cavity formed by the disintegration of tissue, usually caused by microorganisms that invade the tissues.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000154 -->
+    <!-- http://purl.obolibrary.org/obo/AERO_0000201 -->
 
-    <owl:Class rdf:about="&obo;AERO_0000154">
-        <rdfs:label xml:lang="en">RD_wrong</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000133"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000134"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+    <owl:Class rdf:about="&obo;AERO_0000201">
+        <rdfs:label xml:lang="en">sterile abscess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000115 xml:lang="en">An abscess whose contents are not caused by pyogenic bacteria.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000202 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000202">
+        <rdfs:label xml:lang="en">cellulitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&GO;GO_0006954"/>
+        <obo:IAO_0000115 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000203 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000203">
+        <rdfs:label xml:lang="en">nodule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000115 xml:lang="en">A firm, small mass of tissue at the injection site with discrete or well demarcated borders in the absence of abscess formation, erythema and warmth.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000204 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000204">
+        <rdfs:label xml:lang="en">lymphadenitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&GO;GO_0006954"/>
+        <obo:IAO_0000115 xml:lang="en">Inflammation of one or more lymph nodes, usually caused by a primary focus of infection elsewhere in the body.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
 
