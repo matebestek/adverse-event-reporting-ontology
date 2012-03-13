@@ -474,7 +474,7 @@ This class just helps me group some terms during development of the structure</r
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 xml:lang="en">An adverse event process is a processual entity occurring in a pre determined time frame following administration of a coumpound or usage of a device</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An adverse event process is a processual entity occurring in a pre determined time frame following administration of a compound or usage of a device</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">I included the usage of a device into the definition of adverse event as I am aiming at being inclusive, and cover cases such as those described by MAUDE - Manufacturer and User Facility Device Experience. See for example http://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfMAUDE/detail.cfm?mdrfoi__id=1942591 - a patient get fitted with bioprosthetic heart valves and dies within the following 4 months.</rdfs:comment>
         <rdfs:comment xml:lang="en">Note that this definition of adverse event doesn&#39;t imply any type of causality between the sign observed and the coumpond administration/device utilization. For our purposes, we consider any type of sign presenting within a specific time frame after the coumpound administration/device utilization to be an adverse event.</rdfs:comment>
     </owl:Class>
@@ -1150,6 +1150,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000069">
         <rdfs:label xml:lang="en">reported general convulsive seizure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000232 xml:lang="en">20120309, MC: should this be a &quot;report of a generalized convulsive seizure&quot; and be an information artifact?</obo:IAO_0000232>
     </owl:Class>
     
 
@@ -1537,6 +1538,28 @@ following:
         <rdfs:subClassOf rdf:resource="&GO;GO_0006954"/>
         <obo:IAO_0000115 xml:lang="en">Inflammation of one or more lymph nodes, usually caused by a primary focus of infection elsewhere in the body.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000205 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000205">
+        <rdfs:label xml:lang="en">erythema</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000008"/>
+        <obo:IAO_0000115 xml:lang="en">Abnormal redness of the skin.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000206 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000206">
+        <rdfs:label xml:lang="en">induration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Palpable thickening, firmness or hardening of soft tissue that is assessed by a health care provider</obo:IAO_0000115>
     </owl:Class>
     
 
