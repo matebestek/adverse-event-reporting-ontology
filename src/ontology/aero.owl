@@ -271,7 +271,7 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000938"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000208"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
@@ -1127,6 +1127,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1150,6 +1156,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000080">
         <rdfs:label xml:lang="en">reporting process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The process of creating documentation about something and adding it to a system allowing further analysis of the reported entity</obo:IAO_0000115>
     </owl:Class>
     
@@ -1553,6 +1565,32 @@ following:
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000988"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000208 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000208">
+        <rdfs:label xml:lang="en">Brighton assessment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000938"/>
+        <obo:IAO_0000115 xml:lang="en">The assessment performed upon review of an adverse event report according to the Brighton case definitions</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000209 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000209">
+        <rdfs:label xml:lang="en">adverse event reporting process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The process of creating documentation about an adverse event and adding it to a system allowing further analysis of the event</obo:IAO_0000115>
     </owl:Class>
     
 
