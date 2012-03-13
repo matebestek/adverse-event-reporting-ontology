@@ -505,7 +505,7 @@ This class just helps me group some terms during development of the structure</r
 
     <owl:Class rdf:about="&obo;AERO_0000017">
         <rdfs:label xml:lang="en">generalized convulsive seizure according to Brighton criteria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000069"/>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
@@ -816,7 +816,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000988"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000207"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
@@ -1141,34 +1141,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <obo:IAO_0000115 xml:lang="en">A report as submitted in an adverse event reporting system</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">MC, 20110719: not all adverse event report are about adverse event. See for example cases in MAUDE database that are about potential adverse events such as device malfunctions.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">adverse event report</obo:IAO_0000111>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000069 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000069">
-        <rdfs:label xml:lang="en">reported general convulsive seizure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <obo:IAO_0000232 xml:lang="en">20120309, MC: should this be a &quot;report of a generalized convulsive seizure&quot; and be an information artifact?</obo:IAO_0000232>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000070 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000070">
-        <rdfs:label>reported generalized convulsive seizure with insufficient evidence to meet the Brighton case definition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000069"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000071 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000071">
-        <rdfs:label>not a case of generalized convulsive seizure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000069"/>
     </owl:Class>
     
 
@@ -1560,6 +1532,27 @@ following:
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">Palpable thickening, firmness or hardening of soft tissue that is assessed by a health care provider</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000207 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000207">
+        <rdfs:label xml:lang="en">performing a diagnosis according to a Brighton case definition</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000988"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
     </owl:Class>
     
 
