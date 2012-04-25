@@ -39,6 +39,7 @@
         <owl:versionInfo rdf:datatype="&xsd;string">alpha 0.1 </owl:versionInfo>
         <rdfs:comment xml:lang="en">This is a proposed hierarchy to deal with Adverse Events. The initial focus of AERO is to represent specifically adverse events following immunization (AEFIs) according to the Brighton case definitions.
 It however aims at being an inclusive resource and allows other types of adverse events to be added as needed by other communities.</rdfs:comment>
+        <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;aero/external-by-hand.owl"/>
         <owl:imports rdf:resource="&obo;aero/external.owl"/>
         <owl:imports rdf:resource="&obo;aero/externalDerived.owl"/>
@@ -426,14 +427,14 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</obo:IAO_0000115>
@@ -506,17 +507,6 @@ This class just helps me group some terms during development of the structure</r
     <owl:Class rdf:about="&obo;AERO_0000017">
         <rdfs:label xml:lang="en">generalized convulsive seizure according to Brighton criteria</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000039"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
@@ -811,7 +801,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000039"/>
+                        <owl:allValuesFrom rdf:resource="&obo;AERO_0000039"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
@@ -1266,7 +1256,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000110">
         <rdfs:label xml:lang="en">tachycardia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
         <obo:AERO_0000106>TacchyCard</obo:AERO_0000106>
     </owl:Class>
     
@@ -1276,7 +1266,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000111">
         <rdfs:label xml:lang="en">capillary refill time &gt; 3s</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
         <obo:AERO_0000106>CapRefillOver3</obo:AERO_0000106>
     </owl:Class>
     
@@ -1286,7 +1276,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000112">
         <rdfs:label xml:lang="en">reduced central pulse volume</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
         <obo:AERO_0000106>PulseVolRed</obo:AERO_0000106>
     </owl:Class>
     
@@ -1296,7 +1286,8 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000113">
         <rdfs:label xml:lang="en">decreased level of consciousness or loss of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
+        <obo:IAO_0000232>should be a union class</obo:IAO_0000232>
         <obo:AERO_0000106>ConscDecr</obo:AERO_0000106>
     </owl:Class>
     
@@ -1445,28 +1436,9 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000124 -->
 
     <owl:Class rdf:about="&obo;AERO_0000124">
-        <rdfs:label xml:lang="en">respiratory distress signs</rdfs:label>
+        <rdfs:label xml:lang="en">respiratory distress sign</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
         <obo:IAO_0000232>a helper class which allows us to define a qualified cardinality restriction for respiratory distress such as used in the case definition of anaphylaxis.Respiratory distress is defined as having at least 2 respiratory distress signs</obo:IAO_0000232>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000133 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000133">
-        <rdfs:label xml:lang="en">increased use of intercostals muscles</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000118"/>
-        <owl:disjointWith rdf:resource="&obo;AERO_0000134"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000134 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000134">
-        <rdfs:label xml:lang="en">increased use of sternocleidomastoid</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000118"/>
     </owl:Class>
     
 
@@ -1591,6 +1563,61 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The process of creating documentation about an adverse event and adding it to a system allowing further analysis of the event</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000210 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000210">
+        <rdfs:label xml:lang="en">clinical diagnosis of uncompensated shock</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                        <owl:onClass rdf:resource="&obo;AERO_0000211"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                        <owl:onClass rdf:resource="&obo;AERO_0000110"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                        <owl:onClass rdf:resource="&obo;AERO_0000111"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                        <owl:onClass rdf:resource="&obo;AERO_0000112"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                        <owl:onClass rdf:resource="&obo;AERO_0000113"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonMidLevelTerms"/>
+        <obo:IAO_0000115 xml:lang="en">combination of at least 3 of the following:
+- tachycardia
+- capillary refill time &gt; 3s
+- reduced central pulse volume
+- decreased level of consciousness or loss of consciousness</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000211 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000211">
+        <rdfs:label xml:lang="en">uncompensated shock sign</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <obo:IAO_0000115 xml:lang="en">a helper class which allows us to define a qualified cardinality restriction for uncompensated shock such as used in the case definition of anaphylaxis. Clinical diagnosis of uncompensated shock is defined as having at least 3 uncompensated shock signs</obo:IAO_0000115>
     </owl:Class>
     
 
