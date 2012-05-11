@@ -39,14 +39,11 @@
         <owl:versionInfo rdf:datatype="&xsd;string">alpha 0.1 </owl:versionInfo>
         <rdfs:comment xml:lang="en">This is a proposed hierarchy to deal with Adverse Events. The initial focus of AERO is to represent specifically adverse events following immunization (AEFIs) according to the Brighton case definitions.
 It however aims at being an inclusive resource and allows other types of adverse events to be added as needed by other communities.</rdfs:comment>
-        <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;aero/external-by-hand.owl"/>
         <owl:imports rdf:resource="&obo;aero/external.owl"/>
         <owl:imports rdf:resource="&obo;aero/externalDerived.owl"/>
-        <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
-        <owl:imports rdf:resource="http://purl.org/obo/owl/ro"/>
-        <owl:imports rdf:resource="http://purl.org/obo/owl/ro_bfo_bridge/1.1"/>
-        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+        <owl:imports rdf:resource="&obo;bfo/2010-05-25/ruttenberg-bfo2.owl"/>
+        <owl:imports rdf:resource="https://information-artifact-ontology.googlecode.com/svn/releases/2012-01-05/merged/iao-all.owl"/>
     </owl:Ontology>
     
 
@@ -100,104 +97,34 @@ It however aims at being an inclusive resource and allows other types of adverse
 
     <owl:ObjectProperty rdf:about="&obo;AERO_0000125">
         <rdfs:label xml:lang="en">has component</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&ro;has_part"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000051"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
-    <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000293"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000062"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000294"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000297 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000297"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000298 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000298"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000063"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000300"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000308"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000312"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#regulates -->
-
-    <owl:ObjectProperty rdf:about="&OBO_REL;regulates"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#stimulates -->
-
-    <owl:ObjectProperty rdf:about="&OBO_REL;stimulates"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#unfolds_in -->
-
-    <owl:ObjectProperty rdf:about="&OBO_REL;unfolds_in"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
-
-    <owl:ObjectProperty rdf:about="&ro;has_part"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
-
-    <owl:ObjectProperty rdf:about="&ro;part_of"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
-
-    <owl:ObjectProperty rdf:about="&ro;preceded_by"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
-
-    <owl:ObjectProperty rdf:about="&ro;precedes"/>
+    <rdf:Description rdf:about="&obo;OBI_0000299">
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000057"/>
+    </rdf:Description>
     
 
 
@@ -402,7 +329,7 @@ Proposed OBO Foundry label: rash resulting from an AEFI process</rdfs:comment>
 
     <owl:Class rdf:about="&obo;AERO_0000011">
         <rdfs:label xml:lang="en">_manifestations</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
         <rdfs:comment xml:lang="en">temporary placeholder - to be removed
 This class just helps me group some terms during development of the structure</rdfs:comment>
     </owl:Class>
@@ -427,14 +354,14 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</obo:IAO_0000115>
@@ -460,9 +387,9 @@ This class just helps me group some terms during development of the structure</r
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                    <rdf:Description rdf:about="&obo;BFO_0000007"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
@@ -491,7 +418,7 @@ This class just helps me group some terms during development of the structure</r
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;AERO_0000015"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -506,10 +433,10 @@ This class just helps me group some terms during development of the structure</r
 
     <owl:Class rdf:about="&obo;AERO_0000017">
         <rdfs:label xml:lang="en">generalized convulsive seizure according to Brighton criteria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -540,7 +467,7 @@ This class just helps me group some terms during development of the structure</r
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;AERO_0000009"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -574,11 +501,11 @@ This class just helps me group some terms during development of the structure</r
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="&obo;AERO_0000048"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
@@ -609,11 +536,11 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
@@ -644,11 +571,11 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="&obo;AERO_0000028"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="&obo;AERO_0000047"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -784,7 +711,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <owl:Class rdf:about="&obo;AERO_0000037">
         <rdfs:label>bilateral</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <obo:IAO_0000119>http://www.thefreedictionary.com/bilateral</obo:IAO_0000119>
         <obo:IAO_0000115>Affecting or undertaken by two sides equally; binding on both parties</obo:IAO_0000115>
     </owl:Class>
@@ -797,10 +724,10 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
         <rdfs:label>diagnosing generalized convulsive seizure according to Brighton guidelines</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000058"/>
                         <owl:allValuesFrom rdf:resource="&obo;AERO_0000039"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
@@ -825,10 +752,10 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
                         <owl:allValuesFrom rdf:resource="&obo;AERO_0000038"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
@@ -921,14 +848,14 @@ If you are working on a database and only have the clinical criteria vailable, y
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;preceded_by"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -937,14 +864,14 @@ If you are working on a database and only have the clinical criteria vailable, y
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;precedes"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -987,7 +914,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000047"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1000,10 +927,10 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000050">
         <rdfs:label xml:lang="en">bilateral site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Site"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000298"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000086"/>
                 <owl:someValuesFrom rdf:resource="&obo;AERO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1015,7 +942,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000055">
         <rdfs:label xml:lang="en">witness role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <obo:IAO_0000115 xml:lang="en">A role inhering in a person that is realized when the bearer sees an event and reports what happened</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">adapted from http://golovchenko.org/cgi-bin/wnsearch?q=witness</obo:IAO_0000119>
     </owl:Class>
@@ -1031,7 +958,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;AERO_0000013"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1051,7 +978,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;AERO_0000012"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1071,7 +998,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;AERO_0000035"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
                         <owl:someValuesFrom rdf:resource="&obo;VO_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1097,7 +1024,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000067">
         <rdfs:label xml:lang="en">device malfunction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
@@ -1145,7 +1072,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000080">
         <rdfs:label xml:lang="en">reporting process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
@@ -1526,10 +1453,10 @@ following:
         <rdfs:label xml:lang="en">performing a diagnosis according to a Brighton case definition</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000058"/>
                         <owl:someValuesFrom rdf:resource="&obo;AERO_0000003"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
@@ -1622,6 +1549,42 @@ following:
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000007 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="&obo;IAO_0000033"/>
@@ -1697,7 +1660,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO/_BrightonDiagnosis -->
 
     <owl:Class rdf:about="&obo;AERO/_BrightonDiagnosis">
-        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
     </owl:Class>
     
 
@@ -1706,7 +1669,7 @@ following:
 
     <owl:Class rdf:about="&obo;AERO/_BrightonMidLevelTerms">
         <rdfs:label xml:lang="en">_BrightonMidLevelTerms</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
     </owl:Class>
     
 
@@ -1714,7 +1677,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO/_BrightonTerms -->
 
     <owl:Class rdf:about="&obo;AERO/_BrightonTerms">
-        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
     </owl:Class>
     
 
@@ -1746,42 +1709,6 @@ following:
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0001016"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1#Entity -->
-
-    <owl:Class rdf:about="&bfo;Entity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
-
-    <owl:Class rdf:about="&snap;MaterialEntity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
-
-    <owl:Class rdf:about="&snap;Quality"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
-
-    <owl:Class rdf:about="&snap;Role"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
-
-    <owl:Class rdf:about="&snap;Site"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
-
-    <owl:Class rdf:about="&span;ProcessualEntity"/>
     
 
 

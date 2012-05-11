@@ -9,7 +9,6 @@
     <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
-    <!ENTITY oae "http://purl.obolibrary.org/obo/oae/" >
     <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
     <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -33,6 +32,36 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;aero/external-by-hand.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDefinition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
     
 
@@ -45,185 +74,81 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000294">
-        <rdfs:label xml:lang="en">is_concretization_of</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is a relationship between a generically dependent continuant and a specifically dependent continuant. A generically dependent continuant may inhere in more than one entity. It does so by virtue of the fact that there is, for each entity that it inheres, a specifically dependent *concretization* of the generically dependent continuant that is specifically dependent. For instance, consider a story, which is an information artifact that inheres in some number of books. Each book bears some quality that carries the story. The relation between this quality and the generically dependent continuant is that the former is the concretization of the latter.</obo:IAO_0000115>
-
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </owl:ObjectProperty>
-
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000298 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000298">
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000086">
         <rdfs:label xml:lang="en">has_quality</rdfs:label>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#bearer_of"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000053"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:ObjectProperty>
-
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
-  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299">
         <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000057"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:ObjectProperty>
-
     
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
-        <rdfs:label xml:lang="en">realizes</rdfs:label>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </owl:ObjectProperty>
-
-    
-    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
-        <rdfs:label xml:lang="en">is_realized_by</rdfs:label>
-	<owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </owl:ObjectProperty>
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000312">
         <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
-
         <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
-    </owl:ObjectProperty>
-
-
-
-
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#activates -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#activates">
-        <rdfs:label xml:lang="en">activates</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000111 xml:lang="en">activates</obo:IAO_0000111>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#positively_regulates"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of">
-        <rdfs:label xml:lang="en">bearer_of</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000115 xml:lang="en"
-            >A relation between an entity and a dependent continuant; the reciprocal relation of inheres_in</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">bearer_of</obo:IAO_0000111>
-    </owl:ObjectProperty>
-
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:label xml:lang="en">inheres_in</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000115 xml:lang="en"
-            >A relation between a dependent continuant D and an entity E. D inheres_in E iff: given any d that instantiates D at t, there exists some e that instantiates E at t and d *inheres_in* e at t. Here *inheres_in* is the primitive instance level relation.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">inheres_in</obo:IAO_0000111>
-
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in_part_of"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in_part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in_part_of">
-        <rdfs:label xml:lang="en"
-            >inheres_in_part_of</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000111 xml:lang="en"
-            >inheres_in_part_of</obo:IAO_0000111>
-
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#positively_regulates -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#positively_regulates">
-        <rdfs:label xml:lang="en"
-            >positively_regulates</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000115 xml:lang="en"
-            >A regulation relation in which the unfolding of the regulating process *increases* the frequency, rate or extent of the regulated process</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >positively_regulates</obo:IAO_0000111>
-
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#regulates"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000056"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.org/obo/owl/OBO_REL#regulates -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#regulates">
+    <owl:ObjectProperty rdf:about="&OBO_REL;regulates">
         <rdfs:label xml:lang="en">regulates</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000115 xml:lang="en"
-            >A relation between a process and a process or quality. A regulates B if the unfolding of A affects the frequency, rate or extent of B. A is called the regulating process, B the regulates process</obo:IAO_0000115>
-
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en">A relation between a process and a process or quality. A regulates B if the unfolding of A affects the frequency, rate or extent of B. A is called the regulating process, B the regulates process</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">regulates</obo:IAO_0000111>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#role_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#role_of">
-        <rdfs:label xml:lang="en">role_of</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000115 xml:lang="en"
-            >A relation between a role R and an entity E. R role_of E iff: R inheres_in E and R is a role</obo:IAO_0000115>
-
-        <obo:IAO_0000111 xml:lang="en">role_of</obo:IAO_0000111>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.org/obo/owl/OBO_REL#stimulates -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#stimulates">
+    <owl:ObjectProperty rdf:about="&OBO_REL;stimulates">
         <rdfs:label xml:lang="en">stimulates</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
         <obo:IAO_0000111 xml:lang="en">stimulates</obo:IAO_0000111>
     </owl:ObjectProperty>
     
@@ -231,15 +156,48 @@
 
     <!-- http://purl.org/obo/owl/OBO_REL#unfolds_in -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#unfolds_in">
+    <owl:ObjectProperty rdf:about="&OBO_REL;unfolds_in">
         <rdfs:label xml:lang="en">unfolds_in</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI"
-            >http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
-        <obo:IAO_0000115 xml:lang="en"
-            >P unfolds_in C : the execution of P is spatially contained by C. forall pP,  forall c&#39; partipates_in p, c&#39; located_in C at t, for some t in P</obo:IAO_0000115>
-
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.org/obo/owl/ro_proposed</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en">P unfolds_in C : the execution of P is spatially contained by C. forall pP,  forall c&#39; partipates_in p, c&#39; located_in C at t, for some t in P</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">unfolds_in</obo:IAO_0000111>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000007 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100015 -->
+
+    <owl:Class rdf:about="&obo;OBI_0100015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000059 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000059">
+        <rdfs:label>etiological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A process in an organism that leads to a subsequent disorder.</obo:IAO_0000115>
+    </owl:Class>
+    
 
 
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
@@ -249,7 +207,7 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -266,7 +224,7 @@ comment: This class was created automatically from a combination of ontologies</
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -286,27 +244,9 @@ comment: This class was created automatically from a combination of ontologies</
         <obo:IAO_0000116>MC, 20100112: I am using the UBERON term as this one is non human specific, compared to FMA.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">a network of specialized cells that communicate information about an organism&#39;s surroundings and itself[Wikipedia].</obo:IAO_0000115>
     </owl:Class>
-    
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000068">
-        <rdfs:label xml:lang="en">begins to exist during</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
-    </owl:ObjectProperty>
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000059">
-        <rdfs:label>etiological process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">A process in an organism that leads to a subsequent disorder.</obo:IAO_0000115>
-    </owl:Class>
-
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-
 </rdf:RDF>
 
 
-<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
