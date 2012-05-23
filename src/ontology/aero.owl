@@ -222,14 +222,7 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
                     <rdf:Description rdf:about="&obo;OGMS_0000045"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;BFO_0000068"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;AERO_0000009"/>
-                                    <rdf:Description rdf:about="&obo;OGMS_0000059"/>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
+                        <owl:someValuesFrom rdf:resource="&obo;AERO_0000015"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -852,10 +845,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -868,10 +861,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1044,12 +1037,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1059,6 +1046,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A report as submitted in an adverse event reporting system</obo:IAO_0000115>
@@ -1552,6 +1545,20 @@ following:
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="&obo;BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000002">
+        <owl:disjointWith rdf:resource="&obo;BFO_0000003"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000003"/>
     
 
 
