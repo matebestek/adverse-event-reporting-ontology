@@ -112,6 +112,13 @@
     </owl:Class>
     
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000075 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000075">
+        <rdfs:label xml:lang="en">diagnosis textual entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">diagnosis is an assessment of a disease or injury, its likely prognosis and treatment.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">diagnosis textual entity</obo:IAO_0000111>
+    </owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 

@@ -101,8 +101,14 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
-    
+ 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000075 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000075">
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
