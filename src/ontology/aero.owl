@@ -1736,7 +1736,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000244 -->
 
     <owl:Class rdf:about="&obo;AERO_0000244">
-        <rdfs:label xml:lang="en">major dermatological criteria for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">major dermatological criteria set for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1811,7 +1811,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000249 -->
 
     <owl:Class rdf:about="&obo;AERO_0000249">
-        <rdfs:label xml:lang="en">major cardiovascular criteria for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">major cardiovascular criteria set for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000210"/>
@@ -1824,7 +1824,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000250 -->
 
     <owl:Class rdf:about="&obo;AERO_0000250">
-        <rdfs:label xml:lang="en">major respiratory criteria for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">major respiratory criteria set for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000123"/>
