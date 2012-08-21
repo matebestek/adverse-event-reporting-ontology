@@ -371,14 +371,14 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</obo:IAO_0000115>
@@ -869,10 +869,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -885,10 +885,10 @@ If you are working on a database and only have the clinical criteria vailable, y
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;AERO_0000044"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000027"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
-                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000027"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                                <owl:allValuesFrom rdf:resource="&obo;AERO_0000044"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2074,6 +2074,57 @@ following:
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000267 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000267">
+        <rdfs:label xml:lang="en">Brighton assessment of anaphylaxis as an adverse event following immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000208"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000269 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000269">
+        <rdfs:label xml:lang="en">Level 1 of certainty of anaphylaxis according to Brighton</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000244"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;AERO_0000249"/>
+                            <rdf:Description rdf:about="&obo;AERO_0000250"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000267"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000270 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000270">
+        <rdfs:label xml:lang="en">test</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000245"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="&obo;BFO_0000001"/>
@@ -2147,14 +2198,14 @@ following:
     <owl:Class rdf:about="&obo;OBI_0000988">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000075"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000014"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2428,6 +2479,23 @@ following:
         </owl:intersectionOf>
     </owl:Class>
     <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;AERO_0000245"/>
+            <rdf:Description rdf:about="&obo;AERO_0000246"/>
+            <rdf:Description rdf:about="&obo;AERO_0000247"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;AERO_0000253"/>
+            <rdf:Description rdf:about="&obo;AERO_0000254"/>
+            <rdf:Description rdf:about="&obo;AERO_0000255"/>
+            <rdf:Description rdf:about="&obo;AERO_0000256"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000231"/>
@@ -2435,14 +2503,6 @@ following:
             <rdf:Description rdf:about="&obo;AERO_0000233"/>
             <rdf:Description rdf:about="&obo;AERO_0000234"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000245"/>
-            <rdf:Description rdf:about="&obo;AERO_0000246"/>
-            <rdf:Description rdf:about="&obo;AERO_0000247"/>
-        </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
@@ -2453,15 +2513,6 @@ following:
             <rdf:Description rdf:about="&obo;AERO_0000228"/>
             <rdf:Description rdf:about="&obo;AERO_0000229"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000253"/>
-            <rdf:Description rdf:about="&obo;AERO_0000254"/>
-            <rdf:Description rdf:about="&obo;AERO_0000255"/>
-            <rdf:Description rdf:about="&obo;AERO_0000256"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
