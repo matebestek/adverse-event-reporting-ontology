@@ -102,30 +102,6 @@ It however aims at being an inclusive resource and allows other types of adverse
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000235 -->
-
-    <owl:ObjectProperty rdf:about="&obo;AERO_0000235">
-        <rdfs:label xml:lang="en">tp</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000236 -->
-
-    <owl:ObjectProperty rdf:about="&obo;AERO_0000236">
-        <rdfs:label xml:lang="en">has-finding</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000237 -->
-
-    <owl:ObjectProperty rdf:about="&obo;AERO_0000237">
-        <rdfs:label xml:lang="en">patient-finding-tp</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
@@ -1061,12 +1037,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1076,6 +1046,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A report as submitted in an adverse event reporting system</obo:IAO_0000115>
@@ -1668,37 +1644,6 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000240">
         <rdfs:label xml:lang="en">patient</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000241 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000241">
-        <rdfs:label xml:lang="en">grunting patient</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000240"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;AERO_0000237"/>
-                        <owl:hasValue rdf:resource="&obo;AERO_0000226"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000240"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000236"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;AERO_0000235"/>
-                        <owl:hasValue rdf:resource="&obo;AERO_0000226"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2937,13 +2882,20 @@ following:
      -->
 
     <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;AERO_0000245"/>
+            <rdf:Description rdf:about="&obo;AERO_0000246"/>
+            <rdf:Description rdf:about="&obo;AERO_0000247"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000225"/>
-            <rdf:Description rdf:about="&obo;AERO_0000226"/>
-            <rdf:Description rdf:about="&obo;AERO_0000227"/>
-            <rdf:Description rdf:about="&obo;AERO_0000228"/>
-            <rdf:Description rdf:about="&obo;AERO_0000229"/>
+            <rdf:Description rdf:about="&obo;AERO_0000231"/>
+            <rdf:Description rdf:about="&obo;AERO_0000232"/>
+            <rdf:Description rdf:about="&obo;AERO_0000233"/>
+            <rdf:Description rdf:about="&obo;AERO_0000234"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
@@ -2958,44 +2910,12 @@ following:
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000231"/>
-            <rdf:Description rdf:about="&obo;AERO_0000232"/>
-            <rdf:Description rdf:about="&obo;AERO_0000233"/>
-            <rdf:Description rdf:about="&obo;AERO_0000234"/>
+            <rdf:Description rdf:about="&obo;AERO_0000225"/>
+            <rdf:Description rdf:about="&obo;AERO_0000226"/>
+            <rdf:Description rdf:about="&obo;AERO_0000227"/>
+            <rdf:Description rdf:about="&obo;AERO_0000228"/>
+            <rdf:Description rdf:about="&obo;AERO_0000229"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <owl:Class>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000240"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;AERO_0000237"/>
-                        <owl:hasValue rdf:resource="&obo;AERO_0000226"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000240"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000236"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;AERO_0000235"/>
-                        <owl:hasValue rdf:resource="&obo;AERO_0000226"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000245"/>
-            <rdf:Description rdf:about="&obo;AERO_0000246"/>
-            <rdf:Description rdf:about="&obo;AERO_0000247"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
