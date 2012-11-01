@@ -428,12 +428,6 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:label xml:lang="en">generalized convulsive seizure according to Brighton criteria</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -446,6 +440,12 @@ This class just helps me group some terms during development of the structure</r
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1037,6 +1037,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1046,12 +1052,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A report as submitted in an adverse event reporting system</obo:IAO_0000115>
@@ -1639,15 +1639,6 @@ following:
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000240 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000240">
-        <rdfs:label xml:lang="en">patient</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/AERO_0000242 -->
 
     <owl:Class rdf:about="&obo;AERO_0000242">
@@ -2062,19 +2053,8 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000270 -->
 
     <owl:Class rdf:about="&obo;AERO_0000270">
-        <rdfs:label xml:lang="en">test</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000251"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000245"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
     </owl:Class>
     
 
@@ -2553,6 +2533,24 @@ following:
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000317 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000317">
+        <rdfs:label xml:lang="en">Level 2 of certainty of anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000267"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000318 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000318">
+        <rdfs:label xml:lang="en">Level 3 of certainty of anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000267"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="&obo;BFO_0000001"/>
@@ -2873,6 +2871,35 @@ following:
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000314 -->
+
+    <owl:NamedIndividual rdf:about="&obo;AERO_0000314">
+        <rdf:type rdf:resource="&obo;AERO_0000245"/>
+        <rdfs:label xml:lang="en">rash on patient 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000315 -->
+
+    <owl:NamedIndividual rdf:about="&obo;AERO_0000315">
+        <rdf:type rdf:resource="&obo;AERO_0000270"/>
+        <rdfs:label>Patient1</rdfs:label>
+        <obo:AERO_0000125 rdf:resource="&obo;AERO_0000314"/>
+        <obo:AERO_0000125 rdf:resource="&obo;AERO_0000316"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000316 -->
+
+    <owl:NamedIndividual rdf:about="&obo;AERO_0000316">
+        <rdf:type rdf:resource="&obo;AERO_0000251"/>
+        <rdfs:label xml:lang="en">measured hypotension of Patient1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2890,15 +2917,6 @@ following:
         </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000231"/>
-            <rdf:Description rdf:about="&obo;AERO_0000232"/>
-            <rdf:Description rdf:about="&obo;AERO_0000233"/>
-            <rdf:Description rdf:about="&obo;AERO_0000234"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000253"/>
@@ -2906,6 +2924,15 @@ following:
             <rdf:Description rdf:about="&obo;AERO_0000255"/>
             <rdf:Description rdf:about="&obo;AERO_0000256"/>
         </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;AERO_0000231"/>
+            <rdf:Description rdf:about="&obo;AERO_0000232"/>
+            <rdf:Description rdf:about="&obo;AERO_0000233"/>
+            <rdf:Description rdf:about="&obo;AERO_0000234"/>
+        </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>

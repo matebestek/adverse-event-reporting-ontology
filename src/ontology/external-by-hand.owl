@@ -232,6 +232,10 @@ comment: This class was created automatically from a combination of ontologies</
 comment: This class was created automatically from a combination of ontologies</obo:IAO_0000115>
     </owl:Class>
     
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Functional system which consists of structures involved in respiration.</obo:IAO_0000115>
+            </owl:Class>
 
 
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->

@@ -256,6 +256,13 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
         <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
     </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001004">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/UBERON"/>
+    </owl:Class>
     
 
 
