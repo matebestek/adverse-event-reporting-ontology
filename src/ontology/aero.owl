@@ -56,18 +56,22 @@ It however aims at being an inclusive resource and allows other types of adverse
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&obo;AERO_0000106">
         <rdfs:label xml:lang="en">BrightonFormula</rdfs:label>
         <obo:IAO_0000112>AngEdGenLoc - angioedema, localized or generalized</obo:IAO_0000112>
         <obo:IAO_0000115>An annotation property reflecting the string used by Brighton in their ABC tool to encode the term</obo:IAO_0000115>
         <obo:IAO_0000112>SuddOnset = sudden onset</obo:IAO_0000112>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;AERO_0000324">
+        <rdfs:label xml:lang="en">PHAC definition</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The definition of the term as formalized in the PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf. Those definitions are often very specific to adverse event following immunization and are intended for reporting personel.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     
 
 
@@ -428,6 +432,12 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:label xml:lang="en">generalized convulsive seizure according to Brighton criteria</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -440,12 +450,6 @@ This class just helps me group some terms during development of the structure</r
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000014"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -1037,12 +1041,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1052,6 +1050,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;AERO_0000209"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A report as submitted in an adverse event reporting system</obo:IAO_0000115>
@@ -1367,6 +1371,7 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000200">
         <rdfs:label xml:lang="en">infected abscess</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A localized collection of pus in a cavity formed by the disintegration of tissue, usually caused by microorganisms that invade the tissues.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
@@ -1378,7 +1383,8 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000201">
         <rdfs:label xml:lang="en">sterile abscess</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
-        <obo:IAO_0000115 xml:lang="en">An abscess whose contents are not caused by pyogenic bacteria.</obo:IAO_0000115>
+        <obo:AERO_0000324 xml:lang="en">An abscess whose contents are not caused by pyogenic bacteria.</obo:AERO_0000324>
+        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -1389,7 +1395,8 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000202">
         <rdfs:label xml:lang="en">cellulitis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&GO;GO_0006954"/>
-        <obo:IAO_0000115 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:IAO_0000115>
+        <obo:AERO_0000324 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:AERO_0000324>
+        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5803-5820</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -1400,6 +1407,7 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000203">
         <rdfs:label xml:lang="en">nodule</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000116>BCCD: Vaccine 22(2004) 575-585</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A firm, small mass of tissue at the injection site with discrete or well demarcated borders in the absence of abscess formation, erythema and warmth.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
@@ -1411,7 +1419,7 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000204">
         <rdfs:label xml:lang="en">lymphadenitis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&GO;GO_0006954"/>
-        <obo:IAO_0000115 xml:lang="en">Inflammation of one or more lymph nodes, usually caused by a primary focus of infection elsewhere in the body.</obo:IAO_0000115>
+        <obo:AERO_0000324 xml:lang="en">Inflammation of one or more lymph nodes, usually caused by a primary focus of infection elsewhere in the body.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -1422,7 +1430,7 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000205">
         <rdfs:label xml:lang="en">erythema</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000008"/>
-        <obo:IAO_0000115 xml:lang="en">Abnormal redness of the skin.</obo:IAO_0000115>
+        <obo:AERO_0000324 xml:lang="en">Abnormal redness of the skin.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -1433,8 +1441,9 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000206">
         <rdfs:label xml:lang="en">induration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5839-5857</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">Palpable thickening, firmness or hardening of soft tissue that is assessed by a health care provider</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Palpable thickening, firmness or hardening of soft tissue (subcutaneous tissue, fat, fascia or muscle) that is assessed by a health care provider</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1672,7 +1681,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000244 -->
 
     <owl:Class rdf:about="&obo;AERO_0000244">
-        <rdfs:label xml:lang="en">major dermatological criteria set for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">major dermatological criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1747,7 +1756,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000249 -->
 
     <owl:Class rdf:about="&obo;AERO_0000249">
-        <rdfs:label xml:lang="en">major cardiovascular criteria set for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">major cardiovascular criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000210"/>
@@ -1760,7 +1769,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000250 -->
 
     <owl:Class rdf:about="&obo;AERO_0000250">
-        <rdfs:label xml:lang="en">major respiratory criteria set for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">major respiratory criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000123"/>
@@ -2110,7 +2119,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000275 -->
 
     <owl:Class rdf:about="&obo;AERO_0000275">
-        <rdfs:label xml:lang="en">red and icthy eyes</rdfs:label>
+        <rdfs:label xml:lang="en">red and itchy eyes</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
     </owl:Class>
     
@@ -2119,7 +2128,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000276 -->
 
     <owl:Class rdf:about="&obo;AERO_0000276">
-        <rdfs:label xml:lang="en">red and icthy eyes finding</rdfs:label>
+        <rdfs:label xml:lang="en">red and itchy eyes finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2457,7 +2466,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000303 -->
 
     <owl:Class rdf:about="&obo;AERO_0000303">
-        <rdfs:label xml:lang="en">minor dermatological criteria set for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">minor dermatological criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000272"/>
@@ -2472,7 +2481,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000304 -->
 
     <owl:Class rdf:about="&obo;AERO_0000304">
-        <rdfs:label xml:lang="en">minor cardiovascular criteria set for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">minor cardiovascular criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
     </owl:Class>
     
@@ -2512,7 +2521,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000309 -->
 
     <owl:Class rdf:about="&obo;AERO_0000309">
-        <rdfs:label xml:lang="en">minor gastrointestinal criteria set for anaphylaxis according to Brighton</rdfs:label>
+        <rdfs:label xml:lang="en">minor gastrointestinal criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000248"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;AERO_0000295"/>
@@ -2547,6 +2556,75 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000318">
         <rdfs:label xml:lang="en">Level 3 of certainty of anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000267"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000319 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000319">
+        <rdfs:label xml:lang="en">reaction crosses joint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <obo:IAO_0000232 xml:lang="en">201201105, MC: this is intended to be part of the reaction at or near vaccintation site rather than an independent term</obo:IAO_0000232>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+        <obo:AERO_0000324 xml:lang="en">Reaction extending past at least one joint adjacent to the site of
+vaccine administration.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000320 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000320">
+        <rdfs:label xml:lang="en">swelling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5858-5874</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+        <obo:AERO_0000324 xml:lang="en">Visible enlargement of the vaccinated limb that is assessed by any person, with or without objective measurement.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000321 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000321">
+        <rdfs:label xml:lang="en">pain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <obo:AERO_0000324 xml:lang="en">An unpleasant sensation occurring in varying degrees of severity that could be described as discomfort, distress or agony.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000322 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000322">
+        <rdfs:label xml:lang="en">tenderness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <obo:AERO_0000324 xml:lang="en">Abnormal sensitivity to touch or release of pressure.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000323 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000323">
+        <rdfs:label xml:lang="en">warmth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <obo:AERO_0000324 xml:lang="en">A sensation/perception of an increase in temperature.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000325 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000325">
+        <rdfs:label xml:lang="en">local reaction at or near vaccination site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_BrightonTerms"/>
+        <obo:AERO_0000324 xml:lang="en">Any description of morphological or physiological change at or near the vaccination site.</obo:AERO_0000324>
+        <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 26 (2008) 6800-6813</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -2624,14 +2702,14 @@ following:
     <owl:Class rdf:about="&obo;OBI_0000988">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000075"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000014"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2911,18 +2989,18 @@ following:
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000245"/>
-            <rdf:Description rdf:about="&obo;AERO_0000246"/>
-            <rdf:Description rdf:about="&obo;AERO_0000247"/>
+            <rdf:Description rdf:about="&obo;AERO_0000253"/>
+            <rdf:Description rdf:about="&obo;AERO_0000254"/>
+            <rdf:Description rdf:about="&obo;AERO_0000255"/>
+            <rdf:Description rdf:about="&obo;AERO_0000256"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;AERO_0000253"/>
-            <rdf:Description rdf:about="&obo;AERO_0000254"/>
-            <rdf:Description rdf:about="&obo;AERO_0000255"/>
-            <rdf:Description rdf:about="&obo;AERO_0000256"/>
+            <rdf:Description rdf:about="&obo;AERO_0000245"/>
+            <rdf:Description rdf:about="&obo;AERO_0000246"/>
+            <rdf:Description rdf:about="&obo;AERO_0000247"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
