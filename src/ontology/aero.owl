@@ -983,6 +983,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&UBERON;IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000209"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -992,12 +998,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000209"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <UBERON:IAO_0000115 xml:lang="en">A report as submitted in an adverse event reporting system</UBERON:IAO_0000115>
@@ -1084,7 +1084,13 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000105">
         <rdfs:label xml:lang="en">angioedema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:AERO_0000324>Areas of deeper swelling of the skin and/or mucosal tissues in either single or multiple sites which may not be well circumscribed and is usually not itchy. Reported symptoms of ‘swelling of the lip’ or ‘swelling of the tongue or throat’ should not be documented as angioedema unless there is visible skin or mucosal swelling.</UBERON:AERO_0000324>
         <UBERON:IAO_0000119>Vaccine 28 (2010) 4487-4498</UBERON:IAO_0000119>
         <UBERON:IAO_0000232>localized or generalized</UBERON:IAO_0000232>
@@ -1469,7 +1475,13 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000205">
         <rdfs:label xml:lang="en">erythema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:AERO_0000324 xml:lang="en">Abnormal redness of the skin without any raised skin lesions</UBERON:AERO_0000324>
         <UBERON:IAO_0000119>Vaccine 28 (2010) 4487-4498</UBERON:IAO_0000119>
     </owl:Class>
@@ -1646,9 +1658,20 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000221 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000221">
-        <rdfs:label xml:lang="en">_dermatologic or mucosal sign</rdfs:label>
+        <rdfs:label xml:lang="en">dermatologic or mucosal disorder</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&UBERON;OGMS_0000045"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
-        <rdfs:comment xml:lang="en">20120822, MC: probably not needed. Keep for now.</rdfs:comment>
+        <UBERON:IAO_0000115 xml:lang="en">A disorder that is locted in the dermatological-mucosal system</UBERON:IAO_0000115>
     </owl:Class>
     
 
@@ -2828,7 +2851,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000334">
         <rdfs:label xml:lang="en">urticaria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:AERO_0000324 xml:lang="en">Localized redness of superficial layers of skin that is itchy, raised, sharply demarcated and transient (that is skin changes at any location are usually present for less than 12 hours).</UBERON:AERO_0000324>
         <UBERON:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</UBERON:IAO_0000119>
     </owl:Class>
@@ -2839,7 +2868,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000335">
         <rdfs:label xml:lang="en">pruritus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:AERO_0000324>An unpleasant skin sensation that provokes a desire to rub and/or scratch to obtain relief.</UBERON:AERO_0000324>
     </owl:Class>
     
@@ -2849,7 +2884,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000336">
         <rdfs:label xml:lang="en">prickle sensation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:AERO_0000324>Tingling or smarting (stinging) sensation.</UBERON:AERO_0000324>
     </owl:Class>
     
@@ -2859,7 +2900,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000337">
         <rdfs:label xml:lang="en">rash</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:AERO_0000324>A morphologically described change in the appearance of the skin or mucosa that occurs in the context of and in conjunction with an emerging allergic event that consists of one or more clearly identified primary lesion(s) (macule, papule, vesicle, nodule, bulla, cyst, plaque, pustule) and/or secondary skin change(s) (scaling, atrophy, ulcer, fissure, excoriation).</UBERON:AERO_0000324>
         <UBERON:IAO_0000119>Vaccine, 25 (2007) 5697-5706</UBERON:IAO_0000119>
     </owl:Class>
@@ -2870,7 +2917,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000338">
         <rdfs:label xml:lang="en">red eyes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:IAO_0000119>Vaccine 28 (2010) 4487-4498</UBERON:IAO_0000119>
         <UBERON:AERO_0000324>Redness of the white(s) of the eye (s) (sclera)</UBERON:AERO_0000324>
     </owl:Class>
@@ -2881,7 +2934,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000339">
         <rdfs:label xml:lang="en">itchy eyes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000221"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <UBERON:IAO_0000119>Vaccine 28 (2010) 4487-4498</UBERON:IAO_0000119>
         <UBERON:AERO_0000324>A sensation that provokes the desire to rub and/or scratch to obtain relief.</UBERON:AERO_0000324>
     </owl:Class>
@@ -3400,15 +3459,6 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&UBERON;AERO_0000253"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000254"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000255"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000256"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&UBERON;AERO_0000231"/>
@@ -3416,6 +3466,15 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
             <rdf:Description rdf:about="&UBERON;AERO_0000233"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000234"/>
         </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&UBERON;AERO_0000253"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000254"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000255"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000256"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
