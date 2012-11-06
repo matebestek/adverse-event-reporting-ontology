@@ -304,7 +304,7 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
                 <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -394,12 +394,12 @@ This class just helps me group some terms during development of the structure</r
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;regulates"/>
-                        <owl:someValuesFrom rdf:resource="&GO;GO_0007610"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;regulates"/>
+                        <owl:someValuesFrom rdf:resource="&GO;GO_0007610"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -581,17 +581,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
 
     <owl:Class rdf:about="&obo;AERO_0000028">
         <rdfs:label xml:lang="en">generalized motor manifestation</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;AERO_0000014"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
-                        <owl:allValuesFrom rdf:resource="&obo;AERO_0000050"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000014"/>
         <obo:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">bilateral motor manifestation, more than minimal muscle involvement</obo:IAO_0000115>
     </owl:Class>
@@ -637,6 +627,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;AERO_0000027"/>
                     <rdf:Description rdf:about="&obo;AERO_0000028"/>
                     <rdf:Description rdf:about="&obo;AERO_0000044"/>
                 </owl:intersectionOf>
@@ -740,7 +731,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;AERO_0000040"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;unfolds_in"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
                         <owl:allValuesFrom rdf:resource="&obo;AERO_0000050"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1200,7 +1191,13 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000115">
         <rdfs:label xml:lang="en">stridor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A harsh or vibrating noise when breathing caused by obstruction of the windpipe or larynx.</obo:IAO_0000115>
         <obo:AERO_0000324 xml:lang="en">A harsh and continuous sound made on breathing in.</obo:AERO_0000324>
         <obo:AERO_0000106>Stridor</obo:AERO_0000106>
@@ -1213,7 +1210,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000116">
         <rdfs:label xml:lang="en">upper airway swelling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000320"/>
         <obo:IAO_0000232>lip, tongue, throat, uvula or larynx</obo:IAO_0000232>
         <obo:AERO_0000106>SwellUpAirways</obo:AERO_0000106>
     </owl:Class>
@@ -1225,6 +1222,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000117">
         <rdfs:label xml:lang="en">tachypnoea</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;AERO_0000120"/>
         <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
         <obo:AERO_0000106>TachyPnea</obo:AERO_0000106>
@@ -1240,6 +1243,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000118">
         <rdfs:label xml:lang="en">increased use of accessory respiratory muscles</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;AERO_0000120"/>
         <obo:AERO_0000106>RespMuscAccIncr</obo:AERO_0000106>
         <obo:IAO_0000232>sternocleidomastoid, intercostals, etc</obo:IAO_0000232>
@@ -1252,6 +1261,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000119">
         <rdfs:label xml:lang="en">recession</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;AERO_0000120"/>
         <obo:AERO_0000106>Recess</obo:AERO_0000106>
     </owl:Class>
@@ -1263,6 +1278,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000120">
         <rdfs:label xml:lang="en">cyanosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;AERO_0000121"/>
         <obo:AERO_0000324 xml:lang="en">A dark bluish or purplish discolouration of the skin and mucous membrane due to lack of oxygen in the blood.</obo:AERO_0000324>
         <obo:AERO_0000106>Cyanosis</obo:AERO_0000106>
@@ -1276,6 +1297,12 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000121">
         <rdfs:label xml:lang="en">grunting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">A sudden and short noise with each breath when breathing out.</obo:AERO_0000324>
         <obo:AERO_0000106>Grunting</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
@@ -1339,7 +1366,13 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000124">
         <rdfs:label xml:lang="en">respiratory distress sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000232>a helper class which allows us to define a qualified cardinality restriction for respiratory distress such as used in the case definition of anaphylaxis.Respiratory distress is defined as having at least 2 respiratory distress signs</obo:IAO_0000232>
     </owl:Class>
     
@@ -2216,7 +2249,7 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000282">
         <rdfs:label xml:lang="en">persistent dry cough</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000342"/>
     </owl:Class>
     
 
@@ -2240,7 +2273,13 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000284">
         <rdfs:label xml:lang="en">hoarse voice</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">An unnaturally harsh cry of infant or vocalization in a child or adult.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
@@ -2266,7 +2305,13 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000286">
         <rdfs:label xml:lang="en">wheezing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en"> A whistling, squeaking, musical, or puffing sound made by breathing out.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
@@ -2277,7 +2322,13 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000287">
         <rdfs:label xml:lang="en">difficulty breathing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Sensation of difficult/uncomfortable breathing or a feeling of not getting enough air.</obo:AERO_0000324>
     </owl:Class>
     
@@ -2309,7 +2360,13 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000289">
         <rdfs:label xml:lang="en">sensation of throat closure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Feeling or perception of throat closing with a sensation of difficulty breathing.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
@@ -2329,7 +2386,13 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000291">
         <rdfs:label xml:lang="en">sneezing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">An involuntary (reflex), sudden, violent, and audible expulsion of air through the mouth and nose.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
@@ -2340,7 +2403,13 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000292">
         <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Discharge of thin nasal mucus.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
@@ -2780,7 +2849,25 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&obo;AERO_0000341">
         <rdfs:label xml:lang="en">_respiratory sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;AERO/_SymptomsSignsTerms"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
+                                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -2789,7 +2876,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&obo;AERO_0000342">
         <rdfs:label xml:lang="en">dry cough</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Rapid expulsion of air from the lungs to clear the lung airways and not accompanied by expectoration (a non-productive cough).</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
@@ -2800,7 +2893,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&obo;AERO_0000343">
         <rdfs:label xml:lang="en">indrawing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Inward movement of the muscles between the ribs (inter-costal), in the lower part of the neck (supra-clavicular or tracheal tug) or below the chest (sub-costal). The movements are usually a sign of difficulty with breathing.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">retractions</obo:IAO_0000118>
@@ -2812,7 +2911,13 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&obo;AERO_0000344">
         <rdfs:label xml:lang="en">sore throat</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Discomfort or pain in the throat</obo:AERO_0000324>
     </owl:Class>
     
@@ -2822,9 +2927,14 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&obo;AERO_0000345">
         <rdfs:label xml:lang="en">difficulty swallowing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
-        <obo:AERO_0000324 xml:lang="en">Sensation or feeling of difficulty in the passage of solids and liquids down
-to the stomach.</obo:AERO_0000324>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324 xml:lang="en">Sensation or feeling of difficulty in the passage of solids and liquids down to the stomach.</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -2833,7 +2943,13 @@ to the stomach.</obo:AERO_0000324>
 
     <owl:Class rdf:about="&obo;AERO_0000346">
         <rdfs:label xml:lang="en">chest tightness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Inability or perception of not being able to move air in or out of the lungs.</obo:AERO_0000324>
     </owl:Class>
     
