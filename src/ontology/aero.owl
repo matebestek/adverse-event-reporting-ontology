@@ -1128,7 +1128,9 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000109">
         <rdfs:label xml:lang="en">measured hypotension</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000340"/>
+        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:AERO_0000324 xml:lang="en">An abnormally low blood pressure and documented by appropriate measurement. Infants and children: age specific systolic BP of &lt;3-5%percentile or greater than a 30% decrease from that person’s baseline; Adults: systolic BP of &lt;90mm Hg or greater than 30% decrease from that person’s baseline.</obo:AERO_0000324>
         <obo:AERO_0000106>HypotensMeas</obo:AERO_0000106>
     </owl:Class>
     
@@ -1139,7 +1141,10 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000110">
         <rdfs:label xml:lang="en">tachycardia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
+        <obo:AERO_0000324 xml:lang="en">A heart rate that is abnormally high for age and circumstance (In beats per minute: &lt;1year old: &gt;160; 1 – 2 yrs: &gt;150; 2-5 yrs: &gt;140; 5-12 yrs: &gt;120; &gt;12 yrs: &gt;100)</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
         <obo:AERO_0000106>TacchyCard</obo:AERO_0000106>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1150,6 +1155,8 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:label xml:lang="en">capillary refill time &gt; 3s</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
         <obo:AERO_0000106>CapRefillOver3</obo:AERO_0000106>
+        <obo:AERO_0000324 xml:lang="en">Capillary refill time is the time required for the normal skin colour to reappear after a blanching pressure is applied. It is usually performed by pressing on the nail bed to cause blanching and then counting the time it takes for the blood to return to the tissue, indicated by a pink colour returning to the nail. Normally it is &lt;3 seconds.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1159,7 +1166,10 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000112">
         <rdfs:label xml:lang="en">reduced central pulse volume</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
+        <obo:AERO_0000324 xml:lang="en">Absent or decreased pulse in one of the following vessels: carotid, brachial or femoral arteries.</obo:AERO_0000324>
         <obo:AERO_0000106>PulseVolRed</obo:AERO_0000106>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">decreased central pulse volume</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1170,6 +1180,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:label xml:lang="en">decreased level of consciousness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000211"/>
         <obo:AERO_0000106>ConscDecr</obo:AERO_0000106>
+        <obo:AERO_0000324 xml:lang="en">Reduced alertness or awareness of the outside world.</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -1189,9 +1200,11 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&obo;AERO_0000115">
         <rdfs:label xml:lang="en">stridor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:IAO_0000115>A harsh or vibrating noise when breathing caused by obstruction of the windpipe or larynx.</obo:IAO_0000115>
+        <obo:AERO_0000324 xml:lang="en">A harsh and continuous sound made on breathing in.</obo:AERO_0000324>
         <obo:AERO_0000106>Stridor</obo:AERO_0000106>
-        <obo:IAO_0000115>a harsh or vibrating noise when breathing caused by obstruction of the windpipe or larynx.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1213,7 +1226,11 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:label xml:lang="en">tachypnoea</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
         <owl:disjointWith rdf:resource="&obo;AERO_0000120"/>
+        <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
         <obo:AERO_0000106>TachyPnea</obo:AERO_0000106>
+        <obo:AERO_0000324 xml:lang="en">Rapid breathing which is abnormally high for age and circumstance rapid breathing whichis abnormally high for age and circumstance (&lt;1yr: &gt;60; 1-2 yrs: &gt;40; 2-5 yrs: &gt;35; 5-12 yrs: &gt;30: &gt;12 yrs: &gt;16)</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">tachypnea</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1247,7 +1264,9 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:label xml:lang="en">cyanosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
         <owl:disjointWith rdf:resource="&obo;AERO_0000121"/>
+        <obo:AERO_0000324 xml:lang="en">A dark bluish or purplish discolouration of the skin and mucous membrane due to lack of oxygen in the blood.</obo:AERO_0000324>
         <obo:AERO_0000106>Cyanosis</obo:AERO_0000106>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1257,7 +1276,9 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="&obo;AERO_0000121">
         <rdfs:label xml:lang="en">grunting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000124"/>
+        <obo:AERO_0000324 xml:lang="en">A sudden and short noise with each breath when breathing out.</obo:AERO_0000324>
         <obo:AERO_0000106>Grunting</obo:AERO_0000106>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1318,7 +1339,7 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000124">
         <rdfs:label xml:lang="en">respiratory distress sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
         <obo:IAO_0000232>a helper class which allows us to define a qualified cardinality restriction for respiratory distress such as used in the case definition of anaphylaxis.Respiratory distress is defined as having at least 2 respiratory distress signs</obo:IAO_0000232>
     </owl:Class>
     
@@ -1502,7 +1523,7 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000211">
         <rdfs:label xml:lang="en">uncompensated shock sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000340"/>
         <obo:IAO_0000115 xml:lang="en">a helper class which allows us to define a qualified cardinality restriction for uncompensated shock such as used in the case definition of anaphylaxis. Clinical diagnosis of uncompensated shock is defined as having at least 3 uncompensated shock signs</obo:IAO_0000115>
     </owl:Class>
     
@@ -1567,15 +1588,6 @@ following:
         <rdfs:label xml:lang="en">_dermatologic or mucosal sign</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
         <rdfs:comment xml:lang="en">20120822, MC: probably not needed. Keep for now.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000222 -->
-
-    <owl:Class rdf:about="&obo;AERO_0000222">
-        <rdfs:label xml:lang="en">cardiovascular sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
     </owl:Class>
     
 
@@ -2179,6 +2191,8 @@ following:
     <owl:Class rdf:about="&obo;AERO_0000280">
         <rdfs:label xml:lang="en">loss of consciousness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000113"/>
+        <obo:AERO_0000324 xml:lang="en">Total suspension of conscious relationship with the outside world demonstrated by the inability to perceive and to respond to verbal, visual, and painful stimulus.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2226,7 +2240,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000284">
         <rdfs:label xml:lang="en">hoarse voice</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">An unnaturally harsh cry of infant or vocalization in a child or adult.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2250,7 +2266,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000286">
         <rdfs:label xml:lang="en">wheezing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en"> A whistling, squeaking, musical, or puffing sound made by breathing out.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2259,7 +2277,8 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000287">
         <rdfs:label xml:lang="en">difficulty breathing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Sensation of difficult/uncomfortable breathing or a feeling of not getting enough air.</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -2290,7 +2309,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000289">
         <rdfs:label xml:lang="en">sensation of throat closure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Feeling or perception of throat closing with a sensation of difficulty breathing.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2308,7 +2329,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000291">
         <rdfs:label xml:lang="en">sneezing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">An involuntary (reflex), sudden, violent, and audible expulsion of air through the mouth and nose.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2317,7 +2340,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000292">
         <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Discharge of thin nasal mucus.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2349,7 +2374,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000294">
         <rdfs:label xml:lang="en">diarrhoea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000347"/>
+        <obo:AERO_0000324 xml:lang="en">Loose and/or watery stool which may occur more frequently than usual.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">diarrhea</obo:IAO_0000118>
     </owl:Class>
     
@@ -2368,7 +2395,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000296">
         <rdfs:label xml:lang="en">abdominal pain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000347"/>
+        <obo:AERO_0000324 xml:lang="en">Sensation of discomfort or pain in the abdominal region.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2386,7 +2415,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000298">
         <rdfs:label xml:lang="en">nausea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000347"/>
+        <obo:AERO_0000324 xml:lang="en">An unpleasant sensation vaguely referred to the upper abdominal region and the abdomen, with a tendency to vomit.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2404,7 +2435,9 @@ following:
 
     <owl:Class rdf:about="&obo;AERO_0000300">
         <rdfs:label xml:lang="en">vomiting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000347"/>
+        <obo:AERO_0000324 xml:lang="en">The reflex act of ejecting the contents of the stomach through the mouth.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2730,6 +2763,87 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
         <rdfs:subClassOf rdf:resource="&obo;AERO_0000221"/>
         <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
         <obo:AERO_0000324>A sensation that provokes the desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000340 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000340">
+        <rdfs:label xml:lang="en">_cardiovascular sign</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000341 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000341">
+        <rdfs:label xml:lang="en">_respiratory sign</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000342 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000342">
+        <rdfs:label xml:lang="en">dry cough</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Rapid expulsion of air from the lungs to clear the lung airways and not accompanied by expectoration (a non-productive cough).</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000343 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000343">
+        <rdfs:label xml:lang="en">indrawing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Inward movement of the muscles between the ribs (inter-costal), in the lower part of the neck (supra-clavicular or tracheal tug) or below the chest (sub-costal). The movements are usually a sign of difficulty with breathing.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">retractions</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000344 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000344">
+        <rdfs:label xml:lang="en">sore throat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Discomfort or pain in the throat</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000345 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000345">
+        <rdfs:label xml:lang="en">difficulty swallowing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Sensation or feeling of difficulty in the passage of solids and liquids down
+to the stomach.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000346 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000346">
+        <rdfs:label xml:lang="en">chest tightness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO_0000341"/>
+        <obo:AERO_0000324 xml:lang="en">Inability or perception of not being able to move air in or out of the lungs.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000347 -->
+
+    <owl:Class rdf:about="&obo;AERO_0000347">
+        <rdfs:label xml:lang="en">_gastrointestinal sign</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;AERO/_SymptomsSignsTerms"/>
     </owl:Class>
     
 
