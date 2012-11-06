@@ -247,7 +247,7 @@ comment: This class was created automatically from a combination of ontologies</
             </owl:Class>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0012125">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrointestinal system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatological-mucosal system</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical system that consists of the integumental system plus all mucosae and submucosae.</obo:IAO_0000115>
             </owl:Class>
 
