@@ -15,7 +15,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY chebi "http://purl.org/obo/owl/CHEBI#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
+    <!ENTITY UBERON "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY ncbitax "http://purl.org/obo/owl/NCBITaxon#" >
@@ -53,7 +53,7 @@
      xmlns:cell="http://purl.org/obo/owl/CL#"
      xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:UBERON="http://purl.org/obo/owl/UBERON#"
+     xmlns:UBERON="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pro="http://purl.org/obo/owl/PRO#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -220,19 +220,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0000010"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
     
 
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0001016"/>
 </rdf:RDF>

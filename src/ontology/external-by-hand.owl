@@ -200,7 +200,6 @@
     
 
 
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0000010">
         <rdfs:label xml:lang="en">peripheral nervous system</rdfs:label>

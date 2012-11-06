@@ -5,7 +5,7 @@
     <!ENTITY GO "http://purl.org/obo/owl/GO#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
+    <!ENTITY UBERON "http://purl.obolibrary.org/obo/" >
     <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
@@ -23,7 +23,7 @@
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:UBERON="http://purl.org/obo/owl/UBERON#"
+     xmlns:UBERON="http://purl.obolibrary.org/obo/
      xmlns:GO="http://purl.org/obo/owl/GO#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -250,7 +250,6 @@
     
 
 
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000010 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0000010">
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
@@ -266,20 +265,17 @@
     
 
 
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
+
 
     <owl:Class rdf:about="&UBERON;UBERON_0000955">
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo//UBERON"/>
     </owl:Class>
-    
 
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
 
     <owl:Class rdf:about="&UBERON;UBERON_0001016">
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/UBERON"/>
     </owl:Class>
 </rdf:RDF>
 

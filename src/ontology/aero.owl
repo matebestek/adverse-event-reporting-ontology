@@ -6,7 +6,7 @@
     <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY UBERON "http://purl.org/obo/owl/UBERON#" >
+    <!ENTITY UBERON "http://purl.obolibrary.org/obo/" >
     <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
@@ -27,7 +27,7 @@
      xmlns:AERO="&obo;AERO/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:UBERON="http://purl.org/obo/owl/UBERON#"
+     xmlns:UBERON="http://purl.obolibrary.org/obo/"
      xmlns:GO="http://purl.org/obo/owl/GO#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -3117,34 +3117,6 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0001660 -->
-
-    <owl:Class rdf:about="&GO;GO_0001660"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/GO#GO_0006954 -->
-
-    <owl:Class rdf:about="&GO;GO_0006954"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/GO#GO_0007610 -->
-
-    <owl:Class rdf:about="&GO;GO_0007610"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0000955 -->
-
-    <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
-
-    <owl:Class rdf:about="&UBERON;UBERON_0001016"/>
-    
 
 
     <!-- 
