@@ -23,7 +23,7 @@
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:UBERON="http://purl.obolibrary.org/obo/
+     xmlns:UBERON="http://purl.obolibrary.org/obo/"
      xmlns:GO="http://purl.org/obo/owl/GO#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
