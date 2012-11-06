@@ -263,7 +263,15 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/UBERON"/>
     </owl:Class>
     
+    <owl:Class rdf:about="&UBERON;UBERON_0004535">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo//UBERON"/>
+    </owl:Class>
 
+    <owl:Class rdf:about="&UBERON;UBERON_0005409">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo//UBERON"/>
+    </owl:Class>
 
 
 
@@ -271,6 +279,13 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo//UBERON"/>
     </owl:Class>
+
+    <owl:Class rdf:about="&UBERON;UBERON_0012125">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo//UBERON"/>
+    </owl:Class>
+
+
 
 
     <owl:Class rdf:about="&UBERON;UBERON_0001016">

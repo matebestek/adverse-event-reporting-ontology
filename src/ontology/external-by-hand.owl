@@ -236,6 +236,21 @@ comment: This class was created automatically from a combination of ontologies</
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Functional system which consists of structures involved in respiration.</obo:IAO_0000115>
             </owl:Class>
 
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004535">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular system</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical system that has as its parts the heart and blood vessels.</obo:IAO_0000115>
+            </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005409">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrointestinal system</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical system that has as its parts the heart and blood vessels.</obo:IAO_0000115>
+            </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0012125">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrointestinal system</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical system that consists of the integumental system plus all mucosae and submucosae.</obo:IAO_0000115>
+            </owl:Class>
+
 
     <!-- http://purl.org/obo/owl/UBERON#UBERON_0001016 -->
 
