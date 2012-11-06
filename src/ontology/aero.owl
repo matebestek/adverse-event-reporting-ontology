@@ -1658,15 +1658,23 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000221 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000221">
-        <rdfs:label xml:lang="en">dermatologic or mucosal disorder</rdfs:label>
+        <rdfs:label xml:lang="en">dermatologic or mucosal disorder or event</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&UBERON;OGMS_0000045"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
+                                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2373,7 +2381,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000287">
         <rdfs:label xml:lang="en">difficulty breathing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -2437,7 +2445,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000291">
         <rdfs:label xml:lang="en">sneezing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -2719,7 +2727,7 @@ vaccine administration.</UBERON:AERO_0000324>
 
     <owl:Class rdf:about="&UBERON;AERO_0000320">
         <rdfs:label xml:lang="en">swelling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
         <UBERON:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5858-5874</UBERON:IAO_0000116>
         <UBERON:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</UBERON:IAO_0000119>
         <UBERON:AERO_0000324 xml:lang="en">Visible enlargement of the vaccinated limb that is assessed by any person, with or without objective measurement.</UBERON:AERO_0000324>
@@ -2742,7 +2750,7 @@ vaccine administration.</UBERON:AERO_0000324>
 
     <owl:Class rdf:about="&UBERON;AERO_0000322">
         <rdfs:label xml:lang="en">tenderness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000016"/>
         <UBERON:AERO_0000324 xml:lang="en">Abnormal sensitivity to touch or release of pressure.</UBERON:AERO_0000324>
         <UBERON:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</UBERON:IAO_0000119>
     </owl:Class>
@@ -2830,7 +2838,7 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000331">
         <rdfs:label xml:lang="en">regional lymphadenopathy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
         <UBERON:AERO_0000324 xml:lang="en">Abnormal enlargement of the lymph nodes closest to the vaccination site (e.g., inguinal adenopathy when associated with an IM vaccination in the thigh, axillary adenopathy associated with an IM vaccination in the deltoid, etc.).</UBERON:AERO_0000324>
     </owl:Class>
     
@@ -2840,7 +2848,7 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000332">
         <rdfs:label xml:lang="en">oculo-respiratory syndrome</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
         <UBERON:IAO_0000118 xml:lang="en">ORS</UBERON:IAO_0000118>
         <UBERON:AERO_0000324 xml:lang="en">The presence of “bilateral red eyes” plus ≥1 respiratory symptom (cough, wheeze, chest tightness, difficulty breathing, difficulty swallowing, hoarseness or sore throat) that starts within 24 hrs of vaccination, with or without facial oedema.</UBERON:AERO_0000324>
     </owl:Class>
@@ -2884,10 +2892,10 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000336">
         <rdfs:label xml:lang="en">prickle sensation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
                 <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3057,7 +3065,7 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
 
     <owl:Class rdf:about="&UBERON;AERO_0000345">
         <rdfs:label xml:lang="en">difficulty swallowing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -3186,14 +3194,14 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     <owl:Class rdf:about="&UBERON;OBI_0000988">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;OGMS_0000014"/>
+                <owl:onProperty rdf:resource="&UBERON;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;OBI_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;OBI_0000075"/>
+                <owl:onProperty rdf:resource="&UBERON;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;OGMS_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3426,6 +3434,15 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&UBERON;AERO_0000253"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000254"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000255"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000256"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&UBERON;AERO_0000245"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000246"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000247"/>
@@ -3449,15 +3466,6 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
             <rdf:Description rdf:about="&UBERON;AERO_0000233"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000234"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&UBERON;AERO_0000253"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000254"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000255"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000256"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
