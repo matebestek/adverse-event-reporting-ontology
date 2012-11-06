@@ -1051,7 +1051,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000102">
         <rdfs:label xml:lang="en">anaphylaxis according to Brighton</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_BrightonDiagnosis"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
         <UBERON:IAO_0000115 xml:lang="en">An acute hypersensitivity reaction with multi-organ-system involvement that can present as, or rapidly progress to, a severe life-threatening reaction.</UBERON:IAO_0000115>
         <UBERON:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5675-5684</UBERON:IAO_0000116>
         <UBERON:IAO_0000119 xml:lang="en">Rüggeberg JU, Gold MS, Bayas JM, Blum MD, Bonhoeffer J, Friedlander S, de Souza Brito G, Heininger U, Imoukhuede B, Khamesipour A, Erlewyn-Lajeunesse M, Martin S, Mäkelä M, Nell P, Pool V, Simpson N; Brighton Collaboration Anaphylaxis Working Group. Anaphylaxis: case definition and guidelines for data collection, analysis, and presentation of immunization safety data. Vaccine 2007;25(31):5675–5684.</UBERON:IAO_0000119>
@@ -1614,7 +1614,7 @@ following:
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_BrightonMidLevelTerms"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
     </owl:Class>
     
 
@@ -3238,23 +3238,6 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
 
     <owl:Class rdf:about="&UBERON;VO_0000002"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO/_BrightonDiagnosis -->
-
-    <owl:Class rdf:about="&UBERON;AERO/_BrightonDiagnosis">
-        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000001"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO/_BrightonMidLevelTerms -->
-
-    <owl:Class rdf:about="&UBERON;AERO/_BrightonMidLevelTerms">
-        <rdfs:label xml:lang="en">_BrightonMidLevelTerms</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000001"/>
-    </owl:Class>
     
 
 

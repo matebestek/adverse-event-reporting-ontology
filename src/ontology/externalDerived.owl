@@ -219,15 +219,6 @@
     </owl:Class>
     
 
-
-
-    <owl:Class rdf:about="&UBERON;UBERON_0000010"/>
-
-    <owl:Class rdf:about="&UBERON;UBERON_0000955"/>
-    
-
-
-    <owl:Class rdf:about="&UBERON;UBERON_0001016"/>
 </rdf:RDF>
 
 
