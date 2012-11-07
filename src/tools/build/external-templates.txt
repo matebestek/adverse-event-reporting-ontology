@@ -1,5 +1,5 @@
-default endpoint:http://sparql.obo.neurocommons.org/sparql/
-default graph_base:http://purl.org/science/graph/obo/
+default endpoint:http://sparql.hegroup.org/sparql/
+#default graph_base:http://purl.org/science/graph/obo/
 # define the prefixes that will be added to all queries
 
 prefix:rdfs: <http://www.w3.org/2000/01/rdf-schema#>

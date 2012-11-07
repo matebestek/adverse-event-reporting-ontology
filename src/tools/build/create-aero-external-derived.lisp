@@ -32,8 +32,8 @@
   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"
   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"
   xmlns:owl=\"http://www.w3.org/2002/07/owl#\"
-  xml:base=\"http://purl.obolibrary.org/obo/aero/externalDerived.owl#\">
-  <owl:Ontology rdf:about=\"\">
+  xml:base=\"http://purl.obolibrary.org/obo/\">
+  <owl:Ontology rdf:about=\http://purl.obolibrary.org/obo/aero/externalDerived.owl\">
     <owl:versionInfo rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\"
     >$Revision: 80 $</owl:versionInfo>
   </owl:Ontology>
