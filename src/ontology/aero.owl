@@ -1615,6 +1615,12 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
