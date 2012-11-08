@@ -1668,7 +1668,12 @@ following:
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;OGMS_0000045"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&UBERON;BFO_0000007"/>
+                            <rdf:Description rdf:about="&UBERON;OGMS_0000045"/>
+                        </owl:unionOf>
+                    </owl:Class>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
@@ -1684,7 +1689,6 @@ following:
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000045"/>
         <UBERON:IAO_0000115 xml:lang="en">A disorder that is locted in the dermatological-mucosal system</UBERON:IAO_0000115>
     </owl:Class>
     
@@ -2258,7 +2262,7 @@ following:
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&UBERON;AERO_0000125"/>
-                        <owl:onClass rdf:resource="&UBERON;AERO_0000255"/>
+                        <owl:onClass rdf:resource="&UBERON;AERO_0000277"/>
                         <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -2280,6 +2284,7 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:comment>The reduced peripheral circulation diagnosis is the minor cardiovascular criterion for anaphylaxis according to Brighton. The diagnosis is established by observing the combination of at least 2 reduced peripheral circulation findings, but at most one of each type.</rdfs:comment>
     </owl:Class>
     
 
@@ -2527,6 +2532,12 @@ following:
     <owl:Class rdf:about="&UBERON;AERO_0000295">
         <rdfs:label xml:lang="en">diarrhoea finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000294"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2553,6 +2564,12 @@ following:
     <owl:Class rdf:about="&UBERON;AERO_0000297">
         <rdfs:label xml:lang="en">abdominal pain finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000296"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2579,6 +2596,12 @@ following:
     <owl:Class rdf:about="&UBERON;AERO_0000299">
         <rdfs:label xml:lang="en">nausea finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000298"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2967,21 +2990,16 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
         <rdfs:label xml:lang="en">_cardiovascular sign</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;AERO/_SymptomsSignsTerms"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
-                                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&UBERON;BFO_0000082"/>
-                                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&UBERON;BFO_0000082"/>
+                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
+                    </owl:Restriction>
+                </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
