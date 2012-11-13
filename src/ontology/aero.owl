@@ -302,14 +302,14 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
+                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;stimulates"/>
-                <owl:someValuesFrom rdf:resource="&GO;GO_0006954"/>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <UBERON:IAO_0000115 xml:lang="en">Encephalitis is an inflammation of the brain. It may be caused by a number of different factors. One of the most common causes is direct infection of the brain by a virus or bacterium. Inflammation can also occur as a complication of some other disorder, such as mumps (see mumps entry) or herpes simplex (see herpes infections entry).</UBERON:IAO_0000115>
@@ -384,17 +384,6 @@ This class just helps me group some terms during development of the structure</r
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;BFO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;VO_0000002"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
                         <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001016"/>
@@ -411,6 +400,17 @@ This class just helps me group some terms during development of the structure</r
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000014"/>
             </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&UBERON;BFO_0000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="&UBERON;VO_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3130,6 +3130,24 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000350 -->
+
+    <owl:Class rdf:about="&UBERON;AERO_0000350">
+        <rdfs:label xml:lang="en">Reported anaphylaxis with insufficient evidence to meet the case definition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000267"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000351 -->
+
+    <owl:Class rdf:about="&UBERON;AERO_0000351">
+        <rdfs:label xml:lang="en">not a case of anaphylaxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000267"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="&UBERON;BFO_0000001"/>
@@ -3449,15 +3467,6 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
         </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&UBERON;AERO_0000253"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000254"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000255"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000256"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&UBERON;AERO_0000231"/>
@@ -3465,6 +3474,15 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
             <rdf:Description rdf:about="&UBERON;AERO_0000233"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000234"/>
         </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&UBERON;AERO_0000253"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000254"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000255"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000256"/>
+        </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
