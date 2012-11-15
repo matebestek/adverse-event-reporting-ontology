@@ -289,7 +289,7 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
 
     <owl:Class rdf:about="&UBERON;AERO_0000011">
         <rdfs:label xml:lang="en">_manifestations</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
         <rdfs:comment xml:lang="en">temporary placeholder - to be removed
 This class just helps me group some terms during development of the structure</rdfs:comment>
     </owl:Class>
@@ -299,7 +299,7 @@ This class just helps me group some terms during development of the structure</r
     <!-- http://purl.obolibrary.org/obo/AERO_0000012 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000012">
-        <rdfs:label xml:lang="en">Idiopathic thrombocytopenic purpura</rdfs:label>
+        <rdfs:label xml:lang="en">AEFI idiopathic thrombocytopenic purpura  according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000011"/>
         <UBERON:IAO_0000115 xml:lang="en">Idiopathic thrombocytopenic purpura (ITP) is the condition of having a low platelet count (thrombocytopenia) of no known cause (idiopathic).v</UBERON:IAO_0000115>
         <UBERON:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Idiopathic_thrombocytopenic_purpura</UBERON:IAO_0000119>
@@ -310,7 +310,7 @@ This class just helps me group some terms during development of the structure</r
     <!-- http://purl.obolibrary.org/obo/AERO_0000013 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000013">
-        <rdfs:label xml:lang="en">encephalitis</rdfs:label>
+        <rdfs:label xml:lang="en">AEFI encephalitis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -526,7 +526,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000025 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000025">
-        <rdfs:label xml:lang="en">atonic motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">atonic motor manifestation finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
         <UBERON:IAO_0000115 xml:lang="en">A sudden loss of tone in postural muscle, often preceded by a myoclonic jerk and precipitated by hyperventilation</UBERON:IAO_0000115>
         <UBERON:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</UBERON:IAO_0000119>
@@ -537,7 +537,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000026 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000026">
-        <rdfs:label xml:lang="en">generalized atonic motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">generalized atonic motor manifestation finding</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -554,7 +554,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000027 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000027">
-        <rdfs:label xml:lang="en">clonic motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">clonic motor manifestation finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
         <UBERON:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</UBERON:IAO_0000119>
         <UBERON:IAO_0000115 xml:lang="en">Sudden, brief (100ms) involuntary contractions of the same muscle groups, regularly repetitive at a frequency of about two to three contractions per second.</UBERON:IAO_0000115>
@@ -565,7 +565,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000028 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000028">
-        <rdfs:label xml:lang="en">generalized motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">generalized motor manifestation finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
         <UBERON:IAO_0000119 xml:lang="en">Brighton Collaboration, http://www.brightoncollaboration.org/</UBERON:IAO_0000119>
         <UBERON:IAO_0000115 xml:lang="en">bilateral motor manifestation, more than minimal muscle involvement</UBERON:IAO_0000115>
@@ -576,7 +576,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000029 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000029">
-        <rdfs:label xml:lang="en">generalized clonic motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">generalized clonic motor manifestation finding</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -592,7 +592,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000030 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000030">
-        <rdfs:label xml:lang="en">generalized tonic motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">generalized tonic motor manifestation finding</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -608,7 +608,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000031 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000031">
-        <rdfs:label xml:lang="en">generalized tonic-clonic motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">generalized tonic-clonic motor manifestation finding</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -625,7 +625,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000035 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000035">
-        <rdfs:label xml:lang="en">hypotonic-hyporesponsive episode</rdfs:label>
+        <rdfs:label xml:lang="en">AEFI hypotonic-hyporesponsive episode according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000011"/>
         <UBERON:IAO_0000118 xml:lang="en">HHE</UBERON:IAO_0000118>
         <UBERON:IAO_0000115 xml:lang="en">HHE is characterized by sudde onset of reduced muscle tone, hyporesponsiveness (i.e., less responsive than usual to verbal or other sensorial stimuli) and change of skin color (pallor or cyanosis)</UBERON:IAO_0000115>
@@ -696,7 +696,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000040 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000040">
-        <rdfs:label xml:lang="en">shaking</rdfs:label>
+        <rdfs:label xml:lang="en">shaking finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
         <UBERON:IAO_0000118 xml:lang="en">quivering</UBERON:IAO_0000118>
         <UBERON:IAO_0000115 xml:lang="en">repetitive, cyclical movements of the body or a body part; usually involuntary, but can also manifest in response to an attempt at movement</UBERON:IAO_0000115>
@@ -710,7 +710,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000041 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000041">
-        <rdfs:label xml:lang="en">bilateral shaking</rdfs:label>
+        <rdfs:label xml:lang="en">bilateral shaking finding</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -731,7 +731,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000042 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000042">
-        <rdfs:label xml:lang="en">syncope</rdfs:label>
+        <rdfs:label xml:lang="en">syncope finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
         <rdfs:comment xml:lang="en">MC, 20110126: The Brighton guideline on which this is based needs to be checked. 
 Email correspondance with Brighton:
@@ -758,7 +758,7 @@ If you are working on a database and only have the clinical criteria vailable, y
     <!-- http://purl.obolibrary.org/obo/AERO_0000043 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000043">
-        <rdfs:label xml:lang="en">myoclonic jerk</rdfs:label>
+        <rdfs:label xml:lang="en">myoclonic jerk finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
         <UBERON:IAO_0000115 xml:lang="en">A myoclonic jerk is the brief, involuntary twitching of a muscle or group of muscles. It may be caused either by a sudden muscle contraction, or a sudden lapse of contraction. This happens when a person is on the verge of falling asleep, and suddenly have a sensation or feeling that they are free falling through the air. Contractions are called positive myoclonus; relaxations are called negative myoclonus. When falling asleep, it is common for people to experience a type of myoclonic jerk known as a hypnic jerk. Hiccups are also a kind of myoclonic jerk specifically affecting the diaphragm.</UBERON:IAO_0000115>
         <UBERON:IAO_0000119 xml:lang="en">http://house.wikia.com/wiki/Myoclonic_jerk</UBERON:IAO_0000119>
@@ -769,25 +769,8 @@ If you are working on a database and only have the clinical criteria vailable, y
     <!-- http://purl.obolibrary.org/obo/AERO_0000044 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000044">
-        <rdfs:label xml:lang="en">tonic motor manifestation</rdfs:label>
-        <rdfs:label xml:lang="en">tonic-clonic motor manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">tonic motor manifestation finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&UBERON;AERO_0000027"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
-                                <owl:allValuesFrom rdf:resource="&UBERON;AERO_0000044"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000051"/>
@@ -804,7 +787,6 @@ If you are working on a database and only have the clinical criteria vailable, y
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <UBERON:IAO_0000115 xml:lang="en">A sequence consisting of a tonic followed by a clonic phase</UBERON:IAO_0000115>
         <UBERON:IAO_0000115 xml:lang="en">A sustained increase in muscle contraction lasting a few seconds to minutes</UBERON:IAO_0000115>
     </owl:Class>
     
@@ -813,8 +795,8 @@ If you are working on a database and only have the clinical criteria vailable, y
     <!-- http://purl.obolibrary.org/obo/AERO_0000045 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000045">
-        <rdfs:label xml:lang="en">loss of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
+        <rdfs:label xml:lang="en">loss of consciousness finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000372"/>
         <UBERON:IAO_0000115 xml:lang="en">i.e., unreactive to verbal and painful stimuli</UBERON:IAO_0000115>
     </owl:Class>
     
@@ -836,7 +818,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <!-- http://purl.obolibrary.org/obo/AERO_0000048 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000048">
-        <rdfs:label xml:lang="en">witnessed sudden loss of consciousness</rdfs:label>
+        <rdfs:label xml:lang="en">witnessed sudden loss of consciousness finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000047"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -871,66 +853,6 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000023"/>
         <UBERON:IAO_0000115 xml:lang="en">A role inhering in a person that is realized when the bearer sees an event and reports what happened</UBERON:IAO_0000115>
         <UBERON:IAO_0000119 xml:lang="en">adapted from http://golovchenko.org/cgi-bin/wnsearch?q=witness</UBERON:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000061 -->
-
-    <owl:Class rdf:about="&UBERON;AERO_0000061">
-        <rdfs:label xml:lang="en">AEFI encephalitis</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;AERO_0000013"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;VO_0000002"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000013"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000062 -->
-
-    <owl:Class rdf:about="&UBERON;AERO_0000062">
-        <rdfs:label xml:lang="en">AEFI Idiopathic thrombocytopenic purpura</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;AERO_0000012"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;VO_0000002"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000012"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000063 -->
-
-    <owl:Class rdf:about="&UBERON;AERO_0000063">
-        <rdfs:label xml:lang="en">AEFI: hypotonic-hyporesponsive episode</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;AERO_0000035"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;VO_0000002"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000035"/>
     </owl:Class>
     
 
@@ -1038,17 +960,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000102">
         <rdfs:label xml:lang="en">AEFI anaphylaxis according to Brighton</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;BFO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;VO_0000002"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
         <UBERON:IAO_0000115 xml:lang="en">An acute hypersensitivity reaction with multi-organ-system involvement that can present as, or rapidly progress to, a severe life-threatening reaction.</UBERON:IAO_0000115>
         <UBERON:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5675-5684</UBERON:IAO_0000116>
         <UBERON:IAO_0000119 xml:lang="en">Rüggeberg JU, Gold MS, Bayas JM, Blum MD, Bonhoeffer J, Friedlander S, de Souza Brito G, Heininger U, Imoukhuede B, Khamesipour A, Erlewyn-Lajeunesse M, Martin S, Mäkelä M, Nell P, Pool V, Simpson N; Brighton Collaboration Anaphylaxis Working Group. Anaphylaxis: case definition and guidelines for data collection, analysis, and presentation of immunization safety data. Vaccine 2007;25(31):5675–5684.</UBERON:IAO_0000119>
@@ -1961,13 +1873,14 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000256">
         <rdfs:label xml:lang="en">decreased level of consciousness or loss of consciousness finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&UBERON;AERO_0000045"/>
+                    <rdf:Description rdf:about="&UBERON;AERO_0000372"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;AERO_0000354"/>
@@ -3624,6 +3537,53 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000372 -->
+
+    <owl:Class rdf:about="&UBERON;AERO_0000372">
+        <rdfs:label xml:lang="en">decreased level of consciousness finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000373 -->
+
+    <owl:Class rdf:about="&UBERON;AERO_0000373">
+        <rdfs:label xml:lang="en">tonic-clonic manifestation finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&UBERON;AERO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&UBERON;BFO_0000062"/>
+                                <owl:allValuesFrom rdf:resource="&UBERON;AERO_0000044"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <UBERON:IAO_0000115>A sequence consisting of a tonic followed by a clonic phase</UBERON:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="&UBERON;BFO_0000001"/>
@@ -3935,14 +3895,6 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
      -->
 
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&UBERON;AERO_0000245"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000246"/>
-            <rdf:Description rdf:about="&UBERON;AERO_0000247"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&UBERON;AERO_0000231"/>
@@ -3950,6 +3902,14 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
             <rdf:Description rdf:about="&UBERON;AERO_0000233"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000234"/>
         </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&UBERON;AERO_0000245"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000246"/>
+            <rdf:Description rdf:about="&UBERON;AERO_0000247"/>
+        </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
