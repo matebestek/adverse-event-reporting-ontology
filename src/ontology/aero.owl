@@ -189,7 +189,7 @@ Proposed OBO Foundry label: disorder resulting from an AEFI</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AERO_0000004 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000004">
-        <rdfs:label>Brighton assessment of generalized convulsive seizure as an adverse event following immunization </rdfs:label>
+        <rdfs:label>Brighton assessment result of generalized convulsive seizure as an adverse event following immunization </rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
@@ -635,7 +635,7 @@ tonic, clonic, tonic–clonic, or atonic motor manifestations.  (atonic In the a
     <!-- http://purl.obolibrary.org/obo/AERO_0000038 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000038">
-        <rdfs:label xml:lang="en">diagnosing generalized convulsive seizure according to Brighton guidelines</rdfs:label>
+        <rdfs:label xml:lang="en">performing a diagnosis of generalized convulsive seizure according to Brighton guidelines</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000055"/>
@@ -1108,7 +1108,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000109">
         <rdfs:label xml:lang="en">measured hypotension</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000340"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
@@ -1126,7 +1126,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000110">
         <rdfs:label xml:lang="en">tachycardia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000211"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
@@ -1145,7 +1145,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000111">
         <rdfs:label xml:lang="en">capillary refill time &gt; 3s</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000211"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
@@ -1163,7 +1163,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000112">
         <rdfs:label xml:lang="en">reduced central pulse volume</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000211"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
@@ -1182,7 +1182,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000113">
         <rdfs:label xml:lang="en">decreased level of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000211"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -1240,7 +1240,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000117">
         <rdfs:label xml:lang="en">tachypnoea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000124"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -1261,7 +1261,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000118">
         <rdfs:label xml:lang="en">increased use of accessory respiratory muscles</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000124"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -1279,7 +1279,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000119">
         <rdfs:label xml:lang="en">recession</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000124"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -1296,7 +1296,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000120">
         <rdfs:label xml:lang="en">cyanosis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000124"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -1315,7 +1315,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="&UBERON;AERO_0000121">
         <rdfs:label xml:lang="en">grunting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000124"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -1377,22 +1377,6 @@ following:
 • recession
 • cyanosis 
 • grunting</UBERON:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000124 -->
-
-    <owl:Class rdf:about="&UBERON;AERO_0000124">
-        <rdfs:label xml:lang="en">respiratory distress sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <UBERON:IAO_0000232>a helper class which allows us to define a qualified cardinality restriction for respiratory distress such as used in the case definition of anaphylaxis.Respiratory distress is defined as having at least 2 respiratory distress signs</UBERON:IAO_0000232>
     </owl:Class>
     
 
@@ -1509,7 +1493,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000208 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000208">
-        <rdfs:label xml:lang="en">Brighton assessment</rdfs:label>
+        <rdfs:label xml:lang="en">Brighton assessment result</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;OBI_0000938"/>
         <UBERON:IAO_0000115 xml:lang="en">The assessment performed upon review of an adverse event report according to the Brighton case definitions</UBERON:IAO_0000115>
     </owl:Class>
@@ -1573,16 +1557,6 @@ following:
 - capillary refill time &gt; 3s
 - reduced central pulse volume
 - decreased level of consciousness or loss of consciousness</UBERON:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000211 -->
-
-    <owl:Class rdf:about="&UBERON;AERO_0000211">
-        <rdfs:label xml:lang="en">uncompensated shock sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000340"/>
-        <UBERON:IAO_0000115 xml:lang="en">a helper class which allows us to define a qualified cardinality restriction for uncompensated shock such as used in the case definition of anaphylaxis. Clinical diagnosis of uncompensated shock is defined as having at least 3 uncompensated shock signs</UBERON:IAO_0000115>
     </owl:Class>
     
 
@@ -1718,7 +1692,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000243 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000243">
-        <rdfs:label xml:lang="en">diagnosing anaphylaxis according to Brighton guidelines</rdfs:label>
+        <rdfs:label xml:lang="en">performing a diagnosis of anaphylaxis according to Brighton guidelines</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000055"/>
@@ -1731,6 +1705,12 @@ following:
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000207"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000267"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1740,12 +1720,6 @@ following:
     <owl:Class rdf:about="&UBERON;AERO_0000244">
         <rdfs:label xml:lang="en">major dermatological criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000248"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000102"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&UBERON;AERO_0000245"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000246"/>
@@ -1842,7 +1816,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000251">
         <rdfs:label xml:lang="en">measured hypotension finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000340"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
@@ -1857,13 +1831,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000252">
         <rdfs:label xml:lang="en">uncompensated shock sign finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000211"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000340"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&UBERON;AERO_0000253"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000254"/>
@@ -2060,12 +2028,6 @@ following:
     <owl:Class rdf:about="&UBERON;AERO_0000265">
         <rdfs:label xml:lang="en">respiratory distress sign finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000124"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="&UBERON;AERO_0000260"/>
             <rdf:Description rdf:about="&UBERON;AERO_0000261"/>
@@ -2080,7 +2042,7 @@ following:
     <!-- http://purl.obolibrary.org/obo/AERO_0000267 -->
 
     <owl:Class rdf:about="&UBERON;AERO_0000267">
-        <rdfs:label xml:lang="en">Brighton assessment of anaphylaxis as an adverse event following immunization</rdfs:label>
+        <rdfs:label xml:lang="en">Brighton assessment result of anaphylaxis as an adverse event following immunization</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000208"/>
     </owl:Class>
     
@@ -2498,7 +2460,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000294">
         <rdfs:label xml:lang="en">diarrhoea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
@@ -2516,7 +2478,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000295">
         <rdfs:label xml:lang="en">diarrhoea finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
@@ -2531,7 +2493,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000296">
         <rdfs:label xml:lang="en">abdominal pain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
@@ -2548,7 +2510,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000297">
         <rdfs:label xml:lang="en">abdominal pain finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
@@ -2563,7 +2525,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000298">
         <rdfs:label xml:lang="en">nausea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000083"/>
@@ -2580,7 +2542,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000299">
         <rdfs:label xml:lang="en">nausea finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
@@ -2595,7 +2557,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000300">
         <rdfs:label xml:lang="en">vomiting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
@@ -2612,7 +2574,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000301">
         <rdfs:label xml:lang="en">vomiting finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000347"/>
     </owl:Class>
     
 
@@ -2975,19 +2937,23 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
         <rdfs:label xml:lang="en">_cardiovascular sign</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&UBERON;BFO_0000082"/>
-                        <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
-                    </owl:Restriction>
-                </owl:unionOf>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&UBERON;OGMS_0000014"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&UBERON;BFO_0000066"/>
+                                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&UBERON;BFO_0000082"/>
+                                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0004535"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&UBERON;AERO/_SymptomsSignsTerms"/>
     </owl:Class>
     
 
@@ -3109,7 +3075,7 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&UBERON;AERO/_SymptomsSignsTerms"/>
+                    <rdf:Description rdf:about="&UBERON;OGMS_0000014"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
@@ -3144,6 +3110,24 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     <owl:Class rdf:about="&UBERON;AERO_0000351">
         <rdfs:label xml:lang="en">not a case of anaphylaxis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000267"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000352 -->
+
+    <owl:Class rdf:about="&UBERON;AERO_0000352">
+        <rdfs:label xml:lang="en">anaphylaxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000353 -->
+
+    <owl:Class rdf:about="&UBERON;AERO_0000353">
+        <rdfs:label xml:lang="en">seizure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&UBERON;BFO_0000007"/>
     </owl:Class>
     
 
