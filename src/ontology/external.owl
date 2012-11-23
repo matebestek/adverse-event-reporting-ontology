@@ -4,7 +4,7 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY GO "http://purl.org/obo/owl/GO#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY UBERON "http://purl.obolibrary.org/obo/" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
@@ -16,12 +16,12 @@
 ]>
 
 
-<rdf:RDF xmlns="&UBERON;aero/external.owl#"
-     xml:base="&UBERON;aero/external.owl"
+<rdf:RDF xmlns="&obo;aero/external.owl#"
+     xml:base="&obo;aero/external.owl"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:UBERON="http://purl.obolibrary.org/obo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:GO="http://purl.org/obo/owl/GO#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -29,7 +29,7 @@
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="&UBERON;aero/external.owl"/>
+    <owl:Ontology rdf:about="&obo;aero/external.owl"/>
     
 
 
@@ -41,9 +41,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&UBERON;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&UBERON;IAO_0000412"/>
-    <owl:AnnotationProperty rdf:about="&UBERON;IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
     
 
 
@@ -71,212 +71,212 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <owl:Class rdf:about="&UBERON;IAO_0000027"/>
+    <owl:Class rdf:about="&obo;IAO_0000027"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
-    <owl:Class rdf:about="&UBERON;IAO_0000109"/>
+    <owl:Class rdf:about="&obo;IAO_0000109"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
 
-    <owl:Class rdf:about="&UBERON;IAO_0000300"/>
+    <owl:Class rdf:about="&obo;IAO_0000300"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000011">
+    <owl:Class rdf:about="&obo;OBI_0000011">
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000075 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000075">
-        <rdfs:subClassOf rdf:resource="&UBERON;IAO_0000300"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+    <owl:Class rdf:about="&obo;OBI_0000075">
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000094">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0000011"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+    <owl:Class rdf:about="&obo;OBI_0000094">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000274 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000274">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0000652"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+    <owl:Class rdf:about="&obo;OBI_0000274">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000652"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000652 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000652">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0000094"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+    <owl:Class rdf:about="&obo;OBI_0000652">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000094"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000938">
+    <owl:Class rdf:about="&obo;OBI_0000938">
         <rdfs:label xml:lang="en">categorical measurement datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;IAO_0000109"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000968">
+    <owl:Class rdf:about="&obo;OBI_0000968">
         <rdfs:label xml:lang="en">device</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000988 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0000988">
+    <owl:Class rdf:about="&obo;OBI_0000988">
         <rdfs:label xml:lang="en">performing a diagnosis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0200000"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0100015 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0100015">
+    <owl:Class rdf:about="&obo;OBI_0100015">
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0200000">
+    <owl:Class rdf:about="&obo;OBI_0200000">
         <rdfs:label xml:lang="en">data transformation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0000011"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
 
-    <owl:Class rdf:about="&UBERON;OBI_0600007">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0000274"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;obi.owl"/>
+    <owl:Class rdf:about="&obo;OBI_0600007">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000274"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
 
-    <owl:Class rdf:about="&UBERON;OGMS_0000014">
+    <owl:Class rdf:about="&obo;OGMS_0000014">
         <rdfs:label xml:lang="en">clinical finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;IAO_0000027"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;ogms.owl"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
 
-    <owl:Class rdf:about="&UBERON;OGMS_0000045">
+    <owl:Class rdf:about="&obo;OGMS_0000045">
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;ogms.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000010 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0000010">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0100015"/>
-        <UBERON:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
+    <owl:Class rdf:about="&obo;UBERON_0000010">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UBERON"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000955 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0000955">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0100015"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;/UBERON"/>
+    <owl:Class rdf:about="&obo;UBERON_0000955">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="&obo;/UBERON"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001004 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0001004">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0100015"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;UBERON"/>
+    <owl:Class rdf:about="&obo;UBERON_0001004">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="&obo;UBERON"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001016 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0001016">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0100015"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;UBERON"/>
+    <owl:Class rdf:about="&obo;UBERON_0001016">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="&obo;UBERON"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0004535 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0004535">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0100015"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;/UBERON"/>
+    <owl:Class rdf:about="&obo;UBERON_0004535">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="&obo;/UBERON"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0005409 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0005409">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0100015"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;/UBERON"/>
+    <owl:Class rdf:about="&obo;UBERON_0005409">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="&obo;/UBERON"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0012125 -->
 
-    <owl:Class rdf:about="&UBERON;UBERON_0012125">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0100015"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;/UBERON"/>
+    <owl:Class rdf:about="&obo;UBERON_0012125">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100015"/>
+        <obo:IAO_0000412 rdf:resource="&obo;/UBERON"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
 
-    <owl:Class rdf:about="&UBERON;VO_0000002">
-        <rdfs:subClassOf rdf:resource="&UBERON;OBI_0600007"/>
-        <UBERON:IAO_0000412 rdf:resource="&UBERON;VO.owl"/>
+    <owl:Class rdf:about="&obo;VO_0000002">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0600007"/>
+        <obo:IAO_0000412 rdf:resource="&obo;VO.owl"/>
     </owl:Class>
     
 
@@ -285,7 +285,7 @@
 
     <owl:Class rdf:about="&GO;GO_0001660">
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <UBERON:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
     </owl:Class>
     
 
@@ -294,7 +294,7 @@
 
     <owl:Class rdf:about="&GO;GO_0006954">
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <UBERON:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
     </owl:Class>
     
 
@@ -303,7 +303,7 @@
 
     <owl:Class rdf:about="&GO;GO_0007610">
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <UBERON:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/GO"/>
     </owl:Class>
     
 

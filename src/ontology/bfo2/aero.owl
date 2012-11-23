@@ -3143,24 +3143,6 @@ I could say &quot;fluid collection shown by imaging technique&quot; is output of
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000355 -->
-
-    <owl:Class rdf:about="&UBERON;AERO_0000355">
-        <rdfs:label xml:lang="en">dry cough</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000355"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
     
 
 
