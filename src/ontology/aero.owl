@@ -132,6 +132,19 @@ It however aims at being an inclusive resource and allows other types of adverse
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000375 -->
+
+    <owl:ObjectProperty rdf:about="&UBERON;AERO_0000375">
+        <rdfs:label xml:lang="en">exhibits</rdfs:label>
+        <rdfs:comment xml:lang="en">20121126, MC: I made the domain of this relation be material entity rather than patient, as I think we would want to say things such as &quot;heart exhibits myocardial infection finding&quot; etc</rdfs:comment>
+        <rdfs:comment xml:lang="en">20121126, MC: the label of the relation was the best I could think of, but I welcome better suggestions.</rdfs:comment>
+        <UBERON:IAO_0000115 xml:lang="en">A relation between a material entity and the clinical findings it exhibits.</UBERON:IAO_0000115>
+        <rdfs:range rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:domain rdf:resource="&snap;MaterialEntity"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="&UBERON;BFO_0000055">
@@ -1515,6 +1528,12 @@ following:
                 <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1713,7 +1732,7 @@ following:
 
     <owl:Class rdf:about="&UBERON;AERO_0000274">
         <rdfs:label xml:lang="en">localized injection site urticaria finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&UBERON;OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="&UBERON;AERO_0000370"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;AERO_0000354"/>
@@ -2071,6 +2090,12 @@ following:
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&UBERON;IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="&UBERON;AERO_0000288"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&UBERON;AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="&UBERON;UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
