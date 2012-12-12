@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aero.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aero.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:AERO="http://purl.obolibrary.org/obo/AERO/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ogms="http://purl.obolibrary.org/obo/ogms/"
+     xmlns:UBERON="http://purl.obolibrary.org/obo/"
+     xmlns:GO="http://purl.org/obo/owl/GO#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aero/patients.owl">
+        <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
+        <dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
+        <rdfs:comment xml:lang="en">The Adverse Event Reporting Ontology (AERO) is designed to facilitate the representation of adverse event reports and their evaluation in relation to clinical guidelines written by various authorities. We take a realist approach in which findings in reports are information artifacts and are related to instances or types that represent patient, symptoms, diseases, etc. We intend that use of this ontology will result in data that interoperates well with OBO Foundry ontologies as we directly use terms from OBO ontologies wherever appropriate.
+
+The initial domain for this work are reports of adverse events following immunization (AEFIs). We represent the Brighton case definitions as our guidelines, show how findings can be assessed in terms of Brighton criteria and how diagnoses of adverse events with different levels of certainty can be obtained by use of the OWL reasoner.</rdfs:comment>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/aero.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/AERO_0000106">
+        <rdfs:label xml:lang="en">BrightonFormula</rdfs:label>
+        <UBERON:IAO_0000112>AngEdGenLoc - angioedema, localized or generalized</UBERON:IAO_0000112>
+        <UBERON:IAO_0000115>An annotation property reflecting the string used by Brighton in their ABC tool to encode the term</UBERON:IAO_0000115>
+        <UBERON:IAO_0000112>SuddOnset = sudden onset</UBERON:IAO_0000112>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/AERO_0000324">
+        <rdfs:label xml:lang="en">PHAC definition</rdfs:label>
+        <UBERON:IAO_0000115 xml:lang="en">The definition of the term as formalized in the PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf. Those definitions are often very specific to adverse event following immunization and are intended for reporting personel.</UBERON:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000314 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000314">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000245"/>
+        <rdfs:label xml:lang="en">rash on patient 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000315 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000315">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <rdfs:label>Clinical findings of patient1</rdfs:label>
+        <UBERON:AERO_0000125 rdf:resource="http://purl.obolibrary.org/obo/AERO_0000314"/>
+        <UBERON:AERO_0000125 rdf:resource="http://purl.obolibrary.org/obo/AERO_0000316"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000316 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000316">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000251"/>
+        <rdfs:label xml:lang="en">measured hypotension of Patient1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    
+
+
+   </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
