@@ -2878,33 +2878,6 @@ following:
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000314 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000314">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000245"/>
-        <rdfs:label xml:lang="en">rash on patient 1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000315 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000315">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
-        <rdfs:label>Clinical findings of patient1</rdfs:label>
-        <UBERON:AERO_0000125 rdf:resource="http://purl.obolibrary.org/obo/AERO_0000314"/>
-        <UBERON:AERO_0000125 rdf:resource="http://purl.obolibrary.org/obo/AERO_0000316"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000316 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/AERO_0000316">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AERO_0000251"/>
-        <rdfs:label xml:lang="en">measured hypotension of Patient1</rdfs:label>
-    </owl:NamedIndividual>
     
 
 
