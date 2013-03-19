@@ -47,13 +47,13 @@ The initial domain for this work are reports of adverse events following immuniz
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/AERO_0000324">
         <rdfs:label xml:lang="en">PHAC definition</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">The definition of the term as formalized in the PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf. Those definitions are often very specific to adverse event following immunization and are intended for reporting personel.</obo:IAO_0000115>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     
 
@@ -1621,6 +1621,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">Grunting</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1696,16 +1697,17 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000365"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000271"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000271"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">PrickleSens</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1721,6 +1723,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">UrticariaLOC</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1738,6 +1741,7 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <obo:AERO_0000106 xml:lang="en">EyeRedItch</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1872,6 +1876,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">CoughPersisDry</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1883,16 +1888,17 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">VoiceHoarse</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1908,6 +1914,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">ThroatCloseSens</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1946,6 +1953,8 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">Diarrhea</obo:AERO_0000106>
+        <obo:IAO_0000118 xml:lang="en">diarrhea finding</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1967,6 +1976,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">AbdoPain</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1978,16 +1988,17 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">Nausea</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -2009,6 +2020,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">VomitUnspec</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -2019,6 +2031,7 @@ following:
         <rdfs:label xml:lang="en">mast cell tryptase elevation &gt; upper normal limit finding</rdfs:label>
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/AERO_0000310"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <obo:AERO_0000106 xml:lang="en">MastCellTryp</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -2070,16 +2083,18 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000288"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000288"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000232 xml:lang="en">20130319, MC: Here the ontology is more specific than Brighton formula which just states &quot;DiffBreath&quot; - we logically encode the restrictions mentioned in the guideline -&gt; without wheeze or stridor</obo:IAO_0000232>
+        <obo:AERO_0000106 xml:lang="en">DiffBreath</obo:AERO_0000106>
     </owl:Class>
     
 
