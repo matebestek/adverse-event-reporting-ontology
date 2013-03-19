@@ -1578,6 +1578,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">Recess</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -1915,21 +1916,15 @@ following:
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000293">
         <rdfs:label xml:lang="en">sneezing or rhinorrhea finding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000291"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000354"/>
-                    </owl:Restriction>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
                 </owl:unionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
     </owl:Class>
     
 
@@ -2280,6 +2275,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">Rhinorrhea</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -2602,6 +2598,22 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A sequence consisting of a tonic followed by a clonic phase</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000382">
+        <rdfs:label xml:lang="en">sneezing finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000291"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">Sneeze</obo:AERO_0000106>
     </owl:Class>
     
 
