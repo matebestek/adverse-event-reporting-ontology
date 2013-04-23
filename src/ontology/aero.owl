@@ -2427,6 +2427,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">ErythemaGen</obo:AERO_0000106>
     </owl:Class>
     
 
