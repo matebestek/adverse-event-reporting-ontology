@@ -1260,6 +1260,10 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">20130423, MC: in the anaphylaxis case definition, angioedeme can be localized or generalized. There was no need as of today to create specialized subclasses representing those.</rdfs:comment>
+        <obo:AERO_0000106 xml:lang="en">AngEdGenLoc</obo:AERO_0000106>
+        <obo:AERO_0000324 xml:lang="en">Areas of deeper swelling of the skin and/or mucosal tissues in either single or multiple sites which may not be well circumscribed and is usually not itchy. Reported symptoms of ‘swelling of the lip’ or ‘swelling of the tongue or throat’ should not be documented as angioedema unless there is visible skin or mucosal swelling.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
