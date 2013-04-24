@@ -946,7 +946,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000100">
         <rdfs:label xml:lang="en">sudden onset</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <obo:IAO_0000115>The term sudden onsets refers to an event that occurred unexpectedly and without warning leading to a marked change in a subjects previously stable condition</obo:IAO_0000115>
         <obo:IAO_0000119>Anaphylaxis: Case definition and guidelines for data collection, analysis, and presentation of immunization safety data. Vaccine 25 (2007) 5675–5684</obo:IAO_0000119>
         <obo:AERO_0000106>SuddOnset</obo:AERO_0000106>
