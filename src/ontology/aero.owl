@@ -958,7 +958,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000101">
         <rdfs:label xml:lang="en">rapid progression</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <obo:IAO_0000115>The term rapid progression is a conventional clinical term. An exact timeframe sould not be offered since it would have to refer to a wide range of signs and symptoms without a scientific evidence base. Using an arbitrarily restrictive setpoint might bias future data collection unnecessarily.</obo:IAO_0000115>
         <obo:IAO_0000119>Anaphylaxis: Case definition and guidelines for data collection, analysis, and presentation of immunization safety data. Vaccine 25 (2007) 5675–5684</obo:IAO_0000119>
         <obo:AERO_0000106>RapidProgr</obo:AERO_0000106>
@@ -2620,6 +2620,8 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:AERO_0000106 xml:lang="en">UrticariaGen</obo:AERO_0000106>
+        <obo:IAO_0000118 xml:lang="en">hives finding</obo:IAO_0000118>
     </owl:Class>
     
 
