@@ -2375,7 +2375,26 @@ following:
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000350">
         <rdfs:label xml:lang="en">Reported anaphylaxis with insufficient evidence to meet the case definition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000267"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000415"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000269"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000317"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000318"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000351"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000415"/>
     </owl:Class>
     
 
@@ -2820,6 +2839,15 @@ following:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000414">
         <rdfs:label xml:lang="en">difficulty breathing finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000415">
+        <rdfs:label xml:lang="en">reported anaphylaxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000267"/>
     </owl:Class>
     
 
