@@ -977,6 +977,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106>SuddOnset</obo:AERO_0000106>
@@ -998,6 +999,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106>RapidProgr</obo:AERO_0000106>
@@ -1053,6 +1055,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:IAO_0000115>respiratory distress—2 or more of the
@@ -1201,6 +1204,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:IAO_0000115 xml:lang="en">combination of at least 3 of the following:
 - tachycardia
@@ -1448,6 +1452,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -1478,6 +1483,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000210"/>
@@ -1494,6 +1500,7 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000248"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
@@ -1528,6 +1535,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000324 xml:lang="en">An abnormally low blood pressure and documented by appropriate measurement. Infants and children: age specific systolic BP of &lt;3-5%percentile or greater than a 30% decrease from that person’s baseline; Adults: systolic BP of &lt;90mm Hg or greater than 30% decrease from that person’s baseline.</obo:AERO_0000324>
@@ -1553,6 +1561,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
@@ -1586,6 +1595,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000324 xml:lang="en">A heart rate that is abnormally high for age and circumstance (In beats per minute: &lt;1year old: &gt;160; 1 – 2 yrs: &gt;150; 2-5 yrs: &gt;140; 5-12 yrs: &gt;120; &gt;12 yrs: &gt;100)</obo:AERO_0000324>
@@ -1674,6 +1684,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106 xml:lang="en">PulseVolRed</obo:AERO_0000106>
@@ -1743,6 +1754,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000324 xml:lang="en">A harsh and continuous sound made on breathing in.</obo:AERO_0000324>
@@ -1774,6 +1786,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106 xml:lang="en">SwellUpAirways</obo:AERO_0000106>
@@ -1804,6 +1817,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
@@ -1836,6 +1850,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106 xml:lang="en">RespMuscAccIncr</obo:AERO_0000106>
@@ -1865,6 +1880,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106 xml:lang="en">Recess</obo:AERO_0000106>
@@ -1900,6 +1916,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000358"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000359"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000360"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000363"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000370"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000382"/>
@@ -1932,6 +1949,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000324 xml:lang="en">A sudden and short noise with each breath when breathing out.</obo:AERO_0000324>
@@ -1950,6 +1968,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
@@ -2073,6 +2092,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106 xml:lang="en">EyeRedItch</obo:AERO_0000106>
@@ -2095,6 +2115,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
@@ -2161,6 +2182,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <rdfs:comment>The reduced peripheral circulation diagnosis is the minor cardiovascular criterion for anaphylaxis according to Brighton. The diagnosis is established by observing the combination of at least 2 reduced peripheral circulation findings, but at most one of each type.</rdfs:comment>
     </owl:Class>
@@ -2188,6 +2210,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -2233,6 +2256,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000324 xml:lang="en">An unnaturally harsh cry of infant or vocalization in a child or adult.</obo:AERO_0000324>
@@ -2257,6 +2281,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106 xml:lang="en">ThroatCloseSens</obo:AERO_0000106>
@@ -2280,6 +2305,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -2399,6 +2425,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000324 xml:lang="en">An unpleasant sensation vaguely referred to the upper abdominal region and the abdomen, with a tendency to vomit.</obo:AERO_0000324>
@@ -2426,6 +2453,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000370"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
@@ -2444,6 +2472,7 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000106 xml:lang="en">MastCellTryp</obo:AERO_0000106>
@@ -2457,6 +2486,7 @@ following:
         <rdfs:label xml:lang="en">minor dermatological criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000248"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
@@ -2475,6 +2505,7 @@ following:
         <rdfs:label xml:lang="en">minor cardiovascular criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000248"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
     
@@ -2485,6 +2516,7 @@ following:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000307">
         <rdfs:label xml:lang="en">minor respiratory criteria set for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000248"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000283"/>
@@ -2526,6 +2558,7 @@ following:
         <rdfs:label xml:lang="en">minor gastrointestinal criterion for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000248"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
@@ -2544,6 +2577,7 @@ following:
         <rdfs:label xml:lang="en">minor laboratory criteria set for anaphylaxis according to Brighton</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000248"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -2704,6 +2738,7 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
     
@@ -2724,6 +2759,7 @@ following:
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
     </owl:Class>
     
@@ -2746,6 +2782,7 @@ following:
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -2872,6 +2909,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -2895,6 +2933,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <obo:AERO_0000324 xml:lang="en">Discharge of thin nasal mucus.</obo:AERO_0000324>
@@ -2920,6 +2959,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -2943,6 +2983,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
     </owl:Class>
@@ -2966,8 +3007,16 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000205"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000363"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000364"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000365"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000366"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000368"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000370"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000382"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000075"/>
     </owl:Class>
     
 
@@ -3598,6 +3647,14 @@ following:
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000247"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000281"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
@@ -3606,14 +3663,6 @@ following:
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000307"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000247"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000281"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
