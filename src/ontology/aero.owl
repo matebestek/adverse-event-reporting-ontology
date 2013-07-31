@@ -967,6 +967,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000100">
         <rdfs:label xml:lang="en">sudden onset</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000208"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000246"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
@@ -982,6 +983,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000101">
         <rdfs:label xml:lang="en">rapid progression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000208"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000246"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <obo:AERO_0000106>RapidProgr</obo:AERO_0000106>
@@ -1032,6 +1034,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000208"/>
         <obo:IAO_0000115>respiratory distress—2 or more of the
 following: 
 • tachypnoea 
@@ -1069,8 +1072,55 @@ following:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000208">
         <rdfs:label xml:lang="en">Brighton diagnosis result</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000210"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000221"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000245"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000246"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000247"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000251"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000252"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000253"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000255"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000258"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000259"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000260"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000261"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000262"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000264"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000265"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000276"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000279"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000281"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000285"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000290"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000293"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000295"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000299"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000301"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000302"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000340"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000341"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000347"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000357"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000358"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000359"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000360"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000363"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000364"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000365"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000366"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000368"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000370"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000382"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000075"/>
         <obo:IAO_0000115 xml:lang="en">The diagnosis performed upon review of an adverse event report according to the Brighton case definitions</obo:IAO_0000115>
     </owl:Class>
     
