@@ -973,6 +973,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106>SuddOnset</obo:AERO_0000106>
         <obo:IAO_0000119>Anaphylaxis: Case definition and guidelines for data collection, analysis, and presentation of immunization safety data. Vaccine 25 (2007) 5675–5684</obo:IAO_0000119>
         <obo:IAO_0000115>The term sudden onsets refers to an event that occurred unexpectedly and without warning leading to a marked change in a subjects previously stable condition</obo:IAO_0000115>
@@ -989,6 +990,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000246"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106>RapidProgr</obo:AERO_0000106>
         <obo:IAO_0000119>Anaphylaxis: Case definition and guidelines for data collection, analysis, and presentation of immunization safety data. Vaccine 25 (2007) 5675–5684</obo:IAO_0000119>
         <obo:IAO_0000115>The term rapid progression is a conventional clinical term. An exact timeframe sould not be offered since it would have to refer to a wide range of signs and symptoms without a scientific evidence base. Using an arbitrarily restrictive setpoint might bias future data collection unnecessarily.</obo:IAO_0000115>
@@ -1039,6 +1041,7 @@ definition reads &quot;the sudden loss of consciousness was not observed, but th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000208"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:IAO_0000115>respiratory distress—2 or more of the
 following: 
 • tachypnoea 
@@ -1182,6 +1185,7 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:IAO_0000115 xml:lang="en">combination of at least 3 of the following:
 - tachycardia
 - capillary refill time &gt; 3s
@@ -1207,6 +1211,7 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:IAO_0000115 xml:lang="en">A clinical finding that involves the dermatological-mucosal system</obo:IAO_0000115>
     </owl:Class>
     
@@ -1321,6 +1326,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
     </owl:Class>
     
 
@@ -1411,6 +1417,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
     </owl:Class>
     
 
@@ -1479,6 +1486,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000324 xml:lang="en">An abnormally low blood pressure and documented by appropriate measurement. Infants and children: age specific systolic BP of &lt;3-5%percentile or greater than a 30% decrease from that person’s baseline; Adults: systolic BP of &lt;90mm Hg or greater than 30% decrease from that person’s baseline.</obo:AERO_0000324>
         <obo:AERO_0000106 xml:lang="en">HypotensMeas</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
@@ -1499,6 +1507,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000254"/>
@@ -1528,6 +1537,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000324 xml:lang="en">A heart rate that is abnormally high for age and circumstance (In beats per minute: &lt;1year old: &gt;160; 1 – 2 yrs: &gt;150; 2-5 yrs: &gt;140; 5-12 yrs: &gt;120; &gt;12 yrs: &gt;100)</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
         <obo:AERO_0000106 xml:lang="en">TachyCard</obo:AERO_0000106>
@@ -1611,6 +1621,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">PulseVolRed</obo:AERO_0000106>
     </owl:Class>
     
@@ -1675,6 +1686,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000324 xml:lang="en">A harsh and continuous sound made on breathing in.</obo:AERO_0000324>
         <obo:AERO_0000106 xml:lang="en">Stridor</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
@@ -1701,6 +1713,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">SwellUpAirways</obo:AERO_0000106>
         <obo:IAO_0000232 xml:lang="en">lip, tongue, throat, uvula or larynx</obo:IAO_0000232>
     </owl:Class>
@@ -1726,6 +1739,7 @@ following:
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
         <obo:AERO_0000324 xml:lang="en">Rapid breathing which is abnormally high for age and circumstance rapid breathing whichis abnormally high for age and circumstance (&lt;1yr: &gt;60; 1-2 yrs: &gt;40; 2-5 yrs: &gt;35; 5-12 yrs: &gt;30: &gt;12 yrs: &gt;16)</obo:AERO_0000324>
         <obo:AERO_0000106 xml:lang="en">TachyPnea</obo:AERO_0000106>
@@ -1753,6 +1767,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">RespMuscAccIncr</obo:AERO_0000106>
         <obo:IAO_0000232 xml:lang="en">sternocleidomastoid, intercostals, etc</obo:IAO_0000232>
     </owl:Class>
@@ -1777,6 +1792,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">Recess</obo:AERO_0000106>
     </owl:Class>
     
@@ -1804,6 +1820,7 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000301"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000304"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000358"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000359"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000360"/>
@@ -1835,6 +1852,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000324 xml:lang="en">A sudden and short noise with each breath when breathing out.</obo:AERO_0000324>
         <obo:AERO_0000106 xml:lang="en">Grunting</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
@@ -1848,6 +1866,7 @@ following:
         <rdfs:label xml:lang="en">respiratory distress sign finding</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000260"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
@@ -1966,6 +1985,7 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">EyeRedItch</obo:AERO_0000106>
     </owl:Class>
     
@@ -1983,6 +2003,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000256"/>
@@ -2055,6 +2076,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <rdfs:comment>The reduced peripheral circulation diagnosis is the minor cardiovascular criterion for anaphylaxis according to Brighton. The diagnosis is established by observing the combination of at least 2 reduced peripheral circulation findings, but at most one of each type.</rdfs:comment>
     </owl:Class>
     
@@ -2078,6 +2100,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
     </owl:Class>
     
 
@@ -2118,6 +2141,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000324 xml:lang="en">An unnaturally harsh cry of infant or vocalization in a child or adult.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
         <obo:AERO_0000106 xml:lang="en">VoiceHoarse</obo:AERO_0000106>
@@ -2137,6 +2161,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">ThroatCloseSens</obo:AERO_0000106>
     </owl:Class>
     
@@ -2155,6 +2180,7 @@ following:
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
     </owl:Class>
     
 
@@ -2177,6 +2203,7 @@ following:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">Diarrhea</obo:AERO_0000106>
         <obo:AERO_0000324 xml:lang="en">Loose and/or watery stool which may occur more frequently than usual.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
@@ -2246,6 +2273,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000324 xml:lang="en">An unpleasant sensation vaguely referred to the upper abdominal region and the abdomen, with a tendency to vomit.</obo:AERO_0000324>
         <obo:AERO_0000106 xml:lang="en">Nausea</obo:AERO_0000106>
     </owl:Class>
@@ -2269,6 +2297,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000324 xml:lang="en">The reflex act of ejecting the contents of the stomach through the mouth.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
         <obo:AERO_0000106 xml:lang="en">VomitUnspec</obo:AERO_0000106>
@@ -2282,6 +2311,7 @@ following:
         <rdfs:label xml:lang="en">mast cell tryptase elevation &gt; upper normal limit finding</rdfs:label>
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/AERO_0000310"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
         <obo:AERO_0000106 xml:lang="en">MastCellTryp</obo:AERO_0000106>
     </owl:Class>
     
@@ -2565,6 +2595,7 @@ following:
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
     </owl:Class>
     
 
@@ -2617,6 +2648,7 @@ following:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000356"/>
     </owl:Class>
     
 
@@ -2628,16 +2660,31 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000357"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000358"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000359"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000360"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000363"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000364"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000365"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000366"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000368"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000370"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000382"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000075"/>
     </owl:Class>
     
 
