@@ -3852,6 +3852,14 @@ following:
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000256"/>
         </owl:members>
     </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000361"/>
+        </owl:members>
+    </rdf:Description>
     <owl:Class>
         <owl:equivalentClass>
             <owl:Restriction>
@@ -3864,7 +3872,7 @@ following:
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000258"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000257"/>
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -3872,7 +3880,7 @@ following:
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000360"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000258"/>
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -3882,14 +3890,6 @@ following:
             </owl:Restriction>
         </owl:intersectionOf>
     </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000361"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
