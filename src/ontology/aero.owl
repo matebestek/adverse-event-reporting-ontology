@@ -1384,9 +1384,10 @@ following:
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000245"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000246"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000247"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000362"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000371"/>
         </owl:disjointUnionOf>
     </owl:Class>
     
@@ -4112,6 +4113,14 @@ following:
         </owl:members>
     </rdf:Description>
     <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000231"/>
@@ -4119,14 +4128,6 @@ following:
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000233"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000234"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-        </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
