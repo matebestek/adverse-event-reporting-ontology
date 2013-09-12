@@ -1487,14 +1487,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000105"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000105"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000247"/>
@@ -1555,14 +1555,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000367"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000219"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000219"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000249"/>
@@ -1665,14 +1665,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000037"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
@@ -1735,14 +1735,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000044"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
@@ -1770,14 +1770,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000021"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000255"/>
@@ -1900,14 +1900,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000042"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000263"/>
@@ -2003,14 +2003,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000031"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000264"/>
@@ -2072,14 +2072,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000023"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000277"/>
@@ -2114,14 +2114,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000029"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000276"/>
@@ -2263,14 +2263,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000370"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000383"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">Localized redness of superficial layers of skin that is itchy, raised, sharply demarcated and transient (that is skin changes at any location are usually present for less than 12 hours).</obo:AERO_0000324>
@@ -2451,14 +2451,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000030"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000293"/>
@@ -2661,14 +2661,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000046"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000355"/>
@@ -3115,14 +3115,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000022"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000357"/>
@@ -3176,14 +3176,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000354"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
@@ -3203,14 +3203,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000040"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
@@ -3228,14 +3228,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
@@ -3253,14 +3253,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000205"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000205"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000363"/>
@@ -3284,14 +3284,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000361"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000104"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000106 xml:lang="en">ErythemaGen</obo:AERO_0000106>
@@ -3306,14 +3306,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000338"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000338"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000366"/>
@@ -3413,14 +3413,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000366"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000106 xml:lang="en">PruritusGen</obo:AERO_0000106>
@@ -3435,14 +3435,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000337"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000337"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000372"/>
@@ -3458,14 +3458,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000368"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000106 xml:lang="en">SkinRash</obo:AERO_0000106>
@@ -3503,14 +3503,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000370"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000103"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000106 xml:lang="en">UrticariaGen</obo:AERO_0000106>
@@ -3526,14 +3526,14 @@ following:
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000024"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000354"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AERO_0000382"/>
@@ -3840,6 +3840,88 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AERO_0000435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000435">
+        <rdfs:label xml:lang="en">Level 3 of certainty of anaphylaxis - PHAC form</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000309"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000310"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000309"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000310"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000304"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000307"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000267"/>
+        <rdfs:comment xml:lang="en">20130912: In the paper http://dx.doi.org/10.1016/j.vaccine.2010.04.041 &quot;Can the Brighton Collaboration case definitions be used to improve the quality of Adverse Event Following Immunization (AEFI) reporting? Anaphylaxis as a case study&quot;, the form used by PHAC and shown in Appendix E states as a footnote &quot;for level III, a skin MAJOR can count as a minor criterion&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
@@ -3871,14 +3953,14 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000988">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000075"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4098,6 +4180,105 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:Class>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000308"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000257"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000258"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000247"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000281"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000264"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000208"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000246"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000254"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
+        </owl:members>
+    </rdf:Description>
+    <owl:Class>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000281"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000369"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000367"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -4119,100 +4300,18 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000100"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000258"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000260"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000359"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000264"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000357"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000255"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000363"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000295"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000361"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000307"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000414"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000075"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000264"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000357"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -4228,6 +4327,23 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000357"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000208"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000246"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000254"/>
@@ -4238,12 +4354,150 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000255"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000363"/>
+        </owl:members>
+    </rdf:Description>
+    <owl:Class>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000278"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000251"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000307"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000100"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000258"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000260"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000359"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000276"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000361"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000264"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000357"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000264"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000307"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
         </owl:members>
     </rdf:Description>
     <owl:Class>
@@ -4278,37 +4532,34 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000255"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000363"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000208"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000246"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000254"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000247"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000281"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000100"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000258"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000260"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000359"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -4318,8 +4569,80 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000258"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000260"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000359"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000357"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000221"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000263"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000295"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000372"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000414"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000075"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000100"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000258"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000260"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000359"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -4334,12 +4657,30 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000307"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000295"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000361"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000414"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000075"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000231"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000232"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000233"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000234"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000254"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000255"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000256"/>
         </owl:members>
     </rdf:Description>
     <owl:Class>
@@ -4363,268 +4704,9 @@ The first iteration was interpreted as  (1 minor cardiovascular OR respiratory c
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000231"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000232"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000233"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000234"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000357"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000290"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000358"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000382"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000221"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000263"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000295"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000372"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000414"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000075"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000307"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000100"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000258"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000260"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000359"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000264"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000297"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000355"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000361"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000255"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000363"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000261"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000259"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000301"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000360"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000370"/>
-        </owl:members>
-    </rdf:Description>
-    <owl:Class>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000281"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000369"/>
-                    </owl:Restriction>
-                </owl:complementOf>
-            </owl:Class>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000367"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000101"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000251"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000262"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000276"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000299"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000365"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000366"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000368"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000263"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000285"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000372"/>
-        </owl:members>
-    </rdf:Description>
-    <owl:Class>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000308"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000257"/>
-                    </owl:Restriction>
-                </owl:complementOf>
-            </owl:Class>
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000258"/>
-                    </owl:Restriction>
-                </owl:complementOf>
-            </owl:Class>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000414"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000302"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000303"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000253"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000254"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000255"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000256"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000244"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000249"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000250"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000304"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
-        </owl:members>
-    </rdf:Description>
-    <owl:Class>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000278"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000251"/>
-                    </owl:Restriction>
-                </owl:complementOf>
-            </owl:Class>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AERO_0000125"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AERO_0000254"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000307"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000309"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000310"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000364"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
