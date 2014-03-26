@@ -1,0 +1,238 @@
+x = x[ ,-1]
+xPos <- subset(x,Class=="positive")
+xNeg <- subset(x,Class=="negative")
+dim(xNeg)
+dim(xPos)
+xPos[1:5,1:5]
+xNeg[1:5,1:5]
+dataTrain <- rbind(xPos[1:150],xNeg[1:3900])
+dataTrain <- rbind(xPos[1:150,],xNeg[1:3900,])
+dataTest <- rbind(xPos[151:236,],xNeg[3901:5931,])
+head dataTrain
+head(dataTrain)
+dataTrain[1:5,1:5]
+tarin.labels = dataTrain$Class
+train.labels = dataTrain$Class
+test.labels = dataTest$Class
+dataTrain = dataTrain[,-1]
+dataTrain[1:5,1:5]
+dataTest = dataTest[,-1]
+dataTest[1:5,1:5]
+model = naiveBayes(x=dataTrain, y=train.labels)
+model
+predTest <- predict(model, dataTest)
+ç
+predTest
+save.image(file="~/Desktop/Alan.rdata")
+ls()
+modelTest <- predict(model, dataTrain)
+modelTest
+library(foreign)
+library(RWeka)
+install.packages()
+library(RWeka)
+w <- read.arff(system.file("arff","~/Desktop/WekaVAERSdata/ARFVectorWEKAStringToWordVector.arff", package = "RWeka"))
+w <- read.arff("~/Desktop/WekaVAERSdata/ARFVectorWEKAStringToWordVectorNonSparse.arff")
+w <- read.arff(system.file("arff","/Users/mcourtot/Desktop/WekaVAERSdata/ARFVectorWEKAStringToWordVector.arff", package = "RWeka"))
+library(Rweka)
+library(RWeka)
+ls()
+?read.arff
+w <- read.arff("/Users/mcourtot/Desktop/WekaVAERSdata/ARFVectorWEKAStringToWordVectorNonSparse.arff")
+w
+NB <- make_Weka_classifier("weka/classifiers/bayes/NaiveBayes")
+NB
+modelWekaNB <- NB(Class ~ ., data = w)
+modelWekaNB
+w[1:5,1:5]
+rownames(w) = w$VAERSID
+w[1:5,1:5]
+w <- w[,-1]
+w[1:5,1:5]
+wPos <- subset(w,Class=="positive")
+wNeg <- subset(w,Class=="negative")
+wPos[1:5,1:5]
+wNeg[1:5,1:5]
+dim(wPos)
+dim(wNeg)
+wDataTrain <- rbind(wPos[1:150],wNeg[1:3900])
+wDataTrain <- rbind(wPos[1:150,],wNeg[1:3900,])
+wDataTest <- rbind(wPos[151:236,],wNeg[3901:5931,])
+wTrain.labels=wDataTrain$Class
+wTest.labels=wDataTest$Class
+wDataTrain[1:5,1:5]
+wDataTrain = wDataTrain[,-1]
+wDataTest = wDataTest[,-1]
+wModel = NB(x=wDataTrain, y=wTrain.labels)
+data(iris)
+iris
+wModel = NB(wDataTrain, wTrain.labels)
+wDataTrain[1:5,1:50]
+head(wTrain.labels)
+wTrain.labels
+wTestLabels
+wTest.labels
+summary(w)
+library(foreign)
+x <- read.arff("~/Desktop/iris.arff")
+dim(x)
+head(x)
+pairs(iris[1:4],main="Iris Data (red=setosa,green=versicolor,blue=virginica)", pch=21, bg=c("red","green3","blue")[unclass(iris$Species)])
+summary(iris)
+iris
+install(packages("e1071"))
+install.packages("e1071"))
+install.packages("e1071")
+library(e1071)
+classifier <- naiveBayes(iris[,1:4], iris[,5])
+table(predict(classifier, iris[,-5]), iris[,5], dnn=list('predicted','actual'))
+classifier
+x <- read.arff("~/Desktop/WekaVAERSdata/ARFVectorWEKAStringToWordVectorNonSparse.arff")
+dim(x)
+x[1:5,1:5]
+M <- read.csv(file='/Users/mcourtot/Desktop/VAERS/VAERSSensitivity/input.csv", head=TRUE, sep=",")
+''
+M <- read.csv(file="/Users/mcourtot/Desktop/VAERS/VAERSSensitivity/input.csv", head=TRUE, sep=",")
+M
+pred<-M$MelanieClassification
+ref <- M$VAERSManualClassification
+library(caret)
+install.packages("caret")
+library(caret)
+confusionMatrix(pred, ref, positive=1)
+confusionMatrix(pred, ref)
+confusionMatrix(pred, ref, positive='1')
+source("/Users/mcourtot/Desktop/R/contingencyTable.R")
+X$statistic
+X$expected
+X$observed
+symptoms
+unique.ids
+all.symptoms
+source("/Users/mcourtot/Desktop/R/contingencyTable.R")
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+QueryVector
+M
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+class(QueryVectorList)
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+class(QueryVectorList)
+class(queryVector)
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+class(queryVector)
+queryVector
+library(lsa)
+install.packages(lsa)
+install.packages("lsa")
+library(lsa)
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+class(all.symptoms)
+class(queryVector)
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+class(all.symptoms)
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+class(all.symptoms)
+class(queryVector)
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+queryVector
+all.symptoms
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+length(all.symptoms)
+length(queryVector)
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+cosRes
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+docs
+doc
+doc.list
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+library(tm)
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+my.corpus
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+term.doc.matrix
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+weight
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+tfidf.matrix[0:3, ]
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+all.symptoms
+queryVector
+source("/Users/mcourtot/Desktop/R/CosineSimilarity.R")
+class(all.symptoms)
+as.vector(all.symptoms)
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+library(tm)
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+warnings()
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.list
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.list
+all.symptoms
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.list
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.list
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+my.corpus
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+my.corpus
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+my.corpus
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+my.corpus
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.scores
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.scores
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.scores
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+doc.scores
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+plot(doc.scores)
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+my.docs
+my.corpus
+my.corpus$6033
+corpus$6033
+term.doc.matrix.stm
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+QueryVectorList
+source("/Users/mcourtot/Desktop/R/TestCosineSimilarity.R")
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv', header=F, stringsAsFactors=F)
+M
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTermsTest.csv', header=F, stringsAsFactors=F)
+M <- read.table('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTermsTest.csv', header=F, stringsAsFactors=F)
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTermsTest.csv', header=F, stringsAsFactors=F)
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv', header=F, stringsAsFactors=F)
+M <- read.table('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv', header=F, stringsAsFactors=F)
+M
+M <- read.table('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv', header=F, stringsAsFactors=F,sep=",")
+M
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTermsTest.csv', stringsAsFactors=F)
+M <- read.table('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv',stringsAsFactors=F,sep=",")
+M
+M <- read.table('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv',stringsAsFactors=F,sep=",")[1:3410,]
+M
+M <- as.data.frame(read.table('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv',stringsAsFactors=F,sep=",")[1:3410,])
+M
+M <- as.data.frame(read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv',stringsAsFactors=F,sep=",")[1:3410,])
+M
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv',stringsAsFactors=F,sep=",", fill=TRUE)
+M
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTermsTest.csv',stringsAsFactors=F,sep=",", fill=TRUE)
+M
+M <- read.csv('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/VAERSBrightonTerms.csv',stringsAsFactors=F,sep=",", fill=TRUE)
+M
+M <- source('/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/CosineBrighton.R)
+''
+)
+library(tm)
+source("/Users/mcourtot/Desktop/VAERS/VAERSCosine/ReproduceBotsisBrightonResults/CosineBrighton.R")
+setwd('/Users/mcourtot/Desktop/PLoS-Code/ROCcurve/')
+source('ROCCurveOntologyClassification.R')
+source('ROCCurveOntologyClassification.R')
+plot(rocobj)

@@ -1,0 +1,24 @@
+Level 3 post ICPE and are not level 2 => 8 reports
+SELECT DISTINCT ?resource WHERE {
+  ?resource rdf:type <http://purl.obolibrary.org/obo/AERO_0000430>.
+  OPTIONAL { ?resource2 rdf:type <http://purl.obolibrary.org/obo/AERO_0000434>. FILTER(?resource2 = ?resource) }
+  FILTER(!bound(?resource2))
+}
+
+
+
+Level 2 and are not level 1 =>  223 reports
+
+SELECT DISTINCT ?resource WHERE {
+  ?resource rdf:type <http://purl.obolibrary.org/obo/AERO_0000434>.
+  OPTIONAL { ?resource2 rdf:type <http://purl.obolibrary.org/obo/AERO_0000269>. FILTER(?resource2 = ?resource) }
+  FILTER(!bound(?resource2))
+}
+
+
+Level 1=> 98 reports
+
+SELECT DISTINCT ?resource WHERE {
+  ?resource rdf:type <http://purl.obolibrary.org/obo/AERO_0000269>.
+}
+
